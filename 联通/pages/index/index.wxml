@@ -1,0 +1,35 @@
+<view>
+  <image mode='widthFix' style='width:100%;' src='../../image/banner.png'></image>
+</view>
+
+<view style='padding:30rpx 40rpx 0;width:100%;box-sizing:border-box;'>
+  <view style='width:100%;background-color:#EFEFEF;padding:20rpx;box-sizing:border-box;'>
+    <view style='width:100%;padding:0 15rpx;box-sizing:border-box;text-align:center;height:50rpx;'>
+      <text style='color:#635131;line-height:50rpx;font-size:36rpx;'>冰激凌套餐，冰激凌套餐</text>
+      <view style='width:88rpx;height:8rpx;background-color:#D6B68C;margin-top:21rpx;float:left;'></view>
+      <view style='width:88rpx;height:8rpx;background-color:#D6B68C;margin-top:21rpx;float:right;'></view>
+    </view>
+
+    <view style='width:100%;height:180rpx;padding: 20rpx 10rpx;box-sizing:border-box;'>
+      <view bindtap='select1' style='float:left;width:47.75%;height:100%;background:url({{selectimg}}) no-repeat;border-radius:10rpx;background-size:100% 100%;'>
+        <view style='float:right;width:66.6666%;height:100%;padding:30rpx 0;font-family:"微软雅黑";box-sizing:border-box;'>
+          <view style='font-size:32rpx;font-weight:700;{{select1style}}'>冰激凌套餐</view>
+          <view style='font-size:26rpx;{{select1style}}'>(99元/月)</view>
+        </view>
+      </view>
+      <view bindtap='select2' style='float:right;width:47.75%;height:100%;background:url({{selectimga}}) no-repeat;border-radius:10rpx;background-size:100% 100%;'>
+        <view style='float:right;width:66.6666%;height:100%;padding:30rpx 0;font-family:"微软雅黑";box-sizing:border-box;'>
+          <view style='font-size:32rpx;font-weight:700;{{select2style}}'>冰激凌套餐</view>
+          <view style='font-size:26rpx;{{select2style}}'>(199元/月)</view>
+        </view>
+      </view>
+    </view>
+    <view style='font-size:30rpx;line-height:50rpx;text-indent:2em;'>{{taocan}}</view>
+  </view>
+</view>
+<navigator open-type='switchTab' url='../online/online' style='background-color:#CE9639;width:600rpx;height:80rpx;margin:30rpx 75rpx;line-height:80rpx;color:#fff;font-family:"黑体";text-align:center;'>立即申请</navigator>
+
+<image mode='widthFix' style='width:100%;' src='../../image/chang.jpg'></image>
+
+
+<text style='text-align:center;font-size:26rpx;display:block;margin:50rpx;color:#666;'>© 2018 小程序由河南辛普森互联网科技提供技术支持</text>

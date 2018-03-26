@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/online/online",
+    "pages/taocan/taocan"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WxParse",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/indexs.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/online/online",
+        "iconPath": "image/online.png",
+        "selectedIconPath": "image/onlines.png",
+        "text": "在线办理"
+      },
+      {
+        "pagePath": "pages/taocan/taocan",
+        "iconPath": "image/menu.png",
+        "selectedIconPath": "image/menus.png",
+        "text": "套餐助手"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/users.png",
+        "text": "用户"
+      }
+
+    ]
+  }
+}

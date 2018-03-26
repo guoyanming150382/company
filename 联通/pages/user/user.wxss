@@ -1,0 +1,160 @@
+/* pages/lianxi/lianxi.wxss */
+/**index.wxss**/
+/* 头像 */
+page{
+  background-color: #eee
+}
+.container{
+   background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516690824&di=0943a038ebe053f9dc5908b81fad011f&imgtype=jpg&er=1&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F8cb1cb1349540923d0fcdc5a9858d109b3de4978.jpg"); 
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+}
+ .userinfo {
+   display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  margin-top: -179rpx;
+  padding-bottom: 40rpx
+}
+
+.userinfo-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+
+
+
+.all{
+   margin-top: -170rpx; 
+   padding: 10rpx;
+   box-sizing: border-box
+}
+.f{
+  width: 100%;
+  height: 250rpx;
+  background-color: white;
+  border: 2rpx solid #aaa;
+}
+.f .f1{
+  width: 100%;
+  height: 150rpx;
+  /* background: pink; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+  
+}
+.f .f1 .f11{
+  font-size: 30rpx;
+  text-align: center;
+}
+.f .f1 .f11 image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.f .f2{
+  width: 100%;
+  height: 100rpx;
+  /* background: red; */
+  padding: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+  border-top: 2rpx solid #aaa;
+}
+.f .f2 image{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block
+}
+.f .f2 .f22{
+  display: inline-block;
+  position: absolute;
+  top: 28rpx;
+  left: 100rpx
+}
+.f .f2 .f23{
+  font-size: 30rpx;
+  position: absolute;
+  right: 62rpx;
+  top: 30rpx;
+   color: gray;
+}
+.f .f2 .f24{
+  position: absolute;
+  top: -8rpx;
+  right:-34rpx;
+  font-size: 40rpx
+}
+.ct{
+  margin-top: 50rpx;
+  background-color: white;
+  padding: 10rpx;
+  border: 2rpx solid #aaa;
+  box-sizing: border-box
+}
+.ct .ct1{
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 2rpx solid #aaa;
+  line-height: 100rpx;
+  position: relative;
+}
+.ct .ct1 image{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx
+}
+.ct .ct1 .ct2{
+  display: inline-block;
+  padding-left: 100rpx;
+  box-sizing: border-box
+}
+.ct .ct1 .ct3{
+  position: absolute;
+  top: -2rpx;
+  right: 40rpx;
+  font-size: 40rpx;
+  color: gray
+}
+.left-line1:after{
+  content: "";
+  display: block;
+  width: 2rpx;
+  height:100%;
+  background-color: #aaa;
+  position: absolute;
+  top: 0rpx;
+  left: 25%;
+}
+.left-line2:after{
+  content: "";
+  display: block;
+  width: 2rpx;
+  height:100%;
+  background-color: #aaa;
+  position: absolute;
+  top: 0rpx;
+  left: 50%;
+}
+.left-line3:after{
+  content: "";
+  display: block;
+  width: 2rpx;
+  height:100%;
+  background-color: #aaa;
+  position: absolute;
+  top: 0rpx;
+  left: 75%;
+}
