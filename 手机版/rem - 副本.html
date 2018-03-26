@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517898119&di=96e2e54bbeef6e35e8595b8a30bca753&imgtype=jpg&er=1&src=http%3A%2F%2Fuploads.xuexila.com%2Fallimg%2F1706%2F28-1F61Z92547.jpg" style="width: 10rem;"  mode="widthFix">
+</body>
+<script>
+                (function(win,doc){
+                        var fresh = function(){
+                                var html = doc.documentElement;
+                                var w = html.clientWidth;
+                                html.style.fontSize = (w/10) + 'px';
+                        }
+                        if(doc.readySate === 'complete'){
+                                fresh();
+                        }else{
+                                doc.addEventListener("DOMContentLoad",fresh,false);
+                        }
+                        win.addEventListener("resize",fresh,false);
+                })(window,document)
+        </script>
+</html>
