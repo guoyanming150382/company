@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(http://www.emmmmm.xyz/tx/weyb1.jpg);
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+}
+.content{
+	width: 7.5rem;
+	position: fixed;
+	left: 50%;
+	margin-left: -3rem;
+	top: 0.2rem;
+	color: #aaa;
+}
+input::-webkit-input-placeholder{
+            color:#fff;
+        }
+input::-moz-placeholder{
+            color:#fff;
+        }
+input:-moz-placeholder{ 
+            color:#fff;
+        }
+ input:-ms-input-placeholder{
+            color:#fff;
+        }
+.content span{
+	font-size: 0.35rem;
+	color: #fff;
+	font-weight: bold;
+}
+.content input{
+	width: 3.5rem;
+	height: 0.8rem;
+	font-size: 0.28rem;
+	/*font-family: "SimSun";*/
+	text-align: center;
+	line-height: 0.8rem;
+	background-color: transparent ;
+	border-radius: 0.1rem;
+	color: #fff;
+	font-weight: bold;
+}
+.content button{
+	width: 6rem;
+	height: 1rem;
+	background-color: #a3a3a3;
+	border-radius: 0.15rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1rem;
+	font-size: 0.4rem;
+	margin-top: 0.5rem;
+	border: none;
+}
+
+.message{
+		width: 7.5rem;
+		height: 1rem;
+		text-align: center;
+		line-height: 1rem;
+		color: red;
+		font-size: 0.35rem;
+		position: fixed;
+		top: 0;
+		background-color: white;
+		opacity: 0.6;
+	}

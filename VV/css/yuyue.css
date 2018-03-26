@@ -1,0 +1,67 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	/*主体*/
+	.content{
+		height: 90vh;
+		width: 7.5rem;
+		/*background-color: #000;*/
+		background-image: url(http://www.emmmmm.xyz/tx/weyb1.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.content .content1{
+		height: 45vh;
+		width: 100%;
+		/*background-color: pink;*/
+		padding-top: 1.1rem;
+		box-sizing: border-box;
+	}
+	.content .content1 .content2{
+		width: 60%;
+		height: 60%;
+		margin: 0 auto;
+		/*border: 0.02rem solid #fff;*/
+		margin-left: 20%;
+	}
+	.content .content1 .content2 img{
+		width: 100%;
+	}
+	.content .content1 .content2 .content3{
+		width: 60%;
+		height: 1rem;
+		line-height: 1rem;
+		/*background-color: #000;*/
+		color: #fff;
+		margin:0 auto;
+		font-size: 0.4rem;
+		text-align: center;
+		border: 0.02rem solid #fff;
+		border-radius: 0.25rem;
+	}
+	/*底部*/
+	.footer{
+		width: 7.5rem;
+		height: 10vh;
+		background-color: #000;
+		position: fixed;
+		bottom: 0rem;
+		left: 0rem;
+		z-index: 10;
+		border-top: 0.02rem solid #aaa;
+	}
+	.footer li{
+		width: 25%;
+		height: 1rem;
+		font-size: 0.2rem;
+		float: left;
+		list-style: none;
+		text-align: center;
+		padding-top: 0.3rem;
+		box-sizing: border-box;
+	}
+	.footer li img{
+		width: 0.4rem;
+		height: 0.4rem;
+	}

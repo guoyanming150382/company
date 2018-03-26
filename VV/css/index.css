@@ -1,0 +1,154 @@
+/*轮播*/
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.all {
+		width: 7.5rem;
+		overflow: hidden;
+		height: 4rem;
+		position: fixed;
+		top: 0rem;
+		z-index: 99;
+	}
+	#wrap{
+		position: relative;
+		height: 4rem;
+	}
+	#list{
+		position: absolute;
+		list-style: none;
+		/*width: 500%;*/
+		width: 6rem;
+		overflow: hidden;
+		height: 4rem
+	}
+	#list li{
+		float: left;
+		/*width: 20%;*/
+		height: 4rem;
+	}
+	#list li img{
+		display: block;
+		width: 100%;
+		height: 4em
+	}
+
+	/*主体*/
+	.poject{
+		width: 7.5rem;
+		height: 1.2rem;
+		background-color: #000;
+		/*border-bottom: 0.02rem solid #aaa;*/
+		/*margin-top: 4rem;*/
+		position: absolute;
+		top: 4rem;
+		color: #fff;
+	}
+	.poject li{
+		width: 25%;
+		height: 100%;
+		text-align: center;
+		/*line-height: 0.5rem;*/
+		float: left;
+		list-style: none;
+		font-size: 0.2rem
+	}
+	.poject li img{
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+	/*宣传图*/
+	.picture{
+		width: 7.5rem;
+		height: 6rem;
+		position: absolute;
+		top: 13.8rem;
+		margin-bottom: 2.4rem;
+	}
+	.picture .picture-1{
+		width: 100%;
+		height: 4.5rem;
+	}
+	.picture .picture-1 img{
+		width: 100%;
+		height: 100%;
+	}
+	.picture .picture-2{
+		width: 100%;
+		height: 1.5rem;
+		position: relative;
+		top: -0.4rem;
+		color: #fff;
+	}
+	.picture .picture-2 .p1{
+		width: 100%;
+		height: 0.7rem;
+		line-height: 0.7rem;
+		font-size: 0.7rem;
+		text-align: center;
+		font-weight: bold;
+	}
+	.picture .picture-2 .p2{
+		width: 100%;
+		height: 0.4rem;
+		line-height: 0.4rem;
+		font-size: 0.4rem;
+		text-align: center;
+		margin-top: 0.2rem;
+		color: #fff;
+	}
+	.picture .picture-2 .p3{
+		/*width: 100%;*/
+		height: 0.8rem;
+		margin-top: 0.3rem;
+		padding-left: 32%;
+	}
+	.picture .picture-2 .p3 div{
+		width: 40%;
+		height: 100%;
+		text-align: center;
+		font-size: 0.4rem;
+		line-height: 0.8rem;
+		border: 0.02rem solid #fff;
+	}
+	/*中间轮播图*/
+	.swiper-slide{
+		text-align: center;
+		padding-top: 0.8rem;
+		box-sizing: border-box;
+	}
+	.swiper-slide img{
+		width: 4rem;
+		height: 3rem;
+	}
+	/*底部*/
+	.footer{
+		width: 7.5rem;
+		height: 10vh;
+		background-color: #000;
+		position: fixed;
+		bottom: 0rem;
+		left: 0rem;
+		z-index: 10;
+		border-top: 0.02rem solid #aaa
+	}
+	.footer li{
+		width: 25%;
+		height: 1rem;
+		font-size: 0.2rem;
+		float: left;
+		list-style: none;
+		text-align: center;
+		padding-top: 0.3rem;
+		box-sizing: border-box;
+	}
+	.footer li img{
+		width: 0.4rem;
+		height: 0.4rem;
+	}
+/*视频*/
+#myvideo{
+	object-fit: contain;  
+    object-position: center center;
+}

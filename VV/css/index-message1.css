@@ -1,0 +1,101 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+	/*主体*/
+	.content{
+		width: 7.5rem;
+		background-color: #fff;
+
+	}
+	.content .content2{
+		padding: 0rem 0.3rem 0rem 0.3rem;
+		box-sizing: border-box;
+	}
+	.content .content2 .xinxi{
+		width: 100%;
+		height: 0.9rem;
+		/*background-color: yellow*/
+	}
+	.content .content2 .xinxi div{
+		font-size: 0.35rem;
+		line-height: 0.9rem;
+	}
+	.content3{
+		width: 7.5rem;
+		background-color: #fff;
+		padding: 0rem 0.3rem 0rem 0.3rem;
+		box-sizing: border-box;
+		/*background-color: yellow*/
+		padding-top: 0.5rem;
+		box-sizing: border-box;
+	}
+	.content3 .con3{
+		width: 100%;
+		height: 0.65rem;
+		line-height: 0.65rem;
+		text-align: left;
+		font-size: 0.5rem;
+	}
+	.content3 .con4{
+		width: 0.05rem;
+		height: 0.55rem;
+		background-color: #a67d3d;
+		float: left;
+		margin-top: 0.05rem;
+		box-sizing: border-box;
+	}
+	.content3 .kuai{
+		width: 100%;
+		margin-top: 0.1rem
+	}
+	.content3 .kuai1{
+		width: 0.8rem;
+		height: 1.5rem;
+		/*background-color: red;*/
+		display: inline-block;
+	}
+	.content3 .kuai2{
+		width: 0.8rem;
+		height: 0.8rem;
+		/*background-color: blue*/
+	}
+	.content3 .kuai3{
+		font-size: 0.35rem;
+		float: left;
+		margin-top: 0.1rem;
+		padding-left: 0.05rem;
+		box-sizing: border-box;
+	}
+	.content3 .lunzi{
+		width: 100%;
+		padding-left: 0.05rem;
+		box-sizing: border-box;
+		margin-top: 0.2rem
+	}
+	.content3 .lunzi .lun1{
+		width: 1.5rem;
+		height: 2.3rem;
+		/*background-color: red;*/
+	}
+	.content3 .lunzi .lun1 .lun2{
+		font-size: 0.35rem;
+		float: left;
+		margin-top: -0.1rem;
+		padding-left: 0.2rem;
+		box-sizing: border-box;
+	}
+	.huadong{
+		/*width: 100%;*/
+		overflow-y:scroll;
+		white-space: nowrap;
+		 display: flex;
+		 overflow:auto;
+	}
+	.huadong div{
+		display:inline-block;
+		width:5rem;
+		height:3rem;
+	}
+	

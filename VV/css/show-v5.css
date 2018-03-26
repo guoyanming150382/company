@@ -1,0 +1,48 @@
+*{
+		margin: 0;
+		padding: 0;
+	}
+/*头部*/
+	.head{
+	width: 7.5rem;
+	height: 5.7rem;
+	/*background-color: red;*/
+	}
+	.head .x1{
+		width:7.5rem;
+		height: 5.7rem;
+		/*background-color: pink;*/
+		display: none;
+		padding: 0.4rem;
+		box-sizing: border-box;
+	}
+	.head .x1 img{
+		width: 100%;
+		height: 100%;
+	}
+	.butto{
+		width: 4.8rem;
+		height: 0.8rem;
+		/*background-color: green;*/
+		position: relative;
+		top:-1rem;
+		left: 50%;
+		margin-left: -2.4rem;
+		z-index: 999;
+	}
+	.butto span{
+		width: 0.6rem;
+		height: 0.6rem;
+		list-style: none;
+		float: left;
+		margin-right: 0.24rem;
+	}
+	.butto span img{
+		width: 100%;
+		height: 100%;
+	}
+
+	/*展示图*/
+	img{
+		width: 100%;
+	}

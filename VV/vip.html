@@ -1,0 +1,207 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+		<!-- 适应苹果 -->
+		<meta name="apple-touch-fullscreen" content="YES">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <!-- 适应苹果 -->
+		<link rel="stylesheet" type="text/css" href="css/vip.css">
+		<script  src="js/vip.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1296052832,1880339224&fm=27&gp=0.jpg" alt="">
+			<!--<ul>
+				 <li><img src="images/color_04.png" alt="头像"></li>
+				<li>谁的谁的舒蝶</li> 
+			</ul>-->
+		</div>
+		<div class="content">
+			<div class="yuyue">
+				<div class="shixiang" mode="widthFix">
+					<p>预约事项</p>
+				</div>
+				<div class="yuyue1">
+					<a href="#" title=""><div><img src="img/car.png" alt=""><p>预约试驾</p></div></a>
+					<a href="#" title="">
+						<div style="border-left: 0.02rem solid #fff;">
+							<img src="img/wei.png" alt="">
+							<p>维修保养</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="map" >
+			<div class="flast">
+				<div class="tel">
+					<a href="tel:15617927569" title="">
+						<img src="img/tel.png" alt="">
+						<p>一键电话</p>
+					</a>
+				</div>
+				<div class="di">
+					<a href="#dituContent" title="">
+						<img src="img/di.png" alt="">
+						<p>查看地图</p>
+					</a>
+				</div>
+				<div class="di">
+					<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=229436141&site=qq&menu=yes">
+						<img src="img/k.png" alt="">
+						<p>客服会话</p>
+					</a>
+				</div>
+			</div>
+	 		 <!--百度地图容器-->
+	  			<div style="width:90%;height:300px;margin: 0 5%; margin-bottom: 5%;" id="dituContent"></div>
+
+				<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.818803,34.078694);//定义一个中心点坐标
+        map.centerAndZoom(point,15);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"许昌wey汽车销售",content:"地址：许昌市汽车北站西北方向300米",point:"113.845572|34.075091",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://api.map.baidu.com/lbsapi/creatmap/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+			</div>
+			<div class="dizhi">
+				<div class="zhi">
+					公司地址：河南省许昌市魏都区许昌汽北站西北方向300米路西
+				</div>
+				<!-- <hr> -->
+				<div class="dian">
+						联系电话：0374-2651888
+				</div>
+			</div>
+		<!-- 底部 -->
+		<ul class="footer">
+			
+			<li>
+				<a href="javascript:;" ontouchstart="window.location.href='index.html'" style="text-decoration: none;">
+				<img src="img/foot1.png">
+				<div style="color: #fff">首页</div>
+				</a>
+			</li>	
+			
+			
+			<li>
+				<a href="javascript:;" ontouchstart="window.location.href='car-show.html'" style="text-decoration: none;">
+				<img src="img/foot2.png">
+				<div style="color: #fff">车辆展厅</div>
+				</a>
+			</li>	
+			
+			
+			<li>
+				<a href="javascript:;" ontouchstart="window.location.href='yuyue.html'" style="text-decoration: none;">
+				<img src="img/foot3.png">
+				<div style="color: #fff">预约</div>
+				</a>
+			</li>	
+
+			<li>
+				<a href="javascript:;" ontouchstart="window.location.href='vip.html'" style="text-decoration: none;">
+				<img src="img/hui1.png">
+				<div style="color: #00ff00">会员</div>
+				</a>
+			</li>
+		
+		</ul>
+	</body>
+	</html>

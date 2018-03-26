@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>预约</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<link rel="stylesheet" type="text/css" href="css/yuyue-take.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpg" media="screen" />
+</head>
+<script src="js/yuyue-take.js"></script>
+<script type="text/javascript">
+	window.onload=function(){
+
+
+	// 表单验证
+	var oUser=document.getElementById("username");
+	var oTel=document.getElementById("tel");
+	var oBuut=document.getElementById("but");
+	var oMessage=document.getElementById("message");
+	oBuut.onclick=function(){
+		if(oUser.value==""){
+			oMessage.style.display="block";
+			oMessage.innerHTML="用户名不能为空";
+			return false;
+		}else if(oTel.value==""){
+			oMessage.style.display="block";
+			oMessage.innerHTML="电话号码不能为空";
+			return false;
+		}else if(!(/^1(3|4|5|7|8)\d{9}$/.test(oTel.value))){
+			oMessage.style.display="block";
+			oMessage.innerHTML="手机号码不正确";
+			return false;
+		}else{
+			oMessage.style.display="none";
+			oMessage.innerHTML="";
+			// window.open('yuyue-success.html');
+		}
+	}
+	}
+</script>
+<body>
+	<!-- 主体 -->
+	<div class="head">D R I V I N G &nbsp;&nbsp;&nbsp;&nbsp; T E X T</div>
+	<div class="head1">欢迎到店亲临体验</div>
+	<!-- 表单 -->
+	<div class="content">
+		<form action="yuyue-pro-success.html">
+			<p>
+				<input class="in1" type="text" name="text" id="username" placeholder="请输入姓名">
+			</p>
+			<p>
+				<input class="in2" type="text" name="text" id="tel" placeholder="请输入电话号码">
+			</p>
+			<button type="submit" id="but" style="border: none;">提交预约</button>
+		</form>
+	</div>
+	<!-- 返回 -->
+	<a href="javascript:;" ontouchstart="window.location.href='yuyue.html'" style="text-decoration: none;">
+	<img src="img/l.png" style="width: 0.5rem;height:0.5rem;position: fixed;top:0.3rem;left: 0.3rem">
+	</a>
+	<!-- 提是信息 -->
+	<div class="message" id="message" style="display: none;"></div>
+</body>
+</html>

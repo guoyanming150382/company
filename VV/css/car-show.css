@@ -1,0 +1,54 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	/*主体*/
+	.content{
+		width: 7.5rem;
+		height: 90vh;
+		/*background-color: red;*/
+	}
+	.content .content1{
+		width: 60%;
+		height: 50%;
+		/*background-color: green;*/
+		margin-left: 20%;
+	}
+	.content .content1 img{
+		width: 100%;
+	}
+	.content .content1 .content2{
+		width: 50%;
+		height: 0.6rem;
+		/*background-color: red;*/
+		margin: 0 auto;
+		font-size: 0.3rem;
+		line-height: 0.6rem;
+		text-align: center;
+		/*border: 0.04rem solid #000;*/
+	}
+	/*底部*/
+	.footer{
+		width: 7.5rem;
+		height: 10vh;
+		background-color: #000;
+		position: fixed;
+		bottom: 0rem;
+		left: 0rem;
+		z-index: 10;
+		border-top: 0.02rem solid #aaa
+	}
+	.footer li{
+		width: 25%;
+		height: 1rem;
+		font-size: 0.2rem;
+		float: left;
+		list-style: none;
+		text-align: center;
+		padding-top: 0.3rem;
+		box-sizing: border-box;
+	}
+	.footer li img{
+		width: 0.4rem;
+		height: 0.4rem;
+	}

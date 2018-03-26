@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>预约</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<link rel="stylesheet" type="text/css" href="css/yuyue-repair.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpg" media="screen" />
+</head>
+<script  src="js/yuyue-repair.js"></script>
+<body>
+	<!-- 提示信息 -->
+	<div class="message" id="message" style="display: none;"></div>
+	<!-- 返回 -->
+	<a href="javascript:;" ontouchstart="window.location.href='yuyue.html'" style="text-decoration: none;">
+	<img src="img/l.png" style="width: 0.5rem;height:0.5rem;position: fixed;top:0.3rem;left: 0.3rem">
+	</a>
+	<!-- 表单 -->
+	<div class="content">
+		<form action="yuyue-success.html">
+		<p  style="text-indent: 0.2rem">
+		    <span>预约项目：</span>
+		    <input style="border:solid 0.02rem #fff;" class="qu-height" type="text" placeholder="请选择预约项目" id="project">
+		</p>
+		<p  style="text-indent: 0.2rem">
+		    <span>预约日期：</span>
+		    <input style="border:solid 0.02rem #fff;" class="sp-time" type="text" placeholder="请选择预约日期" id="riqi">
+		</p>
+		<p  style="text-indent: 0.2rem">
+		    <span>预约时间：</span>
+		    <input style="border:solid 0.02rem #fff;" class="qu-time" type="text" placeholder="请选择预约时间" id="shijian">
+		  </p>
+		  <p  style="text-indent: 0.2rem">
+		    <span>预约车型：</span>
+		    <input style="border:solid 0.02rem #fff;" class="qu-weight" type="text" placeholder="请选择预约的车型" id="chexing">
+		  </p>
+		  <p style="text-indent: 0.8rem">
+		  	<span>姓名：</span>
+		  	 <input style="border:solid 0.02rem #fff;background-color:transparent " type="text" placeholder="请填写姓名" id="username">
+		  </p>
+		  <p style="text-indent: 0.8rem">
+		  	<span>电话：</span>
+		  	 <input style="border:solid 0.02rem #fff;" type="text" placeholder="请填写电话号码" id="tel">
+		  </p>
+		  <p style="text-indent: 0.8rem">
+		  	<span>车牌：</span>
+		  	 <input style="border:solid 0.02rem #fff;" type="text" placeholder="请输入车牌号" id="carnumber">
+		  </p>
+		  <button type="submit" id="but" >提交预约</button>
+		</form>
+	</div>
+  <script src="js/jq.js"></script>
+  <script src="js/jquery.selector-px.js"></script>
+  <script>
+    $(function () {
+      var nowYear = new Date().getFullYear();
+      var gYear = [];
+      for (var i = 0; i < 100; i++) {
+        gYear.push(Number(nowYear) + i);
+      };
+      var quHeight = ["更换配件","常规检测","钣金喷漆","常规保养","大保养"];
+      var quWeightInt = ["VV5","VV7"];
+      var quWeightFl = ["黑色","蓝色","灰色","银色","红色","白色"];
+
+
+
+      // 无用
+      var spoHour = [ "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"];
+      var spoMinute = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59"];
+      // 无用
+
+
+
+      $.scrEvent({
+        data: gYear,
+        evEle: '.qu-year',
+        title: '年份',
+        defValue: 1980,
+        afterAction: function (data) {
+
+          $(".qu-year").val(data);
+        }
+      });
+
+      // 身高
+      $.scrEvent({
+        data: quHeight,
+        evEle: '.qu-height',
+        title: '项目选择',
+        defValue: "维修",
+        afterAction: function (data) {
+
+          $('.qu-height').val(data);
+        }
+      });
+
+      //体重
+      $.scrEvent2({
+        data: quWeightInt,
+        data2: quWeightFl,
+        evEle: '.qu-weight',
+        title: '车型选择',
+        defValue: "VV5",
+        defValue2: "灰色",
+        linkType: '.',
+        afterAction: function (data1, data2) {
+
+          $('.qu-weight').val(data1 + '-' + data2);
+        }
+      })
+
+
+      //睡眠
+      $.scrEvent2({
+        data: spoHour,
+        data2: spoMinute,
+        evEle: '.qu-time',
+        title: '时间选择',
+        defValue: 6,
+        defValue2: 0,
+        eleName: '时',
+        eleName2: '分',
+        afterAction: function (data1, data2) {
+          $('.qu-time').val(data1 + '时' + data2 + '分');
+        }
+      })
+
+      // 年月日 时分
+      $.dateSelector({
+        evEle: '.sp-date',
+        year: 1990,
+        month: 12,
+        day: 08,
+        startYear: '2018',
+        endYear: '2030',
+        timeBoo: true,
+        afterAction: function (d1, d2, d3, d4, d5) {
+          $('.sp-date').val(d1 + '-' + d2 + '-' + d3 + '  ' + d4 + ':' + d5);
+        }
+      });
+
+      // 年月日
+      $.dateSelector({
+          evEle: '.sp-time',
+          startYear: '2017',
+          endYear: '2030',
+          timeBoo: false,
+          afterAction: function (d1, d2, d3) {
+            $('.sp-time').val(d1 + '-' + d2 + '-' + d3);
+          }
+      });
+});
+
+
+	// 表单验证
+	var oUser=document.getElementById("username");
+	var oTel=document.getElementById("tel");
+	var oBuut=document.getElementById("but");
+	var oMessage=document.getElementById("message");
+	var oCarnum=document.getElementById("carnumber");
+	var oProject=document.getElementById("project");
+	var oDate=document.getElementById("riqi");
+	var oTTim=document.getElementById("shijian");
+	var oChexi=document.getElementById("chexing");
+	oBuut.onclick=function(){
+		if(oUser.value==""){
+			oMessage.style.display="block";
+			oMessage.innerHTML="用户名不能为空";
+			return false;
+		}else if(oProject.value==""){
+			oMessage.style.display="block";
+			oMessage.innerHTML="项目不能为空";
+			return false;
+		}else if(oDate.value==""){
+			oMessage.style.display="block";
+			oMessage.innerHTML="日期不能为空";
+			return false;
+		}else if(oTTim.value==""){
+			oMessage.style.display="block";
+			oMessage.innerHTML="时间不能为空";
+			return false;
+		}else if(oChexi.value==""){
+			oMessage.style.display="block";
+			oMessage.innerHTML="车型不能为空";
+			return false;
+		}else if(oTel.value==""){
+			oMessage.style.display="block";
+			oMessage.innerHTML="电话号码不能为空";
+			return false;
+		}else if(!(/^1(3|4|5|7|8)\d{9}$/.test(oTel.value))){
+			oMessage.style.display="block";
+			oMessage.innerHTML="手机号码不正确";
+			return false;
+		}else if(oCarnum.value==""){
+			oMessage.style.display="block";
+			oMessage.innerHTML="车牌号不能为空";
+			return false;
+		}else{
+			oMessage.style.display="none";
+			oMessage.innerHTML="";
+			// window.open('yuyue-pro-success.html','_self');
+			// location='yuyue-pro-success.html';
+		}
+	}
+  </script>
+</body>
+</html>
