@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>更多</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.head {
+				width: 7.5rem;
+				height: 1rem;
+				/*background-color: red;*/
+				border-bottom: 0.02rem solid #aaa
+			}
+			
+			.head .tu1 {
+				width: 1rem;
+				height: 1rem;
+				padding: 0.15rem;
+				box-sizing: border-box;
+				float: left;
+			}
+			
+			.head .tu2 {
+				width: 1.1rem;
+				height: 0.9rem;
+				padding: 0.25rem;
+				box-sizing: border-box;
+				float: right;
+				margin-top: 0.05rem
+			}
+			
+			.head .tu3 {
+				width: 0.7rem;
+				height: 0.8rem;
+				float: right;
+				margin-top: 0.1rem
+			}
+			
+			.head .tu4 {
+				width: 0.7rem;
+				height: 0.7rem;
+				float: right;
+				padding: 0.1rem;
+				box-sizing: border-box;
+				margin-top: 0.15rem
+			}
+			
+			.head1 {
+				width: 7.5rem;
+				height: 3rem;
+			}
+			
+			.head1 img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.head2 {
+				width: 7.5rem;
+				height: 3.5rem;
+				background-color: #eee;
+				border-top: 0.02rem solid #aaa;
+				border-bottom: 0.02rem solid #aaa
+			}
+			
+			.head2 .left {
+				width: 100%;
+				height: 1rem;
+				line-height: 1rem;
+				/*background-color: red;*/
+				float: left;
+				font-size: 0.5rem;
+				font-weight: bold;
+				text-align: center;
+				color: #000;
+			}
+			
+			.head2 #right {
+				width: 100%;
+				height: 2.5rem;
+				/*background-color: green;*/
+				float: left;
+			}
+			
+			.head2 #right span {
+				font-size: 0.4rem;
+				width: 25%;
+				height: 1rem;
+				float: left;
+				text-align: center;
+				line-height: 1rem;
+			}
+			/*选项卡*/
+			
+			#xianshi .x1 {
+				width: 7.5rem;
+				height: 4.2rem;
+				/*background-color: yellow;*/
+				display: none;
+			}
+			
+			.became {
+				color: blue;
+			}
+			
+			#xianshi #all {
+				width: 7.5rem;
+				/*height: 11.8rem;*/
+			}
+			
+			.p1 {
+				width: 3.75rem;
+				height: 3.8rem;
+				/*background-color: yellow;*/
+				float: left;
+				overflow: hidden;
+				/*border-bottom: 0.02rem solid #aaa;*/
+				padding: 0 0.15rem 0 0.2rem;
+				box-sizing: border-box;
+			}
+			
+			.p1 li {
+				padding-left: 0.25rem;
+				box-sizing: border-box;
+			}
+			
+			.p1 .d3 {
+				color: #ff7f00;
+				width: 2.3rem;
+				display: block;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-top: 0.1rem;
+			}
+			
+			.p1 .d2 {
+				margin-top: 0.1rem;
+			}
+			
+			.d1,
+			.d2 {
+				text-align: center;
+			}
+			
+			.d3 {
+				margin: 0 auto;
+				margin-bottom: 0.2rem;
+				box-sizing: border-box;
+			}
+			/*******/
+			
+			.foot {
+				height: 0.5rem;
+				width: 7.5rem;
+				line-height: 0.5rem;
+				border-bottom: 0.02rem solid #aaa;
+				background-color: #d8d7d7;
+				font-size: 0.28rem;
+				text-align: center;
+				margin-bottom: 1.1rem;
+			}
+			/*分类栏目*/
+			
+			.fenleilan {
+				width: 5.5rem;
+				height: 5rem;
+				background-color: #f2f2f2;
+				position: absolute;
+				top: 1rem;
+				right: 0rem;
+				display: none
+			}
+			
+			.fenleilan li {
+				width: 100%;
+				height: 1rem;
+				list-style: none;
+			}
+			
+			.fenleilan .fen1 .df {
+				width: 2.74rem;
+				height: 1rem;
+				float: left;
+				line-height: 1rem;
+				font-size: 0.4rem;
+			}
+			
+			.rightfenlei {
+				width: 1rem;
+				height: 4.4rem;
+				position: fixed;
+				right: 0rem;
+				bottom: 3rem;
+			}
+			
+			.rightfenlei .right1 {
+				width: 1rem;
+				height: 1rem;
+				margin-top: 0.1rem;
+				background-color: #4d4dff;
+				text-align: center;
+				font-size: 8px;
+				padding-top: 0.1rem;
+				box-sizing: border-box;
+				color: #fff
+			}
+			
+			.rightfenlei .right1 img {
+				width: 0.45rem;
+				height: 0.45rem;
+			}
+			/*底部*/
+			
+			.footer {
+				width: 7.5rem;
+				height: 1.1rem;
+				background-color: #f3f3f3;
+				position: fixed;
+				bottom: 0rem;
+				left: 0rem;
+				z-index: 10;
+				border-top: 0.02rem solid #aaa
+			}
+			
+			.footer li {
+				width: 33.333%;
+				height: 1rem;
+				font-size: 0.2rem;
+				float: left;
+				list-style: none;
+				text-align: center;
+				padding-top: 0.15rem;
+				box-sizing: border-box;
+			}
+			
+			.footer li img {
+				width: 0.4rem;
+				height: 0.4rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="head">
+			<img src="h1.png" class="tu1">
+			<img src="h2.png" class="tu2" id="show">
+			<!-- <img src="h3.png" class="tu3">
+		<img src="h4.png" class="tu4"> -->
+		</div>
+		<div class="head1">
+			<img src="quan.jpg">
+		</div>
+		<div class="head2">
+			<div class="left">车系：</div>
+			<div id="right" style="padding-right: 0.15rem;padding-left: 0.15rem;box-sizing: border-box;">
+				<div style="border: 0.02rem solid #aaa;overflow: hidden;">
+					<span class="became">全部</span>
+					<span>Z500EV</span>
+					<span>E200</span>
+					<span>100</span>
+					<!-- <span></span> -->
+					<span style="margin-left: 25%">大迈芝麻</span>
+					<span>云100s</span>
+				</div>
+			</div>
+		</div>
+		<div id="xianshi">
+			<div style="display: block" id="all" class="x1 itemss">
+				<!--<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo1.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥45900<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">众泰Z500EV</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>-->
+				<!--<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo4.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥125800<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">众泰E200</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>
+				<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo5.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥72800<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">众泰100</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>
+				<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo3.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥119800<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">大迈芝麻</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>
+				<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo2.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥72800<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">众泰云100s</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>-->
+			</div>
+
+			<script src="js/jquery.min.js"></script>
+
+			<script type="text/javascript">
+				$(document).ready(function() {
+					
+					$.ajax({
+						type: "get",
+						url: '../zhongchi/car/GetAllCar',
+						data: {},
+						success: function(res) {
+							console.log(res);
+							var result = res;
+							var html = "";
+							for(var i = 0; i < result.length; i++) {
+								html += "<ul class='p1' style='padding-top: 0.3rem;box-sizing: border-box;'>" +
+									"<div style='border: 0.02rem solid #aaa'>" +
+									'<a href="index-3.html?carid=' + result[i].carid + '">' +
+									'<img src=' + result[i].img + ' style="width: 100%;height:50%">' +
+									"</a>" +
+									'<li class="d1" style="font-size: 0.35rem;color: red">￥' +
+									result[i].price + '<span style="font-size: 0.25rem"> 起</span>' +
+									'</li><li class="d2" style="font-size: 0.25rem">' +
+									result[i].name + '</li><li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li></div></ul>';
+								console.log(html);
+							}
+							$('.itemss').append(html);
+						}
+					})
+
+				})
+			</script>
+
+			<div class="x1">
+				<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo1.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥45900<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">众泰Z500EV</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>
+			</div>
+			<div class="x1">
+				<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo4.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥125800<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">众泰E200</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>
+			</div>
+			<div class="x1">
+				<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo5.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥72800<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">众泰100</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>
+			</div>
+			<div class="x1">
+				<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo3.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥119800<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">大迈芝麻</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>
+			</div>
+			<div class="x1">
+				<ul class="p1" style="padding-top: 0.3rem;box-sizing: border-box;">
+					<div style="border: 0.02rem solid #aaa">
+						<a href="index-3.html">
+							<img src="bo2.png" style="width: 100%;height:50%">
+						</a>
+						<li class="d1" style="font-size: 0.35rem;color: red">
+							￥72800<span style="font-size: 0.25rem"> 起</span>
+						</li>
+						<li class="d2" style="font-size: 0.25rem">众泰云100s</li>
+						<li class="d3" style="font-size: 0.25rem">2018众泰最新款车型</li>
+					</div>
+				</ul>
+			</div>
+		</div>
+
+		<div class="foot">&copy; 2015 许昌众驰汽车销售服务有限公司</div>
+
+		<ul class="fenleilan" id="fenlan">
+			<li style="border-bottom: 0.02rem solid #aaa">
+				<a href="index.html" style="text-decoration: none;color: #000">
+					<img src="fen3.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+					<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+						<div style="width: 70%;float: left;font-size: 0.4rem">首页</div>
+						<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+					</div>
+				</a>
+			</li>
+			<li style="border-bottom: 0.02rem solid #aaa">
+				<a href="index-2.html" style="text-decoration: none;color: #000">
+					<img src="fen4.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+					<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+						<div style="width: 70%;float: left;font-size: 0.4rem">车辆展示</div>
+						<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+					</div>
+				</a>
+			</li>
+			<li style="border-bottom: 0.02rem solid #aaa">
+				<a href="yuyue.html" style="text-decoration: none;color: #000">
+					<img src="fen5.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+					<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+						<div style="width: 70%;float: left;font-size: 0.4rem">预约试驾</div>
+						<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+					</div>
+				</a>
+			</li>
+			<li style="height: 2rem;font-size: 0.25rem;text-align: center;">
+				<div style="margin-bottom: 0.2rem;margin-top: 0.35rem">法律声明 &nbsp;&nbsp;|&nbsp;&nbsp; 联系我们</div>
+				<div>&copy;2015许昌XXXXXXXX汽车销售有限公司</div>
+				<div>豫IPC备285559478</div>
+			</li>
+		</ul>
+		<!-- 底部 -->
+		<ul class="footer">
+			<li>
+				<a href="index.html" style="text-decoration: none;color: #4d4dff">
+					<img src="firsts.png">
+					<div style="color: #4d4dff">首页</div>
+				</a>
+			</li>
+			<li>
+				<a href="yuyue.html" style="text-decoration: none;color: #000">
+					<img src="fen5.png">
+					<div>预约试驾</div>
+				</a>
+			</li>
+			<li>
+				<a href="we.html" style="text-decoration: none;color: #000">
+					<img src="first3.png">
+					<div>关于我们</div>
+				</a>
+			</li>
+		</ul>
+	</body>
+	<script type="text/javascript">
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					if(clientWidth >= 750) {
+						docEl.style.fontSize = '100px';
+					} else {
+						docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+					}
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+
+		var oShow = document.getElementById('show');
+		var oFenl = document.getElementById('fenlan');
+
+		oShow.onclick = function() {
+			if(oFenl.style.display == "none") {
+				oFenl.style.display = "block"
+			} else {
+				oFenl.style.display = "none";
+			}
+		}
+
+		var oRig = document.getElementById('right');
+		var oBtn = oRig.getElementsByTagName('span');
+		var oShows = document.getElementById('xianshi');
+		var oSShow = oShows.getElementsByClassName('x1');
+		for(var i = 0; i < oBtn.length; i++) {
+			oBtn[i].index = i;
+			oBtn[i].onclick = function() {
+				for(var j = 0; j < oBtn.length; j++) {
+					oBtn[j].className = "";
+					oSShow[j].style.display = 'none';
+				}
+				this.className = 'became';
+				oSShow[this.index].style.display = 'block';
+			}
+		}
+	</script>
+
+</html>
