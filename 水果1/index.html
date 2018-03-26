@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body  style="padding-left: 0.2rem;padding-right: 0.2rem;box-sizing: border-box;">
+
+	<div style="border: 0.02rem solid #aaa;padding: 0.1rem;box-sizing: border-box;margin-top: 2.5rem;position: relative;">
+	<img src="img/f0.png" style="width:1rem;height: 1rem;position:absolute;left: 0.3rem;top: 0.2rem;">
+	<div class="head">
+		<div class="head-name">水果妹果品商行</div>
+		<div class="head-word">
+甘平、果大、皮薄、有光泽、肉厚、核小、质脆细、
+		</div>
+	</div>
+	<div class="content">
+		<a href="Fruits.html">
+		<img src="img/f1.jpg" mode="widthFix">
+		</a>
+	</div>
+	<div class="foot">
+		<div class="foot-word" >
+			<a href="Card coupons.html" style="text-decoration: none;color: white">
+			<div style="color: white;background-color:#ff7f00;width: 2rem;text-align: center;">领取优惠券</div>
+			</a>
+		</div>
+		<a href="map.html" style="text-decoration: none;color: #000">
+		<div class="foot-word">许昌.水果妹：八一路一号店</div>
+		</a>
+		<!-- <div  class="foot-word">店铺位置</div> -->
+	</div>
+	</div>
+</body>
+	<script type="text/javascript">
+	(function (doc, win) {
+		var docEl = doc.documentElement,
+		resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+		recalc = function () {
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if(clientWidth>=750){
+				docEl.style.fontSize = '100px';
+			}else{
+				docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			}
+		};
+	if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+	</script>
+</html>

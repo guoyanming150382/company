@@ -1,0 +1,125 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		/*切换*/
+		.container{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0%;
+		}
+
+		.container .page{
+			height: 100%;
+			position: relative;
+		}
+		.container .page0{
+			/*background-color: red;*/
+		}
+		.container .page1{
+			/*background-color: pink;*/
+		}
+		.container .page2{
+			/*background-color: yellow;*/
+		}
+		/*各块的内容*/
+		/*第一个*/
+		.container .page0 .head1{
+			height: 60%;
+			width: 100%;
+			/*background-color: green;*/
+		}
+		.container .page0 .head1 img{
+			width: 100%;
+			height: 100%;
+		}
+	
+		.container .page0 .head3{
+			width: 100%;
+			/*height: 25%;*/
+			/*background-color: red;*/
+			padding-left:20px;
+			padding-right:20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height:25px;
+			text-align: center;
+		}
+		/*第2个*/
+		.container .page1 .head1{
+			height: 60%;
+			width: 100%;
+			/*background-color: green;*/
+		}
+		.container .page1 .head1 img{
+			width: 100%;
+			height: 100%;
+		}
+		
+		.container .page1 .head3{
+			width: 100%;
+			/*height: 25%;*/
+			/*background-color: red;*/
+			padding-left:20px;
+			padding-right:20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height:25px;
+			text-align: center;
+		}
+		/*第3个*/
+		.container .page2 .head1{
+			width: 100%;
+			height: 100%;
+		}
+		.container .page2 .head1 img{
+			width: 100%;
+			height: 100%;
+		}
+		.container .page2 .head2{
+			width: 100%;
+			height: 20%;
+			/*background-color: red;*/
+			padding-top: 40px;
+			position: absolute;
+			left: 25%;
+			/*margin-left: */
+			bottom: 0px;
+			z-index: 999;
+		}
+		.container .page2 .head2 .card{
+			width: 50%;
+			height: 40%;
+			background-color: black;
+			color:white;
+			font-size: 25px;
+			text-align: center;
+			line-height: 50px;
+			/*margin: 0 auto;*/
+			opacity: 0.4;
+		}
+		/*底部三角*/
+		.xiangxiatishi{
+			position: fixed;
+			bottom: 20px;
+			left: 50%;
+			-webkit-transform:translateX(-50%);
+			-webkit-animation:dong 1s linear 0s infinite alternate;
+		}
+
+		@-webkit-keyframes dong{
+			from{
+				bottom:0px;
+			}
+			to{
+				bottom: 40px;
+			}
+		}

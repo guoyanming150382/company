@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<link rel="stylesheet" type="text/css" href="css/card coupons.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpg" media="screen" />
+</head>
+<body>
+	<div class="head">
+		<div class="circular">
+			<img src="img/card.png">
+		</div>
+		<div class="head-card">
+			<div class="up">水果行</div>
+			<div class="mid">满150送100代金券</div>
+			<div class="down">
+				<div class="left">使用条件：</div>
+				<div class="right">仅限橙子可使用</div>
+			</div>
+			<div class="down">
+				<div class="left">可用时间：</div>
+				<div class="right">2017.12.12-2018.5.31</div>
+			</div>
+			<div class="buton">使用此卡券</div>
+		</div>
+	</div>
+	<a href="index.html">
+	<img src="img/l.png" style="width: 50px;height: 50px;position: fixed;bottom: 20px;left: 20px;">
+	</a>
+</body>
+	<script type="text/javascript">
+	(function (doc, win) {
+		var docEl = doc.documentElement,
+		resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+		recalc = function () {
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if(clientWidth>=750){
+				docEl.style.fontSize = '100px';
+			}else{
+				docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			}
+		};
+	if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+	</script>
+</html>

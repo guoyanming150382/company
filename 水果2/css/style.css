@@ -1,0 +1,164 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		/*切换*/
+		.container{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0%;
+		}
+
+		.container .page{
+			height: 100%;
+			position: relative;
+		}
+		.container .page0{
+			/*background-color: red;*/
+		}
+		.container .page1{
+			/*background-color: pink;*/
+		}
+		.container .page2{
+			/*background-color: yellow;*/
+		}
+		/*各块的内容*/
+		/*第一个*/
+		.container .page0 .head1{
+			height: 60%;
+			width: 100%;
+			/*background-color: green;*/
+		}
+		.container .page0 .head1 img{
+			width: 100%;
+			height: 100%;
+		}
+		.container .page0 .head3{
+			width: 100%;
+			/*height: 25%;*/
+			/*background-color: red;*/
+			padding-left:20px;
+			padding-right:20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height:25px;
+			text-align: center;
+		}
+		.container .page0 .button{
+			width: 70%;
+			height: 40px;
+			background-color: #000;
+			color: white;
+			text-align: center;
+			line-height: 40px;
+			font-size: 20px;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+		/*第2个*/
+		.container .page1 .head1{
+			height: 60%;
+			width: 100%;
+			/*background-color: green;*/
+		}
+		.container .page1 .head1 img{
+			width: 100%;
+			height: 100%;
+		}
+		.container .page1 .head3{
+			width: 100%;
+			padding-left:20px;
+			padding-right:20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height:25px;
+			text-align: center;
+		}
+		.container .page1 .button{
+			width: 70%;
+			height: 40px;
+			background-color: #000;
+			color: white;
+			text-align: center;
+			line-height: 40px;
+			font-size: 20px;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+		/*第3个*/
+		.container .page2 .head1{
+			width: 100%;
+			height: 60%;
+		}
+		.container .page2 .head1 img{
+			width: 100%;
+			height: 100%;
+		}
+		.container .page2 .head2{
+			width: 100%;
+			height: 20%;
+			/*background-color: red;*/
+			padding-top: 40px;
+		}
+		.container .page2 .head3{
+			width: 100%;
+			padding-left:20px;
+			padding-right:20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			line-height:25px;
+			text-align: center;
+		}
+		.container .page2 .button{
+			width: 70%;
+			height: 40px;
+			background-color: #000;
+			color: white;
+			text-align: center;
+			line-height: 40px;
+			font-size: 20px;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+		/*底部三角*/
+		.xiangxiatishi{
+			position: fixed;
+			bottom: 20px;
+			left: 50%;
+			-webkit-transform:translateX(-50%);
+			-webkit-animation:dong 1s linear 0s infinite alternate;
+		}
+
+		@-webkit-keyframes dong{
+			from{
+				bottom:0px;
+			}
+			to{
+				bottom: 40px;
+			}
+		}
+
+		/*音乐*/
+		.donghua{
+		    transform-style: preserve-3d;
+		    animation-name: don;
+		    animation-duration: 4s;
+		    animation-timing-function: linear;
+		    animation-iteration-count: infinite;
+		}
+			@keyframes don{
+			    form{
+			        transform: rotateZ(0deg);
+			    }
+			    to{
+			        transform: rotateZ(360deg);
+			    }
+			}
