@@ -1,0 +1,39 @@
+<!--pages/wlhqu/wlhqu.wxml-->
+
+<navigator url='pages/index/index' open-type='switchTab'>99999</navigator>
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.img}}" mode="widthFix" class="swiper-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+
+
+<!-- 图片自适应高度 -->
+<view style='width:40%'>
+<image src='http://img.article.pchome.net/00/28/07/58/pic_lib/wm/1920_1200car_1002.jpg' style='margin-top:60rpx;width:100%' mode='widthFix'></image>
+</view>
+<navigator url='../fenlei/index'>滑动分页</navigator>
+
+<navigator url='lt/lt'>联通</navigator>
+
+<navigator url='jj/jj'>99</navigator>
+
+
+<view class="section">
+  <view class="section__title">movable-view区域小于movable-area</view>
+  <movable-area style="height: 200px;width: 200px;background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all">
+    </movable-view>
+  </movable-area>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to move to (30px, 30px)</button>
+  </view>
+  <view class="section__title">movable-view区域大于movable-area</view>
+  <movable-area style="height: 100px;width: 100px;background: red;" direction="all">
+    <movable-view style="height: 200px; width: 200px; background: blue;">
+    </movable-view>
+  </movable-area>
+</view>

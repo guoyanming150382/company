@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/aaa/aaa",
+    "pages/detail/detail",
+    "pages/sale/sale",
+    "pages/z/z",
+    "pages/fangzao/fangzao",
+    "pages/wlhqu/wlhqu",
+    "pages/lianxi/lianxi",
+    "pages/lianxi/wxby",
+    "pages/lianxi/yysj",
+    "pages/wlhqu/lt/lt",
+    "pages/wlhqu/lt/wd/wd",
+    "pages/wlhqu/lt/sp/sp",
+    "pages/wlhqu/jj/jj"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#111",
+    "navigationBarTitleText": "汽车",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#aaa",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#eee",
+    "selectedColor": "#000",
+    "backgroundColor": "gray",
+    "borderStyle": "white",
+    "position": "botton",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "联系我们",
+        "iconPath": "static/icon/ios1.png",
+        "selectedIconPath": "static/icon/ios2.png"
+      },
+      {
+        "pagePath": "pages/aaa/aaa",
+        "text": "预约试驾",
+        "iconPath": "static/icon/ios3.png",
+        "selectedIconPath": "static/icon/ios4.png"
+      },
+      {
+        "pagePath": "pages/wlhqu/wlhqu",
+        "text": "网络获取",
+        "iconPath": "static/icon/ios3.png",
+        "selectedIconPath": "static/icon/ios4.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": "10000"
+  },
+  "debug": false
+}

@@ -1,0 +1,12 @@
+/* pages/show/show.wxss */
+page {
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+.swiper-image {
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+
+

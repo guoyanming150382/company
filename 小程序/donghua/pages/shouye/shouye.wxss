@@ -1,0 +1,96 @@
+/* pages/shouye/shouye.wxss */
+page{
+  width: 100%;
+}
+.head{
+  height: 400rpx;
+   width: 100%;
+}
+.head-1{
+  height: 250rpx;
+  width: 100%;
+  border: 3rpx solid #aaa;
+  padding: 20rpx;
+  box-sizing: border-box
+}
+.head-1 .head-t{
+  width: 44%;
+  height: 78%;
+  background: red;
+  display: inline-block;float: left
+}
+.head-1 .head-d{
+  width: 44%;
+  height: 78%;
+  background: green;
+  display: inline-block;
+  float: right
+}
+.conter-1{
+  height: 250rpx;
+  width: 100%;
+  background: red;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+.conter-1 .lunbo{
+  width: 100%;
+  height: 100%
+}
+.conter-1 .lunbo image{
+  width: 100%;
+  height: 100%
+}
+.have{
+  display: block
+}
+.no{
+  display: none
+}
+.have1{
+  display: block
+}
+.no1{
+  display: none
+}
+.ha{
+  border: 5rpx solid red;
+}
+.n{
+  border: 5rpx solid white;
+}
+.ha1{
+  border: 5rpx solid white;
+}
+.n1{
+  border: 5rpx solid red;
+}
+.ha11{
+  color: red;
+  font-weight: bolder;
+}
+.n11{
+  color: white;
+  font-weight: bolder;
+}
+.ha12{
+  color: white;
+  font-weight: bolder;
+}
+.n12{
+  color: red;
+  font-weight: bolder;
+}
+
+.b1 .b2:hover{
+  transform: scale(1.4);  
+}
+.e1{
+  width: 20rpx;
+  height: 20rpx;
+  background: red;
+  margin:30rpx;display: inline-block
+}
+.e1:hover{
+  transform: scale(3);  
+}

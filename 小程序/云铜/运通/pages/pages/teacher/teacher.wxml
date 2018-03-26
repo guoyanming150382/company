@@ -1,0 +1,7 @@
+<!--pages/teacher/teacher.wxml-->
+
+<block wx:for="{{menus}}">
+  <view class='teacher'>
+    <image src="{{item.url}}" class="swiper-image" />{{item.name}} : {{item.msg}}
+  </view> 
+</block>

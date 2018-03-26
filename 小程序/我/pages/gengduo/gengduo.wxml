@@ -1,0 +1,27 @@
+<!--pages/gengduo/gengduo.wxml-->
+<view class='nk'>
+  <view class='nk1'>
+    <image src='../images/c1.jpg' style='display:inline-block;float:left' ></image>
+    <view class='nk2' style='display:inline-block;float:left;margin-left:20rpx;'>
+      <template name="cx">
+        <text>型号:{{xin1}}
+            {{xin2}}/{{xin3}} 
+            售价:￥ {{xin4}}
+          </text>
+      </template>
+      <template is="cx" data="{{...sa1}}"></template>
+    </view>
+  </view>
+</view>
+
+<!--遍历-->
+<view wx:for="{{menus1}}" style='width:100%;height:250rpx;margin-top:10rpx;background-color: #eee;' >
+  <image src="{{item.url}}" style='width:50%;height:100%;float:left'/>
+  <view style='width50%;height:100%;float:left;padding-left:30rpx'>
+    <view style='width:300rpx;padding:10rpx;' bindtap='xiangqing'>
+      <view style='line-height:60rpx;height:120rpx'>型号：{{item.text1}}</view>
+      <text style='line-height:60rpx'>{{item.text2}}/{{item.text3}}
+              售价：￥{{item.text4}}</text>
+    </view>
+  </view>
+</view>

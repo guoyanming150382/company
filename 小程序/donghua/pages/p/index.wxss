@@ -1,0 +1,17 @@
+.black{
+
+color:#ff6901;
+  background-color: #fff;
+
+	
+}
+
+.red{
+  
+
+color: #fff;
+	background-color: #ff6901;
+
+
+
+}

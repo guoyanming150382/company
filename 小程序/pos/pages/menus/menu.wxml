@@ -1,0 +1,38 @@
+<!--pages/menus/menu.wxml-->
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.url}}" class="swiper-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<view style='padding:20rpx 0;border-bottom:1px solid #ccc;'>
+  <view class='name' style='width:100%;text-align:center;font-size:36rpx;font-weight:600;line-height:80rpx;'>商品名称</view>
+  <view class='textjs' wx:for="{{texts}}">
+    <text>{{item.text}}</text>
+  </view>
+</view>
+
+<view style='line-height:100rpx;font-size:40rpx;font-weight:600;text-indent:1em;'>商品详情</view>
+
+<view class="weui-cells weui-cells_after-title">联系客服
+  <contact-button class='btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn1 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn2 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn3 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn4 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn5 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn6 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn7 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn8 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn9 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn10 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+</view>
+
+
+
+<text style='display:block;margin:0 20rpx;text-indent:2em;line-height: 66rpx;font-size: 36rpx;color: #999;'>文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述</text>
+
+<view class='img' style='padding:0 10rpx;' wx:for="{{imgs}}">
+  <image src='{{item.url}}' style='width:100%;height:400rpx;'></image>
+</view>

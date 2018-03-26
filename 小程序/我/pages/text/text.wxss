@@ -1,0 +1,11 @@
+/* pages/text/text.wxss */
+.t1{
+  width: 100px;
+}
+.t1 .t2{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}

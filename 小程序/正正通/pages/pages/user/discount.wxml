@@ -1,0 +1,30 @@
+<!--pages/user/discount.wxml-->
+
+<view wx:for="{{aaa}}">
+  <text>
+  {{item.carid}}
+  {{item.detail}}
+  {{item.mile}}
+  {{item.year}}
+  {{item.price}} 
+  </text>
+  <view wx:for="{{item.dict}}">
+    <view wx:if="{{item.imgtype}}">
+      <text>{{item.carid}} if
+        {{item.imgtype}}</text>
+      <image src='{{item.img}}'></image>
+    </view>
+  </view>
+</view>
+<view style='height:20rpx;width:100%;background-color:red'></view>
+
+<view wx:for="{{aaa}}">
+  <view wx:for="{{item.dict}}">
+    <view hidden="{{item.imgtype}}">
+      <text>{{item.carid}}
+        {{item.imgtype}}</text>
+      <image src='{{item.img}}'></image>
+    </view>
+  </view>
+</view>
+

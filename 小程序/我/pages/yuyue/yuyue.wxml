@@ -1,0 +1,45 @@
+<!--pages/yuyue/yuyue.wxml-->
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+<view class='all'>
+ <view class='ys'>
+  <label>姓名：</label>
+  <input name="userName" placeholder="姓名" />
+ </view>
+ <view class='ys'>
+  <label>手机：</label>
+  <input name="tel" placeholder="手机号码" />
+ </view>
+ <view class='ys'>
+  <label>车牌：</label>
+  <input name="cp" placeholder="车牌号码" />
+ </view>
+ <view class='ys'>
+  <label>排量：</label>
+  <input name="pl" placeholder="输入排量" />
+ </view>
+  <view class='ys'>兴趣：
+   <checkbox-group name="cb" bindchange="checkboxChange">
+      <label style='zoom:65%;'><checkbox value="A" />乒乓球</label>
+      <label  style='zoom:65%'><checkbox value="B" />羽毛球</label>
+      <label  style='zoom:65%'><checkbox value="C" checked="checked" />排球</label>
+    </checkbox-group>
+  </view>
+<view class='ys'>级别：
+  <radio-group name="r">
+    <label style='zoom:65%'><radio value="a" checked="checked"/>初级</label>
+    <label  style='zoom:65%'><radio value="b" />中级</label>
+    <label  style='zoom:65%'><radio value="c" />高级</label>
+  </radio-group>
+</view>
+<view class='nf'>
+  <picker mode="date" value="{{dateValue}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange">
+	年份: {{dateValue}}
+  </picker>
+</view>
+ <view style="display:flex;margin-top:30px;">
+  <button style="width:30%" formType="submit" >提交</button>
+  <button style="width:30%" formType="reset" >重置</button>
+ </view>
+</view>
+</form>
+<view>{{tip}}</view>

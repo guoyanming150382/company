@@ -1,0 +1,18 @@
+/* pages/yuyue/yuyue.wxss */
+.all{
+  padding: 60rpx;
+}
+.ys{
+   display: flex;
+   margin: 18rpx;
+   margin-top: 20rpx;
+}
+.ys input{
+  border: 1px solid #eee;
+}
+
+.nf{
+  margin: 10rpx;
+  font-size: 32rpx;
+  margin-left: 15rpx;
+}

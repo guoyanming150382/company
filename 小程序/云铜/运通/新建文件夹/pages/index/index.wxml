@@ -1,0 +1,9 @@
+<!--index.wxml-->
+
+
+<template is="msgItem" data="{{...item,msg:'vue'}}"/>
+<view>
+   <view wx:for='{{nav}}' bindtap='mkdir' class="{{item.color?red:black}}" data-index="{{index}}" id="{{index}}">
+     {{item.content}}
+   </view>
+</view>

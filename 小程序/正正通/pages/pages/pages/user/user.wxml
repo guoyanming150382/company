@@ -1,0 +1,74 @@
+<!--pages/user/user.wxml-->
+
+<view class="mine-wrapper">
+  <view class="avatar-wrapper" style='background: url(https://www.hnxpsit.com/qy/img/headbg.png) no-repeat;'>
+    <view>
+      <view class="avatar">
+        <image style="border-radius:50%;overflow:hidden;background-color:#fff;" src="{{userinfo.avatarUrl ? userinfo.avatarUrl:''}}"></image>
+      </view>
+      <view class="text">
+        <text>青云教育</text>
+
+      </view>
+      <!-- <view class="text">
+        <text wx:if="{{userSign==2}}">{{"您还没有填写真实信息，暂不能借书"}}</text>
+        <text wx:elif="{{userSign==1}}">{{"会员用户"}}</text>
+      </view> -->
+    </view>
+  </view>
+  <!-- <view class="menu_container">
+    <view class="menu_item" wx:for="{{menus}}" wx:for-index="idx" wx:for-item="menu">
+      <image class="menu_icon" src="{{menu.src}}" />
+      <text class='text'>{{menu.text}}</text>
+    </view>
+  </view> -->
+</view>
+
+
+
+
+
+<view class="list-wrapper">
+  <view class="weui-cells weui-cells_after-title">
+    <contact-button class='btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn1 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn2 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn3 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn4 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn5 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn6 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn7 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn8 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn9 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <contact-button class='btn10 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+    <block wx:for="{{menuitems}}" wx:key="menu_for">
+      <navigator url="{{item.url}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+
+        <view class="weui-cell__hd">
+          <view class="weui-cell__bd">{{item.text}}</view>
+          <image src="{{item.icon}}"></image>
+        </view>
+
+        <!-- <view class="weui-cell__ft weui-cell__ft_in-access">{{item.tips}}</view> -->
+      </navigator>
+    </block>
+  </view>
+</view>
+<view class="h2" style='text-align:center;'>联系我们</view>
+
+<view class='lx'>
+  <view class="p">总校地址：八一东路骏景尚都B座1718室</view>
+  <view class="p">咨询热线：0374-3169002</view>
+  <view class='line'></view>
+  <view class="p">教学中心：八一东路许昌学院创业大楼510室</view>
+  <view class="p">咨询热线：0374-2270277 156-0374-7658</view>
+  <view class='line'></view>
+  <view class="p">漯河分校：漯河市人民路美盛国际大厦9楼</view>
+  <view class="p">咨询热线：159-0395-0501</view>
+  <view class='line'></view>
+  <view class="p">青云教育资料共享交流QQ群1：3487775</view>
+  <view class="p">青云教育资料共享交流QQ群2：1727955</view>
+  <view class="p">青云教育资料共享交流QQ群3：6695594</view>
+  <view class='line'></view>
+  <view class="p">如您有任何建议及意见，请发送邮件至：35168286@qq.com，我们将在一个工作日内给予回复。</view>
+</view>

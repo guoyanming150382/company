@@ -1,0 +1,111 @@
+/* pages/menus/menu.wxss */
+
+page {
+  background-color: #f5f5f5;
+}
+.swiper {
+
+  width: 100%;
+}
+.swiper-image {
+  height: 100%;
+  width: 100%;
+}
+
+/* 文字叙述 */
+
+.textjs {
+  width: 50%;
+  display: inline-block;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+
+}
+.textjs text {
+  width: 100%;
+
+  line-height: 66rpx;
+  font-size: 36rpx;
+  color: #999;
+}
+
+
+.weui-cells {
+  position: relative;
+  text-align: center;
+  line-height: 100rpx;
+  border: 1px solid #ccc;
+  background-color: #ddd;
+  border-radius: 10rpx;
+  margin: 10rpx 0 30rpx;
+}
+.weui-cell {
+  padding: 20rpx 0;
+   margin: 0 20rpx 20rpx; 
+  background-color: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 40rpx; 
+  margin-top:20rpx; 
+}
+.weui-cell__bd {
+  float: left; 
+  padding-left: 30rpx;
+  font-size: 30rpx;
+}
+.weui-cell__hd image {
+  float: right; 
+  margin-right: 20px;
+  vertical-align: middle; 
+  height: 30rpx;
+  width: 50rpx;
+}
+
+.weui-cells::after{
+  content: none;
+  border-bottom: none;
+}
+
+.weui-cells::before{
+  border-top: none;
+}
+.weui-cells {
+  font-size: 44rpx;
+}
+.btn {
+  display: inline-block;
+  position: absolute;
+  left: 10rpx;
+  top: 15rpx;
+  padding: 20rpx;
+  opacity: 0; 
+}
+.btn1 {
+  left: 75rpx;
+}
+.btn2 {
+  left: 140rpx;
+}
+.btn3 {
+  left: 205rpx;
+}
+.btn4 {
+  left: 270rpx;
+}
+.btn5 {
+  left: 335rpx;
+}
+.btn6 {
+  left: 400rpx;
+}
+.btn7 {
+  left: 465rpx;
+}
+.btn8 {
+  left: 530rpx;
+}
+.btn9 {
+  left: 595rpx;
+}
+.btn10 {
+  left: 660rpx;
+}

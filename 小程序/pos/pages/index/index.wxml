@@ -1,0 +1,68 @@
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.url}}" class="swiper-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view style='background-color:#fff;' class="swiper-tab">
+  <view style='text-align:center;' class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">分类一
+
+  </view>
+  <view style='text-align:center;' class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">分类二
+
+  </view>
+  <!-- <view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">分类三</view>
+  <view class="swiper-tab-item {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">分类四</view> -->
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:760rpx;margin-bottom:20rpx;" bindchange="bindChange">
+  <swiper-item>
+    <navigator url='../menus/menus'>
+      <text style='text-align:right;padding-right:20rpx;margin:0 10rpx;box-sizing:border-box;display:block;width:100%;font-size:30rpx;line-height:80rpx;'>更多 >></text>
+    </navigator>
+    <view class='menu_pic'>
+
+
+      <view class='goods' style='width:50%; text-align:center;' wx:for="{{menus}}">
+        <navigator url='../menus/menu'>
+          <image class='img' style='width:100%;' src='{{item.url}}'></image>
+          <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'>{{item.name}}</text>
+        </navigator>
+      </view>
+
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <navigator url='../menus/menus'>
+      <text style='text-align:right;padding-right:20rpx;margin:0 10rpx;box-sizing:border-box;display:block;width:100%;font-size:30rpx;line-height:80rpx;'>更多 >></text>
+    </navigator>
+    <view class='menu_pic'>
+
+      <view class='goods' style='width:50%; text-align:center;' wx:for="{{menus}}">
+        <navigator url='../menus/menu'>
+          <image class='img' style='width:100%;' src='{{item.url}}'></image>
+          <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'>{{item.name}}</text>
+        </navigator>
+      </view>
+
+    </view>
+  </swiper-item>
+  <!-- <swiper-item>
+    <view class='ry'>      
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='lx'>      
+    </view>
+  </swiper-item> -->
+
+
+</swiper>
+
+<view class='hf' style='margin-bottom:10rpx;'>
+  <image src='../../image/top.png' style='width:100%;height:100rpx;'></image>
+</view>
+

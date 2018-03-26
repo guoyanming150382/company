@@ -1,0 +1,14 @@
+<!--pages/lianxi/wxby.wxml-->
+
+<view wx:for="{{Array}}" style='width:100%;margin-bottom:10rpx;background-color: #f3f4f6;'>
+    <view style='padding-left:30rpx'>
+      <view style='padding:10rpx;overflow:hidden'>
+        <view style='line-height:60rpx;font-size:30rpx;float:left;width:50%'>预约人 : {{item.name}}</view>
+        <view style='line-height:60rpx;font-size:30rpx;float:left;width:50%'>联系电话 : {{item.tel}}</view>
+        <view style='line-height:60rpx;font-size:30rpx;float:left;width:50%'>预约项目 : {{item.yylx}}</view>
+        <view style='line-height:60rpx;font-size:30rpx;float:left;width:50%'>预约日期 : {{item.yydate}}</view>
+        <view style='line-height:60rpx;font-size:30rpx;float:left;width:50%'>车型 : {{item.model}}</view>
+        <view style='line-height:60rpx;font-size:30rpx;float:left;width:50%'>车牌 : {{item.number}}</view>
+      </view>
+    </view>
+</view>

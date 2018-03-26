@@ -1,0 +1,62 @@
+<!--pages/sale/sale.wxml-->
+
+<view class="page__bd">
+  <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{errorMsg}}</view>
+  <view style="height: {{windowHeight}}px; width: {{windowWidth}}px;">
+    <image src='../../image/bz.jpg' class="back_img"></image>
+  </view>
+  <!-- <view style="position:absolute;top:{{windowHeight * 0.06}}px;">
+    <image src="../../image/bz.jpg" style="width: {{windowWidth * 0.4}}px;height:{{windowWidth * 0.4}}px; margin-left:{{windowWidth * 0.3}}px;border-radius:{{windowWidth * 0.2}}px;"></image>
+  </view> -->
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="login_info" style="margin-top:50rpx; top:{{windowHeight * 0.1}}px;width: {{windowWidth * 0.92}}px;">
+      <view style='padding-bottom:1rpx;' class="weui-cells weui-cells_after-title login_form">
+        <view class="weui-cell weui-cell_input" style='height:80rpx,border-bottom:1px solid #ccc;line-height:80rpx;padding-left:50rpx;border-bottom:1px solid #d6d7d6;'>
+          <view class="weui-cell__hd" style='float:left'>
+            <view class="weui-label">姓名 :</view>
+          </view>
+          <view class="weui-cell__bd" style='height:80rpx;'>
+            <input class="weui-input" style='float:left;text-align:center;padding-top:16rpx;' placeholder="请输入您的姓名" type="text" maxlength="20" value="{{name}}" name="name" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input" style='height:80rpx,border-bottom:1px solid #ccc;line-height:80rpx;padding-left:50rpx;border-bottom:1px solid #d6d7d6;'>
+          <view class="weui-cell__hd" style='float:left'>
+            <view class="weui-label">电话 :</view>
+          </view>
+          <view class="weui-cell__bd" style='height:80rpx;'>
+            <input class="weui-input" style='float:left;text-align:center;padding-top:16rpx;' placeholder="请输入联系电话" type="" maxlength="12" value="{{phone}}" name="phone" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input" style='height:80rpx,border-bottom:1px solid #ccc;line-height:80rpx;padding-left:50rpx;border-bottom:1px solid #d6d7d6;'>
+          <view class="weui-cell__hd" style='float:left'>
+            <view class="weui-label">型号 :</view>
+          </view>
+          <view class="weui-cell__bd" style='height:80rpx;'>
+            <input class="weui-input" style='float:left;text-align:center;padding-top:16rpx;' placeholder="请输入车辆型号" type="text" maxlength="20" value="{{size}}" name="size" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input" style='height:80rpx,border-bottom:1px solid #ccc;line-height:80rpx;padding-left:50rpx;border-bottom:1px solid #d6d7d6;'>
+          <view class="weui-cell__hd" style='float:left'>
+            <view class="weui-label">颜色 :</view>
+          </view>
+          <view class="weui-cell__bd" style='height:80rpx;'>
+            <input class="weui-input" style='float:left;text-align:center;padding-top:16rpx;' placeholder="请输入车辆颜色" type="text" maxlength="20" value="{{color}}" name="color" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input" style='height:80rpx,border-bottom:1px solid #ccc;line-height:80rpx;padding-left:50rpx;border-bottom:1px solid #d6d7d6;'>
+          <view class="weui-cell__hd" style='float:left'>
+            <view class="weui-label">年限 :</view>
+          </view>
+          <view class="weui-cell__bd" style='height:80rpx;'>
+            <input class="weui-input" style='float:left;text-align:center;padding-top:16rpx;' placeholder="请输入车辆年限" type='' value="{{years}}" name="years" />
+          </view>
+        </view>
+        
+        <view class="weui-btn-area" style='margin:50rpx;'>
+          <button class="weui-btn" type="primary" formType="submit">立即报名</button>
+        </view>
+        <text style='display:block;margin-bottom:50rpx;text-align:center'>咨询电话 : 0374-6666666</text>
+      </view>
+    </view>
+  </form>
+</view>

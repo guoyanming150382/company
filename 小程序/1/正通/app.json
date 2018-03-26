@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/sale/sale",
+    "pages/goods/goods",
+    "pages/lianxi/lianxi",
+    "pages/xunjia/xunjia",
+    "pages/qyjj/qyjj",
+    "pages/jrfa/jrfa",
+    "pages/jdyl/jdyl",
+    "pages/wxby/sale"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WxParse",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/indexs.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "iconPath": "image/buy.png",
+        "selectedIconPath": "image/buys.png",
+        "text": "买车"
+      },
+      {
+        "pagePath": "pages/sale/sale",
+        "iconPath": "image/yy.png",
+        "selectedIconPath": "image/yys.png",
+        "text": "预约试驾"
+      },
+      {
+        "pagePath": "pages/lianxi/lianxi",
+        "iconPath": "image/call.png",
+        "selectedIconPath": "image/calls.png",
+        "text": "联系我们"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+page {
+  background-color: #f5f5f5;
+}
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+
+.swiper-image {
+  height: 100%;
+  width: 100%;
+}
+
+.video {
+  margin-top: 20rpx; 
+  width: 100%;
+}
+
+.swiper-tab{ 
+  width: 100%; 
+  border-bottom: 2rpx solid #eeeeee; 
+  text-align: center; 
+  line-height: 80rpx;} 
+.swiper-tab-item{ 
+   font-size: 30rpx;  
+  display: inline-block; 
+  width: 33.3333333%; 
+  color: #666666; 
+} 
+.on{ color: #f10b2e; 
+  border-bottom: 5rpx solid #f10b2e;} 
+ 
+.swiper-box{ 
+  background-color: #fff;  
+  display: block; 
+  height: 100%;
+   width: 100%;
+ overflow: hidden; 
+ } 
+
+
+.jj,.zs,.ry,.lx {
+  margin: 20rpx 15rpx 20rpx 20rpx;
+}
+.zs image {
+  width: 100%;
+}
+ .p {
+	font-size: 30rpx;
+	text-indent: 2em;
+	line-height: 1.5rem;
+	margin-bottom: 20rpx 0;
+}
+.zs .p,.ry .p,.lx .p {
+  margin: 20rpx 0;
+}
+ .span {
+	font-size: 30rpx;
+	font-weight: 600;
+  margin: 20rpx 0;
+}
+
+ .h2 {
+	font-size: 40rpx;
+	font-weight: 600;
+	margin: 20rpx auto;
+	text-align: left;
+}
+.h3 {
+  font-size: 30rpx;
+	font-weight: 600;
+}
+

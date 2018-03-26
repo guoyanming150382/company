@@ -1,0 +1,13 @@
+<!--pages/service/service.wxml-->
+<view style='padding:20rpx;box-sizing: border-box'>
+  <button open-type="contact" session-from="weapp" style='margin-top:30rpx;background-color:#000;color:white;width:50%'>客服会话</button>
+  <button bindtap='click' style='margin-top:25rpx;background-color:#000;color:white;width:50%'>一键导航</button>
+  <image src='../../image/wz.png' mode='widthFix' style='width:100%;margin-top:30rpx;margin-bottom:20rpx'></image>
+  <view style='background-color:#000;color:white;width:68%;margin:auto;text-align:center'>
+    <text>地址：许昌市许继大道向阳路交叉口恒达立体国际B608</text>
+    
+  </view>
+  <view style='background-color:#000;color:white;width:68%;margin:auto;text-align:center'>
+    <text style='display:block;margin-top:10rpx;display:block;'>联系方式：0374-7369696</text>
+  </view>
+</view>

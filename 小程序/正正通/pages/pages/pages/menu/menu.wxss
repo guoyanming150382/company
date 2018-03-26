@@ -1,0 +1,42 @@
+/* pages/menu/menu.wxss */
+.menu_container {
+     display: flex; 
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+
+.menu_item {
+    width: 25%;
+    /* display: flex; */
+    text-align: center;
+    padding-top: 20rpx;
+    overflow: hidden;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.menu_icon {
+  
+    width: 50%;
+    /* height: 40px; */
+    height: 94rpx;
+}
+
+.menu_pic {
+  margin: 10rpx;
+  border-left: 1px dashed #ccc;
+  border-top: 1px dashed #ccc;
+}
+.menu_pic .goods {
+  box-sizing: border-box;
+  float: left;
+  padding: 10rpx;
+  border-bottom: 1px dashed #ccc;
+  border-right: 1px dashed #ccc;
+  
+}
+.menu_pic .goods .img {
+  height: 250rpx;
+}
+
+

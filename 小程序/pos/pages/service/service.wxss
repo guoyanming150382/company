@@ -1,0 +1,6 @@
+/* pages/service/service.wxss */
+page {
+  background-color: #eee;
+}
+
+

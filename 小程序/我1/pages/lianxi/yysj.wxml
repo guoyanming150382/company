@@ -1,0 +1,10 @@
+<!--pages/lianxi/yysj.wxml-->
+<view style='margin-bottom:10rpx;background-color: #f3f4f6;color:#666;font-size:40rpx;font-weight:600;line-height:120rpx;height:120rpx;text-align:center'>预约试驾</view>
+<view wx:for="{{Array}}" style='width:100%;margin-bottom:10rpx;background-color: #f3f4f6;'>
+    <view style='padding-left:30rpx'>
+      <view style='padding:10rpx;overflow:hidden'>
+        <view style='line-height:100rpx;font-size:30rpx;float:left;width:50%'>预约人 : {{item.uname}}</view>
+        <view style='line-height:100rpx;font-size:30rpx;float:left;width:50%;'>联系电话 : {{item.tel}}</view>
+      </view>
+    </view>
+</view>

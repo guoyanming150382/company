@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/yuyue/yuyue",
+    "pages/text/text",
+    "pages/gengduo/gengduo",
+    "pages/donghua/donghua",
+    "pages/xiangqing/xiangqing",
+    "pages/shishi/shishi"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#eee",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/d1.png",
+        "selectedIconPath": "pages/images/d2.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "pages/images/ios1.png",
+        "selectedIconPath": "pages/images/ios2.png"
+      },
+      {
+        "pagePath": "pages/text/text",
+        "text": "测试",
+        "iconPath": "pages/images/t1.png",
+        "selectedIconPath": "pages/images/t2.png"
+      },
+      {
+        "pagePath": "pages/shishi/shishi",
+        "text": "测试",
+        "iconPath": "pages/images/t1.png",
+        "selectedIconPath": "pages/images/t2.png"
+      }
+    ]
+  },
+  "debug": true
+}

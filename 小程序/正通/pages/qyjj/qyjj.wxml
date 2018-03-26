@@ -1,0 +1,9 @@
+<!--pages/qyjj/qyjj.wxml-->
+<view class='head'>
+  <image   src='https://geely-media-base.oss-cn-hangzhou.aliyuncs.com/cms/lynkco/2017/11/15/1510676484964/brand-carousel-2-4-2.jpg'></image>
+</view>
+<view class='js'>
+  <text class='t1'>企业介绍</text>
+  <text>
+领克是由吉利控股集团、吉利汽车集团与沃尔沃汽车合资成立的全球汽车品牌,"领克"一词是吉利旗下品牌的中文名称。2017年4月16日,吉利旗下品牌正式发布了品牌中文名称：领克,并且进行了领克01准量产车和03概念车全球首秀。2017年8月4日吉利控股集团,吉利汽车集团与沃尔沃汽车签订合资协议,领克汽车成为三方合资品牌,合资公司正式成立。</text>
+</view>

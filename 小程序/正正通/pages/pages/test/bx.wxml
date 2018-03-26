@@ -1,0 +1,16 @@
+<!--pages/test/bx.wxml-->
+
+<image src='../../image/bz.jpg' style='width:100%;height:130%;position:absolute;top:0;z-index:1;'></image>
+
+<view style='position:absolute;height:130%;line-height:50rpx;font-size:30rpx;display:block;z-index:6;padding:20rpx;width:100%;box-sizing:border-box;background-color:rgba(255,255,255,0.6)'>
+<text style='color:#666;'>    为不定值保险，分为基本险和附加险，其中附加险不能独立保险。基本险包括第三者责任险和车辆损失险（车损险）；附加险包括全车盗抢险（盗抢险）、车上责任险、无过失责任险、车载货物掉落责任险、玻璃单独破碎险、车辆停驶损失险、自燃损失险、新增设备损失险、不计免赔特约险。我们通常所说的交强险（即机动车交通事故责任强制保险）也属于广义的第三者责任险，交强险是强制性险种，机动车必须购买才能够上路行驶、年检、上户，且在发生第三者损失需要理赔时，必须先赔付交强险再赔付其它险种。
+
+     交强险
+    交强险[全称机动车交通事故责任强制保险]是我国首个由国家法律规定实行的强制保险制度。
+    《机动车交通事故责任强制保险条例》[以下简称《条例》]规定：交强险是由保险公司对被保险机动车发生道路交通事故造成受害人[不包括本车人员和被保险人]的人身伤亡、财产损失，在责任限额内予以赔偿的强制性责任保险。 
+
+     第三者责任险
+负责保险车辆在使用中发生意外事故造成他人（即第三者）的人身伤亡或财产的直接损毁的赔偿责任。撞车或撞人是开车时最害怕的，自己爱车受损失不算，还要花大笔的钱来赔偿他人的损失。因为交强险（2008版）在对第三者的医疗费用和财产损失上赔偿较低，在购买了交强险仍可考虑购买第三者责任险作为补充。 
+</text>
+<navigator url='baoxian'><button style='margin:50rpx 88rpx 0;width:550rpx;font-size:40rpx;line-height:100rpx;text-align:center;height:100rpx;color:#fff;background-color:#999;'> 购买保险 ( 预付10元订金 ) </button></navigator>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/shishi/shishi.wxml-->
+<text>pages/shishi/shishi.wxml</text>
+<view wx:for="{{menu3}}" style='width:100%;height:230rpx;padding:20rpx;box-sizing:border-box;font-size:30rpx;'>
+    <view style='height:25%;width:100%;background:green;color:white;line-height:50rpx'>项目:{{item.text3}}</view>
+    <view style='height:75%;width:75%;float:left;font-size:26rpx;'>
+      <view>【程序】：{{item.text1}}</view>
+      <view>【功能】：{{item.text2}}</view>
+    </view>
+    <image src="{{item.url}}" style='height:75%;width:25%;float:right' />
+  </view>

@@ -1,0 +1,22 @@
+/* pages/sale/sale.wxss */
+
+
+.back_img{   
+  height: 100%;
+  width: 100%;
+  -webkit-filter: blur(6px); /* Chrome, Opera */  
+  -moz-filter: blur(6px);  
+  -ms-filter: blur(6px);      
+  filter: blur(6px);   
+  z-index:0;  
+  position:relative;  
+}  
+.login_info{  
+  z-index: 999;  
+  position:absolute;  
+}  
+.login_form{  
+  border-radius:5px;  
+  margin-left:8%;  
+  background-color: rgba(255,255,255,0.2);  
+}  

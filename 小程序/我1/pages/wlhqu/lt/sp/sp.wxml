@@ -1,0 +1,85 @@
+<view style='background-color:#fff;margin-top:10rpx' class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">未付款</view>
+  <view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">已付款</view>
+  <view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">未发货</view>
+  <view class="swiper-tab-item {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">已发货</view>
+
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:1060rpx;margin-bottom:20rpx;" bindchange="bindChange">
+  <swiper-item>
+    <view wx:for="{{menus1}}" style='width:100%;height:250rpx;margin-top:10rpx;background-color: #eee;font-size:30rpx'>
+      <image src="{{item.url}}" style='width:20%;height:100%;float:left;' />
+      <view style='width:60%;height:100%;float:left;'>
+        <view style='width:100%;padding:20rpx;box-sizing:border-box'>
+          <view style=';height:120rpx'>商品：{{item.text1}}</view>
+          <view style='color:#aaa'>业务：{{item.text2}}</view>
+        </view>
+      </view>
+      <view style='width:20%;height:100%;float:left;padding:10rpx;box-sizing:border-box;'>
+        <text>￥：{{item.text3}}
+数量：x{{item.text5}}
+
+合计：￥{{item.text6}}</text>
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view wx:for="{{menus1}}" style='width:100%;height:250rpx;margin-top:10rpx;background-color: #eee;font-size:30rpx'>
+      <image src="{{item.url}}" style='width:20%;height:100%;float:left;' />
+      <view style='width:60%;height:100%;float:left;'>
+        <view style='width:100%;padding:20rpx;box-sizing:border-box'>
+          <view style=';height:120rpx'>商品：{{item.text1}}</view>
+          <view style='color:#aaa'>业务：{{item.text2}}</view>
+        </view>
+      </view>
+      <view style='width:20%;height:100%;float:left;padding:10rpx;box-sizing:border-box;'>
+        <text>￥：{{item.text3}}
+数量：x{{item.text5}}
+
+合计：￥{{item.text6}}</text>
+      </view>
+    </view>
+  </swiper-item>
+
+
+  <swiper-item>
+    <view wx:for="{{menus1}}" style='width:100%;height:250rpx;margin-top:10rpx;background-color: #eee;font-size:30rpx'>
+      <image src="{{item.url}}" style='width:20%;height:100%;float:left;' />
+      <view style='width:60%;height:100%;float:left;'>
+        <view style='width:100%;padding:20rpx;box-sizing:border-box'>
+          <view style=';height:120rpx'>商品：{{item.text1}}</view>
+          <view style='color:#aaa'>业务：{{item.text2}}</view>
+        </view>
+      </view>
+      <view style='width:20%;height:100%;float:left;padding:10rpx;box-sizing:border-box;'>
+        <text>￥：{{item.text3}}
+数量：x{{item.text5}}
+
+合计：￥{{item.text6}}</text>
+      </view>
+    </view>
+  </swiper-item>
+
+
+  <swiper-item>
+    <view wx:for="{{menus1}}" style='width:100%;height:250rpx;margin-top:10rpx;background-color: #eee;font-size:30rpx'>
+      <image src="{{item.url}}" style='width:20%;height:100%;float:left;' />
+      <view style='width:60%;height:100%;float:left;'>
+        <view style='width:100%;padding:20rpx;box-sizing:border-box'>
+          <view style=';height:120rpx'>商品：{{item.text1}}</view>
+          <view style='color:#aaa'>业务：{{item.text2}}</view>
+        </view>
+      </view>
+      <view style='width:20%;height:100%;float:left;padding:10rpx;box-sizing:border-box;'>
+        <text>￥：{{item.text3}}
+      <view style='width:100%;height:20rpx'></view>
+数量：x{{item.text5}}
+
+合计：￥{{item.text6}}</text>
+      </view>
+    </view>
+  </swiper-item>
+
+</swiper>

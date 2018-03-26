@@ -1,0 +1,16 @@
+<!--pages/qyjj/qyjj.wxml-->
+<view class='head'>
+  <image src='https://geely-media-base.oss-cn-hangzhou.aliyuncs.com/cms/lynkco/2017/11/15/1510676484964/brand-carousel-2-4-2.jpg'></image>
+</view>
+<view class='js'>
+  <text class='t1' style='display:block;margin-bottom:20rpx;'>企业介绍</text>
+
+  <text style='display:block;text-indent:2em;margin-bottom:20rpx;'>领克是欧洲技术、欧洲设计、全球制造、全球销售的高端品牌，2017年8月，吉利汽车、沃尔沃汽车和吉利控股集团签订合资协议，领克成为吉利汽车和沃尔沃汽车的高端合资品牌；领克品牌在技术与品质上对标豪华品牌，在市场定位和消费群体上对标一线外资品牌，为消费者创造全新的品牌体验和价值感。</text>
+  <text style='display:block;text-indent:2em;margin-bottom:20rpx;'>许昌正通领克中心是许昌地区领克总部唯一授权A级经销商，隶属于河南正通集团；河南正通（集团）有限公司是一家集汽车贸易、汽车运输、旧车交易、汽车驾校、品牌汽车4S店 、房产中介等多项经营为一体的集团公司。</text>
+  <text>
+<text style='display:block;margin-bottom:20rpx;'>地址：许昌正通领克中心位于许昌汽车北站北600米路西。</text>
+  <text style='display:block;margin-bottom:20rpx;'>销售热线：0374-2651888</text>
+  <text style='display:block;margin-bottom:20rpx;'>售后热线：0374-2652999</text>
+  <text style='display:block;margin-bottom:20rpx;'>客服热线：0374-3310000</text>
+  </text>
+</view>

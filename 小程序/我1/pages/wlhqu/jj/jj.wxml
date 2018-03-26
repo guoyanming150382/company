@@ -1,0 +1,96 @@
+<!--pages/wlhqu/jj/jj.wxml-->
+<view style='width:100%;color:white;font-size:50rpx;height:130rpx;;background-image:linear-gradient(to top,#ff7f00,red); '>
+  <view style='padding-top:20rpx;box-sizing:border-box;margin-left:50rpx'>
+    <picker bindchange="bindYyPickerChange1" value="{{yyIndex1}}" range="{{yyArray1}}" style='display:inline-block'>
+      <input disabled='true' value='{{yyArray1[yyIndex1]}}'></input>
+    </picker>
+    <view style='width:50rpx;height:50rpx;display:inline-block;float:left;margin-top:-50rpx;margin-left:340rpx;'>
+      <image src='../image/x.png' style='width:100%;height:100%;'></image>
+    </view>
+  </view>
+</view>
+<view class='content'>
+  <form bindsubmit="formBindsubmit">
+    <view class='content-1'>
+      <view class='t1'>
+        <view class='t2'>首月资费模式</view>
+        <view class='t3'>首月按量 ></view>
+      </view>
+      <view class='t1'>
+        <view class='t2'>选择号码</view>
+        <view class='t4'>></view>
+      </view>
+      <view class='t1'>
+        <view class='t2'>是否选择副卡</view>
+        <view class='t3'>
+          <view class='re'>
+            <view class="ba" class="{{ischeckes?'bwh':'bred'}}" bindtap='gaibian'>否</view>
+            <view class="bt" class="{{ischeckes2?'bw':'bre'}}" bindtap='gaibian1'>是</view>
+          </view>
+        </view>
+      </view>
+      <view class='t1'>
+        <view class='t2'>选择号码</view>
+        <view class='t4'>></view>
+      </view>
+      <view class='t1'>
+        <view class='t2'>是否选择宽带</view>
+        <view class='t3'>
+          <view class='re'>
+            <view class='ba' class="{{ischecke?'bwh':'bred'}}" bindtap='gai'>否</view>
+            <view class='bt' class="{{ischecke2?'bw':'bre'}}" bindtap='gai1'>是</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view style='width:100%;height:30rpx;background:#eee'></view>
+    <view class='content-2'>
+      <view class='c1'>
+        <view class='c2'>姓名</view>
+        <input type='text' name='userName' placeholder='请输入姓名' value='{{form_info}}'></input>
+      </view>
+      <view class='c1'>
+        <view class='c2'>身份证</view>
+        <input type='text' name='sf' placeholder='请输入身份证' value='{{form_info}}'></input>
+      </view>
+      <view class='c1'>
+        <view class='c2'>证件地址</view>
+        <input type='text' name='dz' placeholder='请输入证件地址' value='{{form_info}}'></input>
+      </view>
+      <view class='c1'>
+        <view class='c2'>联系电话</view>
+        <input type='text' name='tel' placeholder='请输入联系电话' value='{{form_info}}'></input>
+      </view>
+      <view class='c1'>
+        <view class='c2' style='float:left'>上门地址</view>
+        <picker bindchange="bindYyPickerChange" value="{{yyIndex}}" range="{{yyArray}}" style='margin-left:80rpx;float:left'>
+          <input disabled='true' placeholder='>' value='{{yyArray[yyIndex]}}'></input>
+        </picker>
+        <view style='float:right;margin-top:-5rpx'>></view>
+      </view>
+      <view class='c1'>
+        <view class='c2'>详细地址</view>
+        <input type='text' name='ad1' placeholder='如街道,楼层门牌号等' value='{{form_info}}'></input>
+      </view>
+      <view>
+        <checkbox-group bindchange="checkboxChange">
+          <label style='zoom:65%;font-size:40rpx'>
+            <checkbox value="A" checked='checked' />我已经阅读并了解</label>
+          <text style='color:red;display:inline-block'>【客户入网协议】</text>
+        </checkbox-group>
+      </view>
+    </view>
+    <view class='c1'>
+      <view class='c2' style='padding-left:200rpx;padding-top:30rpx;padding-bottom:30rpx;box-sizing:border-box;background:#eee'>总费用：
+        <view style='color:red;font-size:60rpx;display:inline-block'>￥200</view>
+      </view>
+    </view>
+    <view style='border-bottom:2rpx solid #eee;height:120rpx;width:100%;'>
+      <button formType="submit" style='background-color:#ff4546;color:white;font-size: 30rpx;height:100rpx;line-height:100rpx;'>立即订购</button>
+    </view>
+  </form>
+</view>
+<view class='foot'>
+
+</view>
+<view style='width:100%;text-align:center;line-height:100rpx;background-color:rgba(255,255,255,0.5);color:#F00;font-size:40rpx;font-weight:500;position:fixed;top:0;z-index:666;'>{{tip}}</view>

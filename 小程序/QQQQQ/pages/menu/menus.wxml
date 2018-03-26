@@ -1,0 +1,54 @@
+<!--pages/menu/menus.wxml-->
+<view>
+  <view wx:for="{{menus}}">
+    <image src='{{item.img}}'></image>
+    <view style='text-align:center'>
+      <text class='name'>{{item.name}}</text>
+    </view>
+    <text class='js'>{{item.ass}}</text>
+  </view>
+</view>
+
+
+<view class='money'>
+  <text class='price' style='float:left;color:red;font-size:40rpx;line-height:50rpx'>预付金额 : ¥ 0.1元</text>
+
+</view>
+
+
+<form style='display:none {{style}}' bindsubmit="formSubmit">
+<view class='h2'>请您完善个人信息后点击确认购买</view>
+  <view class='input'>
+    <text class='text'>姓名 : </text>
+    <input value='{{name}}' maxlength='20' name="name" placeholder='请输入您的姓名'></input>
+  </view>
+  <view class='input'>
+    <text class='text'>电话 : </text>
+    <input value='{{name}}' maxlength='12' name="phone" placeholder='请输入您的联系电话'></input>
+  </view>
+  <view class='input'>
+    <text class='text'>地址 : </text>
+    <input value='{{name}}' name="address" placeholder='请输入您的地址'></input>
+  </view>
+  <view style='display:none;height:0;' class='input'>
+    <text class='text' style='padding-right:26rpx'> I D : </text>
+    <input disabled='true' value='{{classid}}' name="classid"></input>
+  </view>
+  <view style='display:none;height:0' class='input'> 
+    <text class='text'>code : </text>
+    <input disabled='true' value='{{openId}}' name="code"></input>
+  </view>
+  <button class='button' form-type="submit">确 认</button>
+  <text style='margin-bottom:150rpx;display:block;text-align:center'>咨询电话 : 0374-6666666</text>
+
+</form>
+
+<!-- <view class='line' style='border-bottom:1px solid #ccc;margin:20rpx 0;'></view> -->
+<!-- <text class='js'>划船不用桨,全靠浪.划船不用桨,全靠浪.划船不用桨,全靠浪.划船不用桨,全靠浪.划船不用桨,全靠浪.划船不用桨,全靠浪.划船不用桨,全靠浪.划船不用桨,全靠浪.</text> -->
+
+<contact-button style='background-color:#fff;' class='btn' type="default-dark" size="20" session-from="weapp"> 联系客服</contact-button>
+<contact-button class='btn1 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+<contact-button class='btn2 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+<contact-button class='btn3 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+
+  <button class='buy' bindtap='payoff' style='text-align:center;position:fixed;right:60rpx;bottom:40rpx;color:#fff;font-size:36rpx;line-height:80rpx;background-color:red;padding:0 20rpx;border-radius:40rpx;'>点击购买</button>

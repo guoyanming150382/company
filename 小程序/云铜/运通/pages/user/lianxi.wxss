@@ -1,0 +1,84 @@
+/* pages/lianxi/lianxi.wxss */
+/**index.wxss**/
+/* 头像 */
+.container{
+  background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515155928507&di=7125d0ffd34735c010381256f4821c93&imgtype=0&src=http%3A%2F%2F04.imgmini.eastday.com%2Fmobile%2F20171008%2F20171008011014_e8709e1a6629b6e87aa84ffa7c6e7f3d_2.jpeg");
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+}
+ .userinfo {
+   display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  margin-top: -71rpx;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+
+
+
+.all{
+  padding: 30rpx;
+  box-sizing: border-box;
+  margin-top: -87rpx;
+}
+
+
+.lxkf{
+  /* border: 2rpx solid #000; */
+  width: 100%;height: 50rpx;
+}
+
+.v1{
+  margin-top: 20rpx;
+}
+.v1 image{
+  margin-left: 30rpx
+}
+.jietu{
+  margin-top: 40rpx;
+}
+
+contact-button{
+  opacity: 0;
+  position: absolute;
+}
+.shixiang{
+  background-color: #ff7f00;
+  margin-bottom: 40rpx;
+}
+.shixiang .sh1{
+  display: inline-block;
+  width:50%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  position: relative;
+}
+.shixiang image{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 15rpx;
+  left: 30rpx;
+}
+.left-line:before{
+  content: "";
+  display: block;
+  width: 2rpx;
+  height:100%;
+  background-color: #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

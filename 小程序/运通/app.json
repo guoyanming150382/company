@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/menu/menus",
+    "pages/sale/sale",
+    "pages/test/test",
+    "pages/user/user",
+    "pages/user/discount",
+    "pages/more/hotmore",
+    "pages/more/newmore",
+    "pages/more/shopmore",
+    "pages/menu/goods",
+    "pages/test/baoxian",
+    "pages/test/bx",
+    "pages/test/gh",
+    "pages/test/zr",
+    "pages/test/dy",
+    "pages/test/sc",
+    "pages/test/fq",
+    "pages/user/lianxi",
+    "pages/user/yygc",
+    "pages/user/yyfw"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WxParse",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/indexs.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "iconPath": "image/buy.png",
+        "selectedIconPath": "image/buys.png",
+        "text": "买车"
+      },
+      {
+        "pagePath": "pages/sale/sale",
+        "iconPath": "image/sale.png",
+        "selectedIconPath": "image/sales.png",
+        "text": "卖车"
+      },
+      {
+        "pagePath": "pages/user/lianxi",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/users.png",
+        "text": "会员"
+      }
+    ]
+  }
+}

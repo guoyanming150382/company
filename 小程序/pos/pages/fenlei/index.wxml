@@ -1,0 +1,53 @@
+<view style='background-color:#fff;' class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">分类1</view>
+  <view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">分类2</view>
+  <view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">分类3</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:1060rpx;margin-bottom:20rpx;" bindchange="bindChange">
+  <swiper-item>
+    <navigator url='../menus/menu'>
+      <view wx:for="{{menus1}}" style='width:100%;height:250rpx;margin-top:10rpx;background-color: #eee;'>
+        <image src="{{item.url}}" style='width:50%;height:100%;float:left' />
+        <view style='width50%;height:100%;float:left;padding-left:30rpx'>
+          <view style='width:300rpx;padding:10rpx;' bindtap='xiangqing'>
+            <view style='line-height:60rpx;height:100rpx'>商品：{{item.text1}}</view>
+            <text style='line-height:60rpx'>简介：{{item.text2}}</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator url='../menus/menu'>
+      <view wx:for="{{menus1}}" style='width:100%;height:250rpx;margin-top:10rpx;background-color: #eee;'>
+        <image src="{{item.url}}" style='width:50%;height:100%;float:left' />
+        <view style='width50%;height:100%;float:left;padding-left:30rpx'>
+          <view style='width:300rpx;padding:10rpx;' bindtap='xiangqing'>
+            <view style='line-height:60rpx;height:100rpx'>商品：{{item.text1}}</view>
+            <text style='line-height:60rpx'>简介：{{item.text2}}</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </swiper-item>
+
+
+  <swiper-item>
+    <navigator url='../menus/menu'>
+      <view wx:for="{{menus1}}" style='width:100%;height:250rpx;margin-top:10rpx;background-color: #eee;'>
+        <image src="{{item.url}}" style='width:50%;height:100%;float:left' />
+        <view style='width50%;height:100%;float:left;padding-left:30rpx'>
+          <view style='width:300rpx;padding:10rpx;' bindtap='xiangqing'>
+            <view style='line-height:60rpx;height:100rpx'>商品：{{item.text1}}</view>
+            <text style='line-height:60rpx'>简介：{{item.text2}}</text>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </swiper-item>
+
+
+
+
+</swiper>

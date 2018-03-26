@@ -1,0 +1,41 @@
+<!--pages/shouye/shouye.wxml-->
+<view class='head'>
+  <image src='../../images/timg.jpg' style='width:100%;height:100%'></image>
+</view>
+
+<view class='head-1'>
+  <view class='head-t'>
+    <image src='https://img30.360buyimg.com/popWaterMark/jfs/t15031/179/337093358/349072/2ef2b255/5a2a6bd5N9fd97cb2.jpg ' style='width:100%;height:100%' bindtap='select1' class="{{tu1?'ha':'n'}}"></image>
+    <view style='height:80rpx;width:100%;font-size:35rpx;text-align:center' class="{{tu1?'ha11':'n11'}}">99元冰淇淋套餐</view>
+  </view>
+  <view class='head-d'>
+    <image src='  https://img30.360buyimg.com/popWaterMark/jfs/t15031/179/337093358/349072/2ef2b255/5a2a6bd5N9fd97cb2.jpg' style='width:100%;height:100%' bindtap='select2'  class="{{tu1?'ha1':'n1'}}"></image>
+    <view style='height:80rpx;width:100%;font-size:35rpx;text-align:center' class="{{tu1?'ha12':'n12'}}">199元冰淇淋套餐</view>
+  </view>
+</view>
+
+<view class='conter-1'>
+  <swiper class="lunbo" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item.url}}" class="swiper-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+
+
+<image src='http://prev.mall.10010.com/uploader/gdesc/201712181700531463619872.jpg' style='width:100%;' mode='widthFix' class="{{tu?'have':'no'}}"></image>
+<image src='../../images/w1.jpg' style='width:100%;' mode='widthFix' class="{{tu1?'have1':'no1'}}"></image>
+<!-- https://img30.360buyimg.com/popWaterMark/jfs/t15031/179/337093358/349072/2ef2b255/5a2a6bd5N9fd97cb2.jpg -->
+<!-- http://prev.mall.10010.com/uploader/gdesc/201712181700531463619872.jpg -->
+
+<view style='width:300rpx;height:300rpx;border:2rpx solid #000; overflow: hidden;' class='b1'>
+  <image src='../../images/l1.png' style='width:100%;height:100%;transition: all 0.6s;  ' class='b2'></image>
+</view>
+
+
+  <view class='e1'></view>
+  <view class='e1'></view>
+  <view class='e1'></view>

@@ -1,0 +1,16 @@
+
+
+
+<!--遍历-->
+<view wx:for="{{menus1}}" style='width:100%;height:250rpx;margin-top:10rpx;background-color: #f3f4f6;'>
+  <navigator style='display:block;width:100%;height:100%' url='../menu/goods?id={{item.carid}}'>
+    <image src="{{item.img}}" style='width:50%;float:left;height:100%' mode="aspectFit" />
+    <view style='width50%;height:100%;float:left;padding-left:30rpx'>
+      <view style='width:300rpx;padding:10rpx;'>
+        <view style='line-height:60rpx;font-size:30rpx;height:120rpx'>车辆型号：{{item.name}}</view>
+        <view style='line-height:60rpx;font-size:30rpx;color:#666;'>{{item.mile}}万公里 / {{item.year}}年</view>
+        <view style='line-height:60rpx;font-size:30rpx;color:#f00;'>售价：￥{{item.price}}</view>
+      </view>
+    </view>
+  </navigator>
+</view>

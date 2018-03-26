@@ -1,0 +1,35 @@
+<!--pages/kefu/kefu.wxml-->
+<view class='v22'>
+  <view class='v2'>1</view>
+  <view class='v2'>2</view>
+  <view class='v2'>3</view>
+</view>
+<view class='v1'>
+  <view>
+    <text>
+    床前明月光，疑是地上霜。
+    举头望明月，低头思故乡。
+    </text>
+  </view>
+  <view>
+    <text>
+    床前明月光，疑是地上霜。
+    举头望明月，低头思故乡。
+    床前明月光，疑是地上霜。
+    举头望明月，低头思故乡。
+    床前明月光，疑是地上霜。
+    举头望明月，低头思故乡。
+    </text>
+    </view>
+  <view>
+    <text>
+    床前明月光，疑是地上霜。
+    举头望明月，低头思故乡。
+    </text>
+  </view>
+</view>
+
+
+
+
+

@@ -1,0 +1,5 @@
+/* pages/donghua/donghua.wxss */
+image{
+  width: 300rpx;
+  height: 250rpx;
+}

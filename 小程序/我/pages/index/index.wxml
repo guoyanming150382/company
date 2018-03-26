@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<!-- 轮播图 -->
+<view class='text_h1b3'>
+  <swiper indicator-dots='{{indicatorDots}}' autoplay="{{autoplay}}"
+  interval='{{interval}}' duration='{{duration}}' circular='{{circular}}'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src='{{item}}' class='slide-image'/>
+        </swiper-item>
+      </block>
+  </swiper>
+</view>
+
+<navigator url='../yuyue/yuyue'>预约</navigator>
+<!-- 数据绑定 -->
+<view>{{message}}</view> <!-- 内容 -->
+<!-- 运算 --><view> {{a + b}} + {{c+a+b}} + d </view>
+<!--字符串运算--><view>{{"hrll"+name}}</view>
+<!--数据路径计算--><view>{{object.key}} {{array[1]}}</view>
+<view wx:for="{{shuzu}}" style='float:left'>{{item}}</view><!-- 列表渲染 -->
+
+<!-- 条件渲染 -->
+<text wx:if="{{text == 'web'}}">web</text>
+<text wx:elif="{{text == 'app'}}">app</text>
+<text wx:else="{{text == 'js'}}">js</text>
+
+<!--模板-->
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+<!--事件,功能累加-->
+<view bindtap="add" style='font-size:32rpx'>{{count}}</view>1

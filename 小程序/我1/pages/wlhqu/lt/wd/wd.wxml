@@ -1,0 +1,9 @@
+<!--pages/wlhqu/lt/wd/wd.wxml-->
+<map id="map" longitude="113.869300" latitude="34.044197" scale="14" markers="{{markers}}" show-location bindmarkertap='bindmarkertap' style="width: 100%; height: 80%; padding:10rpx;box-sizing:border-box">
+</map>
+
+<view wx:for="{{markers}}">
+  <view wx:for="{{item.callout}}">
+    <text>{{item.aaaaa}}fgdfgfhfhg</text>
+  </view>
+</view>

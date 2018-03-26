@@ -1,0 +1,17 @@
+/* pages/kefu/kefu.wxss */
+.v22 .v2{
+  width: 33%;
+  height: 30px;
+  background-color: blue;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1px;
+  line-height: 30px;
+}
+
+.v1 view{
+  width: 100%;
+  background-color: gray;
+  border: 1px solid #000;
+ 
+}

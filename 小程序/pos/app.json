@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menus/menus",
+    "pages/menus/menu",
+    "pages/service/service",
+    "pages/user/user",
+    "pages/daili/daili",
+    "pages/user/guanyu/guanyu",
+    "pages/user/lianxi/lianxi",
+    "pages/user/fuwu/fuwu",
+    "pages/fenlei/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WxParse",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/indexs.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/fenlei/index",
+        "iconPath": "image/menu.png",
+        "selectedIconPath": "image/menus.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "iconPath": "image/call.png",
+        "selectedIconPath": "image/calls.png",
+        "text": "客服"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/users.png",
+        "text": "会员"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+<!--pages/lianxi/lianxi.wxml-->
+<!-- 联系 -->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    </block>
+  </view>
+</view>
+<view class='all'>
+  <view class='f'>
+    <navigator url='sp/sp'>
+      <view class='f1'>
+        <view class='f11 '><image src='../../../image/zhi.png'></image><text>
+        未付款</text></view>
+        <view class='f11 '><image src='../../../image/zhif.png'></image><text>
+        已付款</text></view>
+        <view class='f11 '><image src='../../../image/wl.png'></image><text>
+        未发货</text></view>
+        <view class='f11'><image src='../../../image/wl1.png'></image><text>
+        已发货</text></view>
+        <!-- <view class='f11'><image src='../../../image/st.png'></image><text>
+        退款/售后</text></view> -->
+      </view>
+      <view class='f2'>
+        <image src='../../../image/t1.png'></image>
+        <view class='f22'>全部订单</view>
+        <view class='f23'>查看所有订单<view class='f24'>＞</view></view>
+      </view>
+    </navigator>
+  </view>
+  <view class='ct'>
+    <view class='ct1'><image src='../../../image/b1.png'></image><view class='ct2'>冰激凌套餐</view><view class='ct3'>></view></view>
+    <view class='ct1'><image src='../../../image/b2.png'></image><view class='ct2'>冰激凌套餐</view><view class='ct3'>></view></view>
+    <view class='ct1'><image src='../../../image/b3.png'></image><view class='ct2'>冰激凌套餐</view><view class='ct3'>></view></view>
+    <view class='ct1'><image src='../../../image/b4.png'></image><view class='ct2'>冰激凌套餐</view><view class='ct3'>></view></view>
+      <navigator url='wd/wd'>
+      <view class='ct1' style='border-bottom:2rpx solid white'><image src='../../../image/wd.png'></image><view class='ct2'>网点分布图</view><view class='ct3'>></view></view>
+      </navigator>
+    </view>
+</view>
+
