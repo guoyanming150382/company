@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, 
+   maximum-scale=1.0, 
+   user-scalable=no" >
+   <style type="text/css">
+   *{
+     margin: 0;
+     padding: 0;
+ }
+#sancha ul li a{
+    color: white
+}
+/*选项卡*/
+ .all {
+    /*height: 100%;*/
+    height: 8rem;
+    overflow: hidden;
+
+}
+#wrap{
+    position: relative;
+}
+#list{
+    position: absolute;
+    list-style: none;
+    /*width: 500%;*/
+    width: 6rem;
+    overflow: hidden;
+}
+#list li{
+    float: left;
+    /*width: 20%;*/
+}
+#list li img{
+    display: block;
+    width: 100%;
+}
+/*淡入淡出*/
+.warp{
+    min-width:7.5rem;
+    width:7.5rem;
+    height: 5rem;
+    margin:0 auto;
+    background-color: black
+   }
+   #banner{
+    position: relative;
+   }
+   .u1{
+    position: relative;
+    width:7.5rem;
+    height:5rem;
+    overflow: hidden;
+   }
+   .u1 li{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 7.5rem;
+    height: 5rem;
+    text-align: center;
+   }
+  
+   .u1 li img{
+    width: 7.5rem;
+    height: 5rem;
+   }
+</style>
+</head>
+<body>
+	<!-- <div style="width: 7.5rem;height:16rem;position: fixed;top: 0rem;">
+        <img src="t2.jpg" style="width: 100%;height:100%;z-index: 1" >
+    </div> -->
+    <!-- 导航栏目 -->
+    <div style="width: 7.5rem;height: 1.2rem;background-color: #000;color:#fff;position: fixed;top: 0rem;left: 0rem;z-index: 15;font-size: 0.32rem;padding-left: 0.3rem;box-sizing: border-box;line-height: 1.2rem" id="tbu">许昌众驰汽车销售服务有限公司
+        <div><img src="tp.png" style="position: absolute;top:0.2rem;right:0rem;z-index: 99;width: 0.8rem;height: 0.8rem" id="butt">
+        </div>
+    </div>
+    <div style="width: 3rem;color:#fff;height: 4rem;background-color:#000;opacity: 0.8; position: fixed;top: 1rem;right: 0rem;z-index: 99;display: none" id="sancha">
+        <ul style="list-style: none">
+            <li style="height: 1rem;line-height:1rem;text-align: center;font-size:  0.4rem;"><a href="#" style="text-decoration: none;">首页</a></li>
+            <li style="height: 1rem;line-height:1rem;text-align: center;font-size:  0.4rem;"><a href="#" style="text-decoration: none;">案例</a></li>
+            <li style="height: 1rem;line-height:1rem;text-align: center;font-size:  0.4rem;"><a href="#" style="text-decoration: none;">车型</a></li>
+            <li style="height: 1rem;line-height:1rem;text-align: center;font-size:  0.4rem;"><a href="#" style="text-decoration: none;">客服</a></li>
+        </ul>
+
+    </div>
+    <!-- 主体 -->
+    <div style="width: 7.5rem;position: absolute;top:1rem;z-index: 11;background-color: #fff;color: #000;" id="wattt">
+        <!-- 淡入淡出 -->
+        <div class="warp">
+           <div class="lunbo" id="banner">
+              <ul class="u1">
+                 <li style="display: block"><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1584103188,276508123&fm=27&gp=0.jpg"></li>
+                 <li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517646946202&di=fbaab385cdf526a84d09d2f100822a63&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimage%2Fc0%253Dshijue1%252C0%252C0%252C294%252C40%2Fsign%3Db7a1869cb299a9012f38537575fc600e%2F4d086e061d950a7baa99144c00d162d9f3d3c98e.jpg"></li>
+                 <li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517646965347&di=e4f4143b02c7fa47e4a81914d5dcfb38&imgtype=jpg&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D3501535277%2C1062411320%26fm%3D214%26gp%3D0.jpg"></li>
+             </ul>
+
+         </div>
+    </div>
+    <!-- 选项卡 -->
+        <div class="all" id="suoyou" >
+            <div id="wrap" style="background-color: #000;padding-top: 0.3rem;box-sizing: border-box;">
+                <ul id="list">
+                    <li>
+                        <a href="javascript:;" style="text-decoration: none">
+                            <div style="font-size: 0.4rem;padding: 0.3rem;box-sizing: border-box;width:6rem;height: 0.5rem;line-height: 0.5rem;margin: auto;color: #fff;text-align: center;margin-bottom: 0.1rem;font-weight: bold">限 量 版</div>
+                            <img src="c6.png" alt="">
+                            <div style="font-size: 0.3rem;padding: 0.3rem;box-sizing: border-box;width:6rem;height: 3.2rem;line-height: 0.5rem;margin: auto;color: #fff;">你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗好吗你好吗你好吗你好</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" style="text-decoration: none">
+                            <div style="font-size: 0.4rem;padding: 0.3rem;box-sizing: border-box;width:6rem;height: 0.5rem;line-height: 0.5rem;margin: auto;color: #fff;text-align: center;margin-bottom: 0.1rem;font-weight: bold">豪 华 版</div>
+                            <img src="c5.png" alt="">
+                            <div style="font-size: 0.3rem;padding: 0.3rem;box-sizing: border-box;width:6rem;height: 3.2rem;margin: auto;line-height: 0.5rem;color: #fff;">你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗好吗你好吗你好吗你好吗你</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" style="text-decoration: none">
+                            <div style="font-size: 0.4rem;padding: 0.3rem;box-sizing: border-box;width:6rem;height: 0.5rem;line-height: 0.5rem;margin: auto;color: #fff;text-align: center;margin-bottom: 0.1rem;font-weight: bold">简 约 版</div>
+                            <img src="c3.png" alt="">
+                            <div style="font-size: 0.3rem;padding: 0.3rem;box-sizing: border-box;width:6rem;height: 3.2rem;margin: auto;line-height: 0.5rem;color: #fff;">你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗好吗你好吗你好吗你好吗你</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" style="text-decoration: none">
+                            <div style="font-size: 0.4rem;padding: 0.3rem;box-sizing: border-box;width:6rem;height: 0.5rem;line-height: 0.5rem;margin: auto;color: #fff;text-align: center;margin-bottom: 0.1rem;font-weight: bold">普 通 版</div>
+                            <img src="c2.png" alt="">
+                            <div style="font-size: 0.3rem;padding: 0.3rem;box-sizing: border-box;width:6rem;height: 3.2rem;margin: auto;line-height: 0.5rem;color: #fff;">你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗你好吗好吗你好吗你好吗你</div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- 图片文字介绍 -->
+        <div style="width: 7.5rem;background-color: #fff;margin-top: 0.25rem">
+            <img src="c1.gif" style="width: 3.8rem" mode="widthFix">
+            <ul style="width:3.7rem;color: #000;font-size: 0.3rem;float: right;list-style: none;padding-left: 0.2rem;box-sizing: border-box;margin-top: 0.5rem">
+                <li style="height: 0.5rem">凭外表 就能神魂颠倒</li>
+                <li style="height: 0.5rem">绚丽车身颜值爆表</li>
+                <li style="height: 0.5rem">小巧灵动舒适惬意</li>
+                <li style="height: 0.5rem">安全呵护智趣生活</li>
+            </ul>
+        </div>
+        <div style="height: 3rem;width: 7.5rem;background-color: #4b4e53">
+            
+            <ul style="width: 50%;height: 100%;font-size: 0.25rem;color:#fff;float: left;list-style: none;padding-left: 0.2rem;box-sizing: border-box;">
+                <li style="height: 20%;line-height: 1rem">自动化电动车窗、可调座椅</li>
+                <li style="height: 20%;line-height: 1rem">一体式旋钮触控换档</li>
+                <li style="height: 20%;line-height: 1rem">一键启动</li>
+                <li style="height: 20%;line-height: 1rem">电子手刹</li>
+            </ul>
+            <div style="width: 50%;height: 100%;float: left;"><img src="sh3.jpg" style="width: 100%;height: 100%"></div>
+        </div>
+        <div style="height: 3rem;width: 7.5rem;background-color: #8eb3c6;">
+            <div style="width: 50%;height: 100%;float: left;"><img src="sh2.jpg" style="width: 100%;height: 100%"></div>
+            <ul style="width: 50%;height: 100%;font-size: 0.25rem;color: #fff;float: left;list-style: none;padding-left: 0.1rem;box-sizing: border-box;">
+                <li style="height: 20%;line-height: 1rem">智能安卓系统，兼容性更强</li>
+                <li style="height: 20%;line-height: 1rem">高度集成10英寸超大显示屏一键操控尽在掌握</li>
+                <li style="height: 20%;line-height: 1rem">车载智能终端实现车辆远程操控</li>
+            </ul>
+            
+        </div>
+        <div style="height: 3rem;width: 7.5rem;background-color: #020202">
+            
+            <ul style="width: 50%;height: 100%;font-size: 0.25rem;color:#fff;float: left;list-style: none;padding-left: 0.2rem;box-sizing: border-box;">
+                <li style="height: 20%;line-height: 1rem">高效永磁同步电动机，加速块</li>
+                <li style="height: 20%;line-height: 1rem">安全性高、电机性能稳定耗损低</li>
+                <li style="height: 20%;line-height: 1rem">多功能显示仪表盘</li>
+                <li style="height: 20%;line-height: 1rem">集成多项数据，轻松驾驶</li>
+            </ul>
+            <div style="width: 50%;height: 100%;float: left;"><img src="sh1.jpg" style="width: 100%;height: 100%"></div>
+        </div>
+<!-- 地址 -->
+        <div style="padding: 0.3rem;box-sizing: border-box;background-color: #eee;color: #000">
+                    <p style="font-size: 0.3rem;line-height: 0.4rem;">地址：河南省许昌市新兴路与灞陵路交叉口向南300米</p>
+                    <p style="font-size: 0.3rem;line-height: 0.4rem;">电话：0374888888</p>
+                </div>
+               
+            </div>   
+
+            <!-- <div style="width: 7.5rem;height:14rem;position: fixed;top: 0rem;" id="tp">
+             <img src="t1.gif" style="width: 100%;height:100%;z-index: 9999" >
+         </div> -->
+     </body>
+     <script  src="transformCss.js"></script>
+     <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+     <script>
+        // 大小自适应计算
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+            resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if(clientWidth>=750){
+                    docEl.style.fontSize = '100px';
+                }else{
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+            // 消失图片
+            // var oDiv=document.getElementById("tp");
+            // setTimeout(function(){
+            //     oDiv.style.display="none";
+            // },3000);
+            // var oTb=document.getElementById("tbu");
+            // setTimeout(function(){
+            //     oTb.style.display="block"
+            // },3100);
+            // 定时器
+            var oSSO=document.getElementById("suoyou");
+            setTimeout(function(){
+                oSSO.style.display="block"
+            },3200);
+            
+            var oWww=document.getElementById("wattt");
+            setTimeout(function(){
+                oWww.style.display="block"
+            },3600);
+            var oMM=document.getElementById("map1");
+            
+            var oSc=document.getElementById("sancha");
+            var oTbb=document.getElementById('butt');
+            oTbb.onclick=function(){
+                if(oSc.style.display=="none"){
+                    oSc.style.display="block"
+                }else{
+                    oSc.style.display="none";
+                }
+
+            }
+
+            // 选项卡js
+            document.addEventListener("touchstart",function (event) {
+              event.preventDefault()
+
+          })
+            window.onload =function () {
+               var spanNodes = document.querySelectorAll("#navs span")
+               var wrap = document.getElementById("wrap")
+               var list = document.getElementById("list")
+               list.innerHTML += list.innerHTML
+               var liNodes = document.querySelectorAll("#list li")
+               var styleN = document.createElement("style")
+               var cssText = '#list{width:' + liNodes.length + '00%}'
+               cssText += '#list li{width:' + (1 / liNodes.length * 100) + '%}'
+               cssText += '#wrap{height:' + liNodes[0].offsetHeight + 'px}'
+               styleN.innerHTML = cssText;
+               document.head.appendChild(styleN)
+
+               var elementX = 0;
+               var startX = 0;
+               var timer =0;
+               var now = 0;
+//           var disX =0
+//           var  translateX =0;
+wrap.addEventListener("touchstart", function (event) {
+   clearInterval(timer)
+   list.style.transition = 'none';
+   var left = transformCss(list, "translateX")
+   var now = Math.round(-left / document.documentElement.clientWidth)
+
+   if (now == 0) {
+       now = spanNodes.length
+   } else if (now == liNodes.length - 1) {
+       now = spanNodes.length - 1
+   }
+   transformCss(list, 'translateX', -now * document.documentElement.clientWidth)
+
+   var touch = event.changedTouches[0];
+//               elementX = list.offsetLeft;
+startX = touch.clientX
+//                elementX =translateX;
+elementX = transformCss(list, 'translateX')
+});
+wrap.addEventListener("touchmove", function (event) {
+   var touch = event.changedTouches[0];
+   var nowX = touch.clientX;
+   var disX = nowX - startX
+//               translateX = elementX+disX
+//               list.style.transform = 'translateX('+translateX +'px)';
+transformCss(list, 'translateX', elementX + disX)
+});
+wrap.addEventListener("touchend", function (event) {
+   event.preventDefault()
+
+//               var left =list.offsetLeft;
+//                   var left = translateX;
+var left = transformCss(list, "translateX")
+//               if(disX<0){
+//                now = Math.ceil(-left/document.documentElement.clientWidth)
+//               }else{
+//                   now = Math.floor(-left/document.documentElement.clientWidth)
+//
+//               }
+now = Math.round(-left / document.documentElement.clientWidth)
+if (now < 0) {
+   now = 0
+} else if (now > liNodes.length - 1) {
+   now = liNodes.length - 1
+}
+list.style.transition = '0.5s';
+//               translateX = -now*document.documentElement.clientWidth;
+//               list.style.transform = 'translateX('+translateX+'px)';
+transformCss(list, 'translateX', -now * document.documentElement.clientWidth)
+               //同步小圆点
+               for (var i = 0; i < spanNodes.length; i++) {
+                   spanNodes[i].className = ''
+               }
+               auto();
+           });
+         // 自动轮播图
+//           var now = 0;
+auto();
+function  auto() {
+    clearInterval(timer)
+    timer = setInterval(function () {
+        list.style.transition = 'none'
+        if(now ==liNodes.length-1){
+            now =spanNodes.length-1
+        }
+        transformCss(list, 'translateX', -now * document.documentElement.clientWidth)
+        setTimeout(function () {
+            now++;
+            list.style.transition = '0.5s'
+            transformCss(list, 'translateX', -now * document.documentElement.clientWidth)
+            for (var i = 0; i < spanNodes.length; i++) {
+                spanNodes[i].className = ''
+            }
+
+        },20)
+
+    },2000)
+}
+
+
+}
+
+// 淡入淡出js
+var num=0;
+  var btnLeft=$(".btnLeft");
+  var btnRight=$(".btnRight");
+  var Id=$("#banner");
+  var oUl=Id.find("ul");
+  var oLi=oUl.find("li");
+  var oLiLen=oLi.length;
+  var curHtml="<div class='cur'></div>"; 
+  Id.append(curHtml);
+  var oCur=$(".cur");
+  // 动态添加小圆点
+  for(var i=0;i<oLiLen;i++){
+    var curA="<span></span>"
+    oCur.append(curA);
+  }
+  var oCurSpan=oCur.find("span");
+  var oCurS=oCur.find("span:first");
+  oCurS.addClass('active')
+  // 自动轮播
+  var t=setInterval(function(){
+    num++;
+    lunbo();
+  },3000);
+  // 移动到轮播清除定时器
+  Id.hover(function(){
+    clearInterval(t)
+  },function(){
+    t=setInterval(function(){
+      num++;
+      lunbo();
+    },3000);
+  });
+  // 左箭头按钮
+  btnLeft.on("click",function(){
+    num--;
+    lunbo();
+  })  
+   //右箭头按钮 
+  btnRight.on("click",function(){
+    num++;
+    lunbo();
+  })
+  function lunbo(){
+    if(num==oLiLen){
+      num=0;
+    }
+    oLi.eq(num).fadeIn().siblings().fadeOut();
+    oCurSpan.eq(num).addClass('active').siblings().removeClass('active');
+  }
+  lunbo();
+</script>
+</html>
