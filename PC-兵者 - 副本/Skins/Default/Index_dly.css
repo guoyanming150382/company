@@ -1,0 +1,726 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*common*/
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.ml10 {
+	margin-left: 10px;
+}
+
+.bg {
+	background: #FFF;
+}
+
+
+/**/
+
+.fullSlide {
+	width: 100%;
+	position: relative;
+	height: 656px;
+}
+
+.fullSlide .bd {
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.fullSlide .bd ul {
+	width: 100% !important;
+}
+
+.fullSlide .bd li {
+	width: 100% !important;
+	height: 656px;
+	overflow: hidden;
+	text-align: center;
+	background-position: center top;
+	background-repeat: no-repeat
+}
+
+.fullSlide .bd li a {
+	display: block;
+	height: 656px;
+}
+
+.fullSlide .hd {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	bottom: 0px;
+	left: 0;
+	height: 30px;
+	line-height: 30px;
+	display: none
+}
+
+.fullSlide .hd ul {
+	text-align: center;
+}
+
+.fullSlide .hd ul li {
+	cursor: pointer;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 100px;
+	height: 8px;
+	margin: 1px;
+	overflow: hidden;
+	background: #fff;
+	line-height: 999px;
+	background-repeat: no-repeat;
+}
+
+.fullSlide .hd ul .on {
+	background: #3CA00A;
+}
+
+
+/**/
+
+.zs {
+	height: 808px;
+	background: url("Img/dly/zsb.jpg") no-repeat center 0;
+	overflow: hidden;
+}
+
+.zs h3 {
+	width: 760px;
+	height: 80px;
+	background: #c8000a;
+	font-size: 40px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 80px;
+	margin: 56px auto 0;
+}
+
+.zs ul {
+	margin: 80px 0 0 410px;
+}
+
+.zs ul li {
+	height: 68px;
+}
+
+.zs ul li p {
+	float: left;
+	width: 43px;
+	height: 43px;
+	background: url("Img/dly/zsy.png") no-repeat;
+	font-size: 25px;
+	color: #fbfbfb;
+	text-align: center;
+	line-height: 43px;
+}
+
+.zs ul li em {
+	display: block;
+	float: left;
+	font-size: 20px;
+	color: #555555;
+	font-weight: bold;
+	line-height: 43px;
+	margin-left: 23px;
+}
+
+.zs ul li em span {
+	color: #c8000a;
+}
+
+
+/**/
+
+.gg {
+	height: 254px;
+	background: url("Img/dly/ggb.jpg") no-repeat center 0;
+	overflow: hidden;
+}
+
+.gg p {
+	float: right;
+	width: 195px;
+}
+
+.gg p img {
+	display: block;
+	width: 144px;
+	height: 89px;
+	margin: 75px auto 38px;
+}
+
+.gg p a {
+	display: block;
+	width: 148px;
+	height: 39px;
+	background: #d00f09;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 39px;
+	margin: 0 auto;
+}
+
+
+/**/
+
+.qs {
+	height: 894px;
+	background: url("Img/dly/qsb.jpg") no-repeat center 0;
+	overflow: hidden;
+}
+
+.qs h3 {
+	height: 154px;
+	padding-top: 62px;
+}
+
+.qs h3 p {
+	width: 918px;
+	height: 60px;
+	background: #c8000a;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 60px;
+	margin: 0 auto;
+}
+
+.qs ul {
+	height: 762px;
+	background: url("Img/dly/qs_06.png") no-repeat;
+	position: relative;
+}
+
+.qs ul li {
+	width: 500px;
+}
+
+.qs ul li p {
+	font: 34px "Impact";
+	color: #ff7700;
+}
+
+.qs ul li em {
+	display: block;
+	font-size: 20px;
+	color: #333333;
+	font-weight: bold;
+	line-height: 35px;
+}
+
+.qs ul li em span {
+	display: block;
+}
+
+.qs .qsl1 {
+	position: absolute;
+	left: 193px;
+	top: 75px;
+}
+
+.qs .qsl2 {
+	position: absolute;
+	left: 0;
+	top: 314px;
+}
+
+.qs .qsl3 {
+	position: absolute;
+	left: 576px;
+	top: 525px;
+}
+
+.qs .qsl4 {
+	position: absolute;
+	left: 809px;
+	top: 310px;
+}
+
+.qs .qsl5 {
+	position: absolute;
+	left: 780px;
+	top: 60px;
+}
+
+
+/**/
+
+.ms {
+	height: 1518px;
+	overflow: hidden;
+}
+
+.ms h3 {
+	height: 195px;
+	text-align: center;
+	padding-top: 40px;
+	font-size: 40px;
+	color: #c8000a;
+	font-weight: normal;
+	margin-bottom: 54px;
+}
+
+.ms h3 p {
+	width: 588px;
+	height: 60px;
+	margin: 0 auto;
+	background: #c8000a;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.ms dl {
+	height: 415px;
+}
+
+.ms dl dt {
+	float: left;
+}
+
+.ms dl dd {
+	float: left;
+}
+
+.ms dl dd p {
+	font-size: 18px;
+	color: #333333;
+	line-height: 40px;
+	margin-top: 20px;
+}
+
+.ms dl dd p span {
+	display: block;
+}
+
+.ms .msd {
+	margin-left: 543px;
+}
+
+.ms dl dt img {
+	width: 215px;
+	height: 193px;
+}
+
+.ms .msd dt img {
+	width: 151px;
+	height: 175px;
+	margin-top: 30px;
+}
+
+.ms .mst1 {
+	position: absolute;
+	left: 500px;
+	top: 255px;
+}
+
+.ms .mst2 {
+	position: absolute;
+	left: -295px;
+	top: 650px;
+}
+
+.ms .mst3 {
+	position: absolute;
+	left: 500px;
+	top: 1046px;
+}
+
+
+/**/
+
+.fs {
+	height: 738px;
+	background: url("Img/dly/fsb.jpg") no-repeat center 0;
+	overflow: hidden;
+	position: relative
+}
+
+.fs h3 {
+	height: 125px;
+	text-align: center;
+	padding-top: 42px;
+	font-size: 40px;
+	color: #c8000a;
+	font-weight: normal;
+}
+
+.fs h3 p {
+	width: 588px;
+	height: 60px;
+	margin: 0 auto;
+	background: #c8000a;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.fs ul {
+	padding-top: 58px;
+}
+
+.fs ul li {
+	float: left;
+	text-align: center;
+	font-size: 24px;
+	color: #c8000a;
+	font-weight: bold;
+	margin-right: 13px;
+}
+
+.fs ul li a {
+	color: #c8000a
+}
+
+.fs ul li img {
+	display: block;
+	width: 240px;
+	height: 319px;
+	margin-bottom: 25px;
+	box-shadow: #c4c5c3 0 0 5px;
+}
+
+.fs ul .nones {
+	margin-right: 0;
+}
+
+.fs .dka {
+	display: block;
+	position: absolute;
+	right: 80px;
+	top: 436px;
+	width: 80px;
+	height: 80px;
+	background: #c8000a;
+	border: 1px solid #ffffff;
+	text-align: center;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.fs .dka img {
+	display: block;
+	margin: 0 auto;
+	padding: 9px 0 3px;
+}
+
+
+/**/
+
+.dz {
+	height: 725px;
+	background: #ececec url("Img/dly/bj_02.jpg") no-repeat center 55px;
+	overflow: hidden;
+	position: relative
+}
+
+.dz h3 {
+	height: 160px;
+	text-align: center;
+	padding-top: 56px;
+	font-size: 40px;
+	color: #c8000a;
+	font-weight: normal;
+}
+
+.dz h3 p {
+	width: 588px;
+	height: 60px;
+	margin: 0 auto;
+	background: #c8000a;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.dz li img {
+	display: block;
+	float: left;
+	width: 742px;
+	height: 433px;
+}
+
+.dz li p {
+	float: left;
+	width: 258px;
+	height: 433px;
+	background: #c8000a;
+}
+
+.dz li p em {
+	display: block;
+	width: 205px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #ffffff;
+	line-height: 28px;
+	padding-top: 36px;
+}
+
+.dz li p em span {
+	display: block;
+	text-align: right;
+	margin-top: 20px;
+}
+
+.dz li p em span i {
+	display: block;
+	font-style: normal;
+}
+
+.dz .dzj1 {
+	position: absolute;
+	left: 98px;
+	top: 454px;
+}
+
+.dz .dzj2 {
+	position: absolute;
+	right: 98px;
+	top: 454px;
+}
+
+
+/**/
+
+.dk {
+	height: 1502px;
+	overflow: hidden;
+}
+
+.dk .dkb1 {
+	height: 1000px;
+}
+
+.dk .dkb1 h3 {
+	height: 170px;
+	text-align: center;
+	padding-top: 42px;
+	font-size: 40px;
+	color: #c8000a;
+	font-weight: normal;
+}
+
+.dk .dkb1 h3 p {
+	width: 588px;
+	height: 60px;
+	margin: 0 auto;
+	background: #c8000a;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 60px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.dk .dkb1 ul {
+	position: relative;
+}
+
+.dk .dkb1 ul img {
+	transition: All 0.5s;
+	-webkit-transition: All 0.5s;
+	-moz-transition: All 0.5s;
+	-o-transition: All 0.5s;
+}
+
+.dk .dkb1 ul li:hover img {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+}
+
+.dk .dkb1 .dkl1 {
+	position: absolute;
+	left: -360px;
+	top: 0;
+	width: 573px;
+	height: 447px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl2 {
+	position: absolute;
+	left: 213px;
+	top: 0;
+	width: 461px;
+	height: 447px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl3 {
+	position: absolute;
+	left: 674px;
+	top: 0;
+	width: 305px;
+	height: 222px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl4 {
+	position: absolute;
+	left: 979px;
+	top: 0;
+	width: 305px;
+	height: 222px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl5 {
+	position: absolute;
+	left: 1284px;
+	top: 0;
+	width: 276px;
+	height: 729px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl6 {
+	position: absolute;
+	left: 674px;
+	top: 222px;
+	width: 305px;
+	height: 226px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl7 {
+	position: absolute;
+	left: 979px;
+	top: 222px;
+	width: 305px;
+	height: 226px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl8 {
+	position: absolute;
+	left: -360px;
+	top: 447px;
+	width: 286px;
+	height: 282px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl9 {
+	position: absolute;
+	left: -74px;
+	top: 447px;
+	width: 287px;
+	height: 282px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl10 {
+	position: absolute;
+	left: 213px;
+	top: 447px;
+	width: 461px;
+	height: 282px;
+	overflow: hidden
+}
+
+.dk .dkb1 .dkl11 {
+	position: absolute;
+	left: 674px;
+	top: 447px;
+	width: 610px;
+	height: 281px;
+	overflow: hidden
+}
+
+.dk .dkb2 {
+	height: 480px;
+	background: url("Img/dly/bj_04.jpg") no-repeat center;
+}
+
+.dk .dkb2 ul {
+	padding-top: 78px;
+}
+
+.dk .dkb2 ul li {
+	float: left;
+	width: 332px;
+	height: 206px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.dk .dkb2 ul li a {
+	color: #ffffff;
+}
+
+.dk .dkb2 ul li p {
+	font-size: 28px;
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+
+.dk .dkb2 ul li p b {
+	color: #ffa200;
+}
+
+.dk .dkb2 ul li span {
+	display: block;
+	width: 135px;
+	height: 39px;
+	background: url("Img/dly/dkk1.jpg") no-repeat;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 39px;
+	margin: 20px auto 0;
+}
+
+.dk .dkb2 ul li a:hover span {
+	background: url("Img/dly/dkk2.jpg") no-repeat;
+}
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/
+
+
+/**/

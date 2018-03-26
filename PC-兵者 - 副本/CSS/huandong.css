@@ -1,0 +1,18 @@
+#huandong {
+	width: 1000px;
+	height: 350px;
+	margin: -30px auto;
+	border: 1px solid red;
+	overflow: hidden;
+}
+
+#huandong li {
+	width: 200px;
+	height: 350px;
+	float: left;
+	cursor: pointer;
+}
+
+#huandong ul {
+	width: 1000px;
+}
