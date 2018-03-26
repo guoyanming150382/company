@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>许昌众驰给您的新年福利已送到！请查收！</title>
+<meta name="keywords" content="canvas动画, 手机微信网站特效, css3动画, html5特效, 网页特效" />
+<meta name="description" content="网页特效库-专注于HTML5、CSS3、js、jQuery、手机移动端等网页特效的手机与分享。特效库始终坚持：无会员、无积分、无限制的“三无原则”，所有的资源都免费提供广大童鞋下载学习和使用。" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+      <!-- <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style1.css" /> -->
+      <style type="text/css">
+      	body{
+      		background-image: url(image/tu2.jpg);
+      		background-size: 100% 100vh;
+      		background-repeat: no-repeat;
+      	}
+      
+		.donghua{
+		    transform-style: preserve-3d;
+		    animation-name: dong;
+		    animation-duration: 4s;
+		    animation-timing-function: linear;
+		    animation-iteration-count: infinite;
+		}
+			@keyframes dong{
+			    form{
+			        transform: rotateZ(0deg);
+			    }
+			    to{
+			        transform: rotateZ(360deg);
+			    }
+			}
+		.to1{
+			animation-name: tou;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: 1;
+			animation-fill-mode:forwards;
+			position: absolute;
+			top: -0.5rem;
+		}
+		 @keyframes tou{
+		0%{
+			left: -110vw;
+		}
+		100%{
+			left: 0vw;
+		}
+			}
+		.to2{
+			animation-name: tous;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: 1;
+			animation-fill-mode:forwards;
+			animation-delay: 0.5s;
+			position: absolute;
+			opacity: 0;
+		}
+		 @keyframes tous{
+		0%{
+			left: -50vw;
+			opacity: 0;
+		}
+		100%{
+			left: 15vw;
+			opacity: 1;
+		}
+			}
+		.to3{
+			animation-name: touss;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: 1;
+			animation-fill-mode:forwards;
+			animation-delay: 2s;
+			top:32vh;
+			position: absolute;
+			left: -8rem;
+			opacity: 0;
+		}
+		 @keyframes touss{
+		0%{
+			left: -8rem;
+			opacity: 0;
+		}
+		100%{
+			left: 35vw;
+			opacity:1;
+		}
+		
+		}
+		.to4{
+			animation-name: tousss;
+			animation-duration: 1.5s;
+			animation-timing-function: linear;
+			animation-iteration-count: 1;
+			animation-fill-mode:forwards;
+			animation-delay: 4s;
+			left: 0rem;
+			opacity: 0;
+		}
+		 @keyframes tousss{
+		0%{
+			left: -5rem;
+			opacity: 0;
+		}
+		100%{
+			left: 0rem;
+			opacity:1;
+		}
+      </style>
+</head>
+
+<body>
+	 
+<a href="index2.html">
+<img src="image/r.png" style="width: 0.8rem;height:0.8rem;position: fixed;right: 0.1rem;bottom: 0.4rem;" /><meta http-equiv="refresh" content="7;URL=index2.html"> 
+</a>
+
+<audio src="https://www.emmmmm.xyz/sos/gx.mp3" preload="auto" loop="loop" style="position: fixed;bottom: 0rem;right: 0rem;z-index: 12" id="music2"></audio>
+	 <a href="javascript:playPause();" id="abq" ><img src="image/music.png" style="width: 1rem;height: 1rem;position: fixed;bottom: 1.8rem;left: 0.3rem;z-index: 999;" id="music_btn2" class="donghua">
+	<img src="image/music1.png" style="width: 1rem;height: 1rem;position: fixed;bottom: 1.8rem;left: 0.3rem;z-index: 999;display: none;" id="music_btn3" >
+	 </a> 
+	 <!-- 动画 -->
+	<div  class="to1" style="padding: 0.3rem;box-sizing: border-box;">
+		<img src="image/t3.png" style="width: 6.8rem;height:5rem">
+	</div>
+	<div  class="to2">
+		<img src="image/t2.png" style="width: 5rem;height: 3.5rem;position: absolute;top:4.5rem;left: -2rem">
+	</div>
+	<div  class="to3">
+		<img src="image/t1.png" style="width: 4.3rem;height: 5.3rem;">
+	</div>
+	<div  class="to4">
+		<img src="image/t4.png" style="width: 3.4rem;height: 0.7rem;position: absolute;bottom: 0.3rem;">
+	</div>
+</body>
+<script type="text/javascript">
+	(function (doc, win) {
+		var docEl = doc.documentElement,
+		resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+		recalc = function () {
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if(clientWidth>=750){
+				docEl.style.fontSize = '100px';
+			}else{
+				docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			}
+		};
+	if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('music2');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
+
+	 function playPause(){
+                var music = document.getElementById('music2');    
+                var music_btn = document.getElementById('music_btn2');
+                var music_btn3 = document.getElementById('music_btn3');
+                setTimeout(function(){  
+                    if (music.paused){    
+                        music.play();    
+                        music_btn.src = 'image/music.png';  
+                        music_btn.style.display ="block";  
+                        music_btn3.style.display="none";
+                    }    
+                    else{    
+                        music.pause();   
+                        music_btn.style.display ="none";
+                        music_btn3.style.display="block";
+                        music_btn.src = 'image/music1.png';     
+                    }   
+                },0) ;
+            }
+
+</script>
+</html>
