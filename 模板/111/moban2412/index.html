@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="http://fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation<</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="w3layouts-logo">
+						<h1><a href="index.html">辛普森 <span>互联网科技有限公司</span></a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">首页</a></li>
+							<li><a href="about.html" class="hvr-sweep-to-bottom">关于我们</a></li>
+							<li><a href="gallery.html" class="hvr-sweep-to-bottom">展示</a></li>
+							<li><a href="#" class="dropdown-toggle hvr-sweep-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">编辑<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="hvr-sweep-to-bottom" href="icons.html">图标</a></li>
+									<li><a class="hvr-sweep-to-bottom" href="typography.html">编排</a></li>          
+								</ul>
+							</li>
+							<li><a href="mail.html" class="hvr-sweep-to-bottom">联系我们</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>	
+								<div class="banner_text">
+									<h3>响应式模板</h3>
+									<div class="w3ls-line"> </div>
+									<p>全新推出「响应式网站模板」</p>
+									<div class="w3-button">
+										<a href="single.html" class="btn btn-1 btn-1b">了解更多</a>
+									</div>
+								</div>
+							</li>
+							<li>	
+								<div class="banner_text">
+									<h3>精美模板下载</h3>
+									<div class="w3ls-line"> </div>
+									<p>采用模块化方式开发</p>
+									<div class="w3-button">
+										<a href="single.html" class="btn btn-1 btn-1b">了解更多</a>
+									</div>
+								</div>
+							</li>
+							<li>	
+								<div class="banner_text">
+									<h3>响应式模板</h3>
+									<div class="w3ls-line"> </div>
+									<p>主体类型为企业、政开发</p>
+									<div class="w3-button">
+										<a href="single.html" class="btn btn-1 btn-1b">了解更多</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+			</section>
+			<!-- flexSlider -->
+			<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+			<script defer src="js/jquery.flexslider.js"></script>
+			<script type="text/javascript">
+				$(window).load(function(){
+					$('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						$('body').removeClass('loading');
+						}
+					});
+				});
+			</script>
+			<!-- //flexSlider -->
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- services -->
+	<div class="services">
+		<div class="container">
+			<div class="services-main">
+				<div class="services-heading">
+					<h2>公司介绍</h2>
+					<div class="agileits-line"> </div>
+				</div>
+				<div class="services-bottom">
+					<div class="services-grid">
+						<div class="col-md-6 services-grid-left">
+							<div class="services-icon"><i class="fa fa-envira" aria-hidden="true"></i></div> 
+							<div class="services-text">
+								<h4>发展历程</h4>
+								<p>全面开放申请后，主体类型为企业、政府、媒体、其他组织或个人的开发者，均可申请注册小程序。小程序、订阅号、服务号、企业号是并行的体系。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-6 services-grid-right">
+							<img src="images/3.jpg" alt="" />
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="services-grid">					
+						<div class="col-md-6 services-grid-right ulta-grid">
+							<img src="images/4.jpg" alt="" />
+						</div>
+						<div class="col-md-6 services-grid-left ulta-grid">
+							<div class="services-icon"><i class="fa fa-magnet" aria-hidden="true"></i></div> 
+							<div class="services-text">
+								<h4>企业文化</h4>
+								<p>网站由域名、空间服务器、DNS域名解析、网站程序、数据库等组成。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="services-grid">
+						<div class="col-md-6 services-grid-left">
+							<div class="services-icon"><i class="fa fa-cog" aria-hidden="true"></i></div> 
+							<div class="services-text">
+								<h4>职位招聘</h4>
+								<p>手机软件的运行需要有相应的手机系统，目前（2017.6.1）主要的手机系统：1.苹果公司的iOS.2.谷歌公司的Android（安卓）系统。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-6 services-grid-right">
+							<img src="images/6.jpg" alt="" />
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="services-grid">					
+						<div class="col-md-6 services-grid-right ulta-grid">
+							<img src="images/4.jpg" alt="" />
+						</div>
+						<div class="col-md-6 services-grid-left ulta-grid">
+							<div class="services-icon"><i class="fa fa-magnet" aria-hidden="true"></i></div> 
+							<div class="services-text">
+								<h4>企业文化</h4>
+								<p>网站由域名、空间服务器、DNS域名解析、网站程序、数据库等组成。</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--services -->
+	<!-- services-bottom -->
+	<div class="text-grid">
+		<div class="container">
+			<h4>企业新闻</h4>
+			<p>全新推出「响应式网站模板」，移动端访客能够得到与电脑网站一样的体验，轻松找到在电脑网站上看到的内容，无论是在电脑、平板、手机上都可以访问到排版合适的网站，即便是微信等应用内置浏览器也是如此。</p>
+		</div>
+	</div>
+	<!-- //services-bottom -->
+	<!-- blog -->
+	<div class="blog">
+		<div class="container">
+			<div class="services-heading">
+				<h3>服务项目</h3>
+				<div class="agileits-line"> </div>
+			</div>
+			<div class="agileinfo-blog-grids">
+				<div class="col-md-4 wthree-blog">
+					<div class="w3-agileits-blog">
+						<div class="w3-agileits-blog-img">
+							<a href="single.html"><img src="images/7.jpg" alt="" /></a>
+						</div>
+						<div class="w3-agileits-blog-text">
+							<a href="single.html">网站是做</a>
+							<p>人们可以通过网站来发布自己想要公开的资讯，或者利用网站来提供相关的网络服务。人们可以通过网页浏览器来访问网站，获取自己需要的资讯或者享受网络服务</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 wthree-blog">
+					<div class="w3-agileits-blog">
+						<div class="w3-agileits-blog-img">
+							<a href="single.html"><img src="images/8.jpg" alt="" /></a>
+						</div>
+						<div class="w3-agileits-blog-text">
+							<a href="single.html">微信小程序</a>
+							<p>是一种不需要下载安装即可使用的应用，它实现了应用“触手可及”的梦想，用户扫一扫或搜一下即可打开应用。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 wthree-blog">
+					<div class="w3-agileits-blog">
+						<div class="w3-agileits-blog-img">
+							<a href="single.html"><img src="images/9.jpg" alt="" /></a>
+						</div>
+						<div class="w3-agileits-blog-text">
+							<a href="single.html">APP软件</a>
+							<p>手机软件的运行需要有相应的手机系统，目前（2017.6.1）主要的手机系统：1.苹果公司的iOS.2.谷歌公司的Android（安卓）系统。</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 wthree-blog">
+					<div class="w3-agileits-blog">
+						<div class="w3-agileits-blog-img">
+							<a href="single.html"><img src="images/7.jpg" alt="" /></a>
+						</div>
+						<div class="w3-agileits-blog-text">
+							<a href="single.html">网站是做</a>
+							<p>人们可以通过网站来发布自己想要公开的资讯，或者利用网站来提供相关的网络服务。人们可以通过网页浏览器来访问网站，获取自己需要的资讯或者享受网络服务</p>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //blog -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="agileinfo_footer_grids">
+				<div class="col-md-4 agileinfo_footer_grid">
+					<div class="agile-logo">
+						<h4><a href="index.html">辛普森 <span>互联网科技有限公司</span></a></h4>
+					</div>
+					<p>专注于互联网开发，打造IT品牌</p>
+					<div class="agileinfo-social-grids">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							<li><a href="#"><i class="fa fa-vk"></i></a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 agileinfo_footer_grid">
+					<h3>联系信息</h3>
+					<ul class="agileinfo_footer_grid_list">
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>许昌市<span>东城区智慧大道亨源通世纪广场1号楼1102室</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+					</ul>
+				</div>
+				<div class="col-md-4 agileinfo_footer_grid">
+					<h3>导航</h3>
+					<ul class="agileinfo_footer_grid_nav">
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="index.html">首页</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="about.html">关于我们</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="gallery.html">展示</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="typography.html">编排</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="icons.html">图标</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="mail.html">联系我们</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3agile_footer_copy">
+				<p>Copyright &copy; 2017.Company name All rights reserved.
+					<!-- <a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a> -->
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>	
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<!-- <link rel="shortcut icon" type="images/x-icon" href="images/favicon.jpg" media="screen" /> -->
+	<link rel="icon" href="images/favicon.jpg" type="image/x-icon"/> 
+	<style>
+		.animation {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		    animation: move 5s linear infinite alternate;
+		}
+		@keyframes move {
+		    0% {
+		        transform: translate(-100px, 0);
+		        background-color: red;
+		    }
+		    100% {
+		        transform: translate(800px, 0);
+		        background-color: yellow;
+		    }
+		}
+		.btn{
+			cursor: pointer;
+			width: 50px;
+			height: 20px;
+		}
+		.btn:hover{
+			background-color: pink;
+		}
+</style>
+</head>
+<body>
+	
+	<div class="animation"></div>
+	<div class="btn">stop</div>
+</body>
+<script type="text/javascript">
+	document.querySelector('.btn').addEventListener('click', function() {
+    let btn = document.querySelector('.btn');
+    let elem = document.querySelector('.animation');
+    let state = elem.style['animationPlayState'];
+    
+    if(state === 'paused') {
+        elem.style['animationPlayState'] = 'running';
+        btn.innerText = 'stop';
+    } else {
+        elem.style['animationPlayState'] = 'paused';
+        btn.innerText = 'play';
+    }
+    
+});
+</script>
+</html>
