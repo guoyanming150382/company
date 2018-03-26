@@ -1,0 +1,10 @@
+/* pages/index/xiangxi.wxss */
+.all{
+  padding: 30rpx;
+}
+
+.shouyi{
+  text-indent:2em;
+  font-size:30rpx;
+  line-height:1.5rem
+}

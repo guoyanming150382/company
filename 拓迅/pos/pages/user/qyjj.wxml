@@ -1,0 +1,11 @@
+<!--pages/user/qyjj.wxml-->
+<view class='all'>
+  <view style='width:100%;heigh:350rpx;'>
+    <image src='http://www.emmmmm.xyz/tx/logo1.png' mode='widthFix' style='width:100%;margin-bottom:20rpx;'></image>
+  </view>
+  <view style='text-indent:2em;font-size:30rpx;line-height:1.5rem'>河南拓迅文化传播有限公司作为可信赖的“团队成长”训练专家，我们以理论为指导、以实践为方式、以实用为内容、以实效为目的，为成长型企业提供从拓展、到内训、到机制的顾问式培训服务，精心引导企业持续健康发展，成就卓越企业。</view>
+  <view style='text-indent:2em;font-size:30rpx;line-height:1.5rem'>河南拓迅文化传播有限公司以5A团队执行解决方案为模型，通过A Question(执行问题)的深度调研，到Attitude(执行心态)的调整，到Action(执行能力)的提升，到团队A Platform(执行机制)的形成，最终实现A Team(高效执行团队文化)。</view>
+  <video style='z-index:666;width:100%;height:466rpx;margin-top:40rpx' autoplay='true' src='https://ossmediaoutput.lynkco.com/cms/lynkco/2017/12/04/1512382403887/LNC_99s_TVC_WIP10_1.mp4'></video>
+  <view style='font-weight:bolder;line-height:1.5rem;margin-top:20rpx;'>公司资质</view>
+  <image src='http://www.emmmmm.xyz/tx/zhizhao.png' mode='widthFix' style='width:100%;margin-top:20rpx;' class='ye'></image>
+</view>

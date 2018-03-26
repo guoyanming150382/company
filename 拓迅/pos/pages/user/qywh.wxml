@@ -1,0 +1,24 @@
+<!--pages/user/qywh.wxml-->
+<view class='all'>
+  <view style='width:100%;heigh:350rpx;'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516962740834&di=07eca91ea374a57c0b5c16dc0c1fffa9&imgtype=0&src=http%3A%2F%2Fpic2.16pic.com%2F00%2F06%2F55%2F16pic_655345_b.jpg' mode='widthFix' style='width:100%;'></image>
+  </view>
+  <view class='jianju' style='fony-size:40rpx;font-weight:bold'>核心价值观：</view>
+  <view style='text-indent:2em;' class='jianju'>勿忘初心、方得始终</view>
+  <view class='jianju' style='fony-size:40rpx;font-weight:bold'>企业愿景：</view>
+  <view style='text-indent:2em;' class='jianju'>1、态度决定一切，细节决定成败</view>
+  <view style='text-indent:2em;' class='jianju'>2、态度决定行为，行为培养性格，性格决定命运</view>
+  <view style='text-indent:2em;' class='jianju'>3、持诚信互利共荣，以厚德载物</view>
+  <view class='jianju' style='fony-size:40rpx;font-weight:bold'>经营理念：</view>
+  <view class='jianju' style='text-indent:2em;'>执行--敢于担当，按规定时间，高质量地完成预定结果</view>
+  <view class='jianju' style='text-indent:2em;'>学习--始终保持学习心态，不断完善提升自我</view>
+  <view class='jianju' style='text-indent:2em;'>团队--思想统一，形成合力，量才而用，追求团队成功</view>
+  <view class='jianju' style='text-indent:2em;'>管理--增强大局观，双赢思维，注重沟通调研，形成方法论</view>
+  <view class='jianju' style='text-indent:2em;'>计划--合理规划，严谨有序，要事第一，黄金时间办要事</view>
+  <view class='jianju' style='text-indent:2em;'>品质--精心设计，注重细节，一次性把事做对</view>
+  <view class='jianju' style='text-indent:2em;'>道德--正直诚信，恪守、监督并打击损害公司利益的行为</view>
+  <view class='jianju' style='text-indent:2em;'>梦想--持之以恒、真正为实现自身价值的梦想而奋斗，不为私心所困</view>
+  <view class='jianju' style='text-indent:2em;'>目标--坚持不懈地帮助客户提高生产力，提升自身社会品质</view>
+  <view class='jianju' style='text-indent:2em;'>原则--脚踏实地，实事求是，点滴创新，用数据说话</view>
+
+</view>

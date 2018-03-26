@@ -1,0 +1,5 @@
+/* pages/user/qyjj.wxss */
+.all{
+  padding: 30rpx;
+  box-sizing: border-box
+}

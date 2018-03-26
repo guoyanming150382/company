@@ -1,0 +1,77 @@
+<!--pages/user/user.wxml-->
+
+<view class="mine-wrapper">
+  <view class="avatar-wrapper" style='background-image: url(http://www.emmmmm.xyz/tx/logo1.png);background-size:100% 100%'>
+    <view>
+      <view class="avatar">
+        <image style="border-radius:50%;overflow:hidden;background-color:#fff;" src="{{userinfo.avatarUrl ? userinfo.avatarUrl:''}}"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="list-wrapper" style='margin-top:130rpx'>
+    <view class="weui-cells weui-cells_after-title">
+
+      <navigator url="qyjj" class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-cell__bd">关于我们</view>
+          <image src="http://59.110.163.174/qy/img/go.jpg"></image>
+        </view>
+      </navigator>
+      <navigator url="fzlc" class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-cell__bd">拓展基地</view>
+          <image src="http://59.110.163.174/qy/img/go.jpg"></image>
+        </view>
+      </navigator>
+      <navigator url="qywh" class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-cell__bd">企业文化</view>
+          <image src="http://59.110.163.174/qy/img/go.jpg"></image>
+        </view>
+      </navigator>
+      <view  class="weui-cell">
+        <view class="weui-cell__hd" bindtap='calling'>
+          <view class="weui-cell__bd">联系电话</view>
+          <image src="http://59.110.163.174/qy/img/go.jpg"></image>
+        </view>
+      </view>
+      <view  class="weui-cell">
+        <view class="weui-cell__hd" style='position:relative'>
+        <contact-button class='btn btn1' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn2' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn3' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn4' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn5' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn6' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn7' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn8' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn9' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn10' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn11' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn12' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn13' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn14' type="default-dark"  size="20" session-from="weapp"></contact-button>
+        <contact-button class='btn btn15' type="default-dark"  size="20" session-from="weapp"></contact-button>
+          <view class="weui-cell__bd">联系客服</view>
+          <image src="http://59.110.163.174/qy/img/go.jpg"></image>
+        </view>
+      </view>
+      <navigator bindtap='click' class="weui-cell" >
+        <view class="weui-cell__hd">
+          <view class="weui-cell__bd">定位导航</view>
+          <image src="http://59.110.163.174/qy/img/go.jpg"></image>
+        </view>
+      </navigator>
+      <view>
+      </view>
+    </view>
+  </view>
+  <view class='map'>
+    <image src='http://www.emmmmm.xyz/tx/wz.png' mode='widthFix'></image>
+  </view>
+  <view class='d1'>
+    <view>地址：河南省许昌市望田路土地局家属院1幢东起2单元5层东户</view>
+    <view>电话：15664216668</view>
+  </view>
+</view>

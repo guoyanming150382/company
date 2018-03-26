@@ -1,0 +1,117 @@
+/* pages/menu/menu.wxss */
+.menu_container {
+      display: flex;  
+    width: 100%;
+}
+
+
+.menu_item {
+    width: 25%;
+    text-align: center;
+    padding-top: 20rpx;
+    overflow: hidden;
+    box-sizing: border-box;
+       background: #eee
+}
+.menu_icon {
+  
+    width: 50%;
+    height: 94rpx;
+}
+
+.menu_pic {
+  margin: 10rpx;
+}
+.menu_pic .goods {
+  box-sizing: border-box;
+  float: left;
+  padding: 10rpx;
+  
+}
+.menu_pic .goods .img {
+  height: 250rpx;
+}
+
+.hide {
+  display: none;
+}
+.bstyle {
+  border-bottom:5rpx solid transparent;
+}
+
+.all{
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.all .l1{
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20rpx;
+  margin-top: 6rpx;
+}
+.all .l3{
+  font-size: 30rpx;
+  text-indent:2em;
+}
+
+/* 表格 */
+.table {
+  border: 0px solid darkgray;
+  width: 100%
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+  border-bottom: 1rpx solid #aaa
+}
+.td {
+  font-size: 30rpx;
+    width:50%;
+    justify-content: center;
+    height: 100rpx;
+    line-height: 40rpx;
+    padding: 10rpx;
+    box-sizing: border-box;
+}
+.bg-w{
+  background: snow;
+}
+
+.th {
+  width: 50%;
+  justify-content: center;
+  background: green;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+/* 项目操作 */
+
+.wall .wall-1{
+  width: 100%;
+  height: 20rpx;
+  background: green;
+}
+.wall .wall-2{
+  width:80%;
+  height: 180rpx;
+}
+.wall .wall-2 .wall-3{
+  width: 80%;
+  height: 180rpx;
+  float: left
+}
+.wall .wall-2 .wall-4{
+  width: 20%;
+  height: 180rpx;
+  float: right
+}
+.wall .wall-2 .wall-4 image{
+  width: 20%;
+  height: 180rpx;
+}

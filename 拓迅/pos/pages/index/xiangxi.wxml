@@ -1,0 +1,18 @@
+<!--pages/index/xiangxi.wxml-->
+<view class='all'>
+  <view style='font-weight:bold;color:red;line-height:1.5rem;font-size:40rpx'>团队凝聚力拓展课程，推动企业团队成长，助力中国经济腾飞！</view>
+  <view style='font-size:40rpx;margin-top:20rpx;color:green'>【课程背景】</view>
+  <view style='text-indent:2em;font-size:30rpx;line-height:1.5rem'>随着市场竞争的日趋激烈，组织内外环境的复杂性、不确定性日益增强，知识型员工的增多和更加专业化的分工，使得传统职能组织结构下依靠优秀的个人就能取得好业绩的方式不再适应21世纪这个快速变迁的时代。团队作为一种先进的组织形态，越来越引起企业的重视，许多企业已经从理念、方法等管理层面进行团队建设。</view>
+  <view style='text-indent:2em;font-size:30rpx;line-height:1.5rem'>团队凝聚力和向心力是卓越团队的重要保障，而团队拓展训练是提升团队凝聚力最有效的方式。</view>
+  <image src='http://www.emmmmm.xyz/tx/qiye1-1.jpg' mode='widthFix' style='width:100%;margin-top:15rpx'></image>
+  <view style='font-size:40rpx;margin-top:20rpx;color:green'>【课程收益】</view>
+  <view class='shouyi'>培养团队观念下的全局意识和团队精神</view>
+  <view class='shouyi'>培养相互关心、支持的工作态度，增强团队凝聚力</view>
+  <view class='shouyi'>通过团队协作共同完成各项艰巨任务， 培养互信互助意识，增强团队工作效率</view>
+  <view class='shouyi'>培训团队成员的主动沟通意识,改善组织内部的沟通与信息交流</view>
+  <view class='shouyi'>培养在压力与困难面前勇于挑战的信念</view>
+  <view class='shouyi'>增进学员对团队力量的认识、培养学员的归属感</view>
+  <image src='http://www.emmmmm.xyz/tx/qiye1-2.jpg' mode='widthFix' style='width:100%;margin-top:15rpx;'></image>
+</view>
+
+  

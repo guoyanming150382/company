@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/service/service",
+    "pages/user/user",
+    "pages/fenlei/fenlei",
+    "pages/user/qyjj",
+    "pages/user/fzlc",
+    "pages/user/qywh",
+    "pages/index/xiangxi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "sps",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#008000",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/indexs.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/fenlei/fenlei",
+        "iconPath": "image/menu.png",
+        "selectedIconPath": "image/menus.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "iconPath": "image/call.png",
+        "selectedIconPath": "image/calls.png",
+        "text": "业务咨询"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/users.png",
+        "text": "关于我们"
+      }
+    ]
+  }
+}

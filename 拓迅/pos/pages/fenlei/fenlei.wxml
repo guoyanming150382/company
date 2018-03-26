@@ -1,0 +1,89 @@
+<!--pages/menu/menu.wxml-->
+
+<view class="menu_container">
+  <view class="menu_item">
+    <view bindtap='showhide1' data-type='公职考试'>
+      <image class="menu_icon" src="{{img1}}"></image>
+      <text class='bstyle' style='font-size:22rpx;padding-bottom:20rpx;display:block;text-align:center;color:#000;{{bstyle1}}'>课程介绍</text>
+    </view>
+  </view>
+  <view class="menu_item">
+    <view bindtap='showhide2' data-type='资格证考试'>
+      <image class="menu_icon" src="{{img2}}" />
+      <text class='bstyle' style='font-size:22rpx;padding-bottom:20rpx;display:block;text-align:center;color:#000;{{bstyle2}}'>课程主题</text>
+    </view>
+  </view>
+  <view class="menu_item">
+    <view bindtap='showhide3' data-type='学历提升'>
+      <image class="menu_icon" src="{{img3}}" />
+      <text class='bstyle' style='font-size:22rpx;padding-bottom:20rpx;display:block;text-align:center;color:#000;{{bstyle3}}'>项目操作</text>
+    </view>
+  </view>
+  <view class="menu_item">
+    <view url='' bindtap='showhide' data-type='其他'>
+      <image class="menu_icon" src="{{img4}}" />
+      <text class='bstyle' style='font-size:22rpx;padding-bottom:20rpx;display:block;text-align:center;color:#000;{{bstyle4}}'>安全保障</text>
+    </view>
+  </view>
+</view>
+
+
+<view style='{{style1}}' class="hide">
+  <view class='all' style='line-height: 1.5rem;width:100%;'>
+    <view class='l1'>课程介绍</view>
+    <view class='l3'>拓展训练：团队凝聚力、新员工训练、团队建设、MBA|MPA、学成素质、客户联谊、趣味运动会、企业年会、野外宿营、峡谷漂流、公务员专项、碧海蓝天</view>
+    <view class='l3'>体验式培训：行动销售、迷宫商城、沙漠掘金、啤酒游戏</view>
+    <view class='l3'>管培训练 ：凝聚的力量、Mini MBA、Mini EMBA、商业模式</view>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516872337369&di=80ef6088b6c529fb5fa4bc14fc2a345a&imgtype=0&src=http%3A%2F%2Fsc.jb51.net%2Fuploads%2Fallimg%2F140324%2F11-140324153459203.jpg' style='width:100%;margin-top:20rpx' mode='widthFix'></image>
+  </view>
+  
+</view>
+
+
+<view style='{{style2}}' class="hide">
+  <view style='width:100%;padding:10rpx;box-sizing:border-box'>
+    <view style='margin-bottom:20rpx;margin-top:5rpx;font-size: 50rpx;font-weight: bold;text-align: center'>课程主题</view>
+    <view class="table">
+      <view class="tr bg-w">
+        <view class="th">课程主题</view>
+        <view class="th">课程的主要项目</view>
+      </view>
+      <block wx:for="{{listData}}" wx:key="{{code}}">
+        <view class="tr">
+          <view class="td" style=' border-right: 1rpx solid #aaa'>{{item.code}}</view>
+          <view class="td">{{item.text}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+
+<view style='{{style3}}' class="hide">
+   <view style='margin-bottom:20rpx;margin-top:15rpx;font-size: 50rpx;font-weight: bold;text-align: center'>项目操作</view>
+  <view wx:for="{{menu3}}" style='width:100%;height:250rpx;padding:0 10rpx 0 10rpx;box-sizing:border-box;font-size:30rpx;background:#eee;'>
+    <view style='height:25%;width:100%;background:green;color:white;line-height:60rpx;padding-left:20rpx;box-sizing:border-box;border:1rpx solid #000'>项目：{{item.text3}}</view>
+    <view style='height:75%;width:75%;float:left;font-size:26rpx;padding-top:10rpx;box-sizing:border-box;border-right:1rpx solid #000'>
+      <view>【程序】：{{item.text1}}</view>
+      <view>【功能】：{{item.text2}}</view>
+    </view>
+    <image src="{{item.url}}" style='height:75%;width:25%;float:right;' />
+  </view>
+</view>
+
+
+
+<view style='{{style4}}' class="hide">
+  <view class='all' style='line-height: 1.5rem;width:100%'>
+    <view class='l1'>安全保障</view>
+    <view class='l3' style='margin-bottom:20rpx'>安全对拓迅不仅意味着完善的训练体系、严密的制度、它更是我们企业文化的一部分，它已经融入到我们拓迅人的日常工作和生活习惯中。我们的任何项目始终如一地将安全保障放在各项工作的首位，日常活动均经过精心的设计与实验。经验丰富的教官团队严格地依照安全程序指导、以及正确实施项目的操作方法，把安全隐患的萌芽果断扼杀。</view>
+    <view class='l1'>相关安全措施</view>
+    <view class='l3'>1、专业旅游大巴车，司机全部是7年以上驾龄；</view>
+    <view class='l3'>2、全封闭式营区管理模式，总教官与助教轮流值班巡逻，排除安全隐患；</view>
+    <view class='l3'>3、严格规范操作方法，各种高空项目实施前，会有专业人员提前做好安全准备；</view>
+    <view class='l3'>4、所使用器械装备全部遵循UIAA（国际登山联合会认证）、CE（欧洲安全标准）；</view>
+    <view class='l3'>5、常用急救药品全套配备；</view>
+    <view class='l3'>6、多年积累的实战经验，教练、安全员、助教等全部从事户外运动项目3年以上；</view>
+  </view>
+</view>
+

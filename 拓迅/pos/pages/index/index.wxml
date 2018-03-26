@@ -1,0 +1,107 @@
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.url}}" style='width:100%' mode='widthFix' />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='anniu' style='{{styleaa}}' bindtap='hide'>
+  <view>公司简介</view>
+  <image src='../../image/but.png'></image>
+</view>
+<view class='anniu' style='{{sty1}}' bindtap='show'>
+  <view style='color:red'>公司简介</view>
+  <image src='../../image/buts.png'></image>
+</view>
+<view class='jianjie' style='{{styleaa}}'>
+  <image src='http://www.emmmmm.xyz/tx/logo2.png'></image>
+  <view class='jianjie-word'>河南拓迅文化传播有限公司是许昌地区领先的拓展培训公司，以团队建设为核心目标，以公司独特的优势服务于广大企事业单位群体，迄今为止，服务过的知名企业达五百多家。是专业的拓展培训服务商，拓展训练课程、真人CS野战课程、沙盘模拟课程、趣味运动会、企业年会策划研发商和拓展培训产品供应商；是拓展培训在河南许昌地区发展的开拓者和领导者！</view>
+  <view class='jianjie-word'>公司长期致力于开发新颖、独特、匹配的体验式培训（拓展训练、真人CS野战、企业培训、趣味运动会、主题活动、年会策划）课程及方案，为客户方独立定制新颖、实用的成长解决方案；
+  </view>
+  <video style='z-index:666;width:100%;height:466rpx;margin-top:40rpx' autoplay='true' src='https://ossmediaoutput.lynkco.com/cms/lynkco/2017/12/04/1512382403887/LNC_99s_TVC_WIP10_1.mp4'></video>
+</view>
+
+
+<view style='background-color:#fff;' class="swiper-tab">
+  <!-- <view style='display:inline-block;position:relative'>
+    <image src='../../image/l1.png' style='width:30rpx;height:30rpx;position:absolute;left:-25rpx;top:-54rpx'></image>
+  </view> -->
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex;overflow:auto;display:inline-block;width:90%;float:left;">
+    <view class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">企业篇</view>
+    <view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">青少年篇</view>
+    <view class="swiper-tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">事业单位篇</view>
+    <view class="swiper-tab-item {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">内训类</view>
+    <view class="swiper-tab-item {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">安保类</view>
+    <view class="swiper-tab-item {{currentTab==5 ? 'on' : ''}}" data-current="5" bindtap="swichNav">冬.夏令营</view>
+    <view class="swiper-tab-item {{currentTab==6 ? 'on' : ''}}" data-current="6" bindtap="swichNav">客户见证</view>
+  </scroll-view>
+  <view style='display:inline-block;margin-top:24rpx' bindtap='next'>
+    <image src='../../image/rr.png' style='width:35rpx;height:35rpx;float:left'></image>
+  </view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="{{'height:'+tabheight}};margin-top:20rpx" bindchange="bindChange">
+  <swiper-item>
+
+    <view wx:for="{{menus1}}" style='width:50%;height:250rpx;background-color: #eee;display:inline-block;text-align:center;float:left;'>
+      <navigator url='xiangxi' style='width:100%;height:80%;'>
+        <image src="{{item.url}}" style='width:90%;height:100%;' />
+        <view style='text-align:center;font-size:30rpx'>{{item.text}}</view>
+      </navigator>
+    </view>
+
+  </swiper-item>
+  <swiper-item>
+    <view wx:for="{{menus2}}" style='width:50%;height:250rpx;background-color: #eee;display:inline-block;text-align:center;float:left;'>
+      <navigator url='xiangxi' style='width:100%;height:80%;'>
+        <image src="{{item.url}}" style='width:90%;height:100%;' />
+        <view style='text-align:center;font-size:30rpx'>{{item.text}}</view>
+      </navigator>
+    </view>
+  </swiper-item>
+
+
+  <swiper-item>
+    <view wx:for="{{menus3}}" style='width:50%;height:250rpx;background-color: #eee;display:inline-block;text-align:center;float:left;'>
+      <navigator url='xiangxi' style='width:100%;height:80%;'>
+        <image src="{{item.url}}" style='width:90%;height:100%;' />
+        <view style='text-align:center;font-size:30rpx'>{{item.text}}</view>
+      </navigator>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view wx:for="{{menus4}}" style='width:50%;height:250rpx;background-color: #eee;display:inline-block;text-align:center;float:left;'>
+      <navigator url='xiangxi' style='width:100%;height:80%;'>
+        <image src="{{item.url}}" style='width:90%;height:100%;' />
+        <view style='text-align:center;font-size:30rpx'>{{item.text}}</view>
+      </navigator>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view wx:for="{{menus5}}" style='width:50%;height:250rpx;background-color: #eee;display:inline-block;text-align:center;float:left;'>
+      <navigator url='xiangxi' style='width:100%;height:80%;'>
+        <image src="{{item.url}}" style='width:90%;height:100%;' />
+        <view style='text-align:center;font-size:30rpx'>{{item.text}}</view>
+      </navigator>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view wx:for="{{menus6}}" style='width:50%;height:250rpx;background-color: #eee;display:inline-block;text-align:center;float:left;'>
+      <navigator url='xiangxi' style='width:100%;height:80%;'>
+        <image src="{{item.url}}" style='width:90%;height:100%;' />
+        <view style='text-align:center;font-size:30rpx'>{{item.text}}</view>
+      </navigator>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view wx:for="{{menus7}}" style='width:50%;height:250rpx;background-color: #eee;display:inline-block;text-align:center;float:left;'>
+      <navigator url='xiangxi' style='width:100%;height:80%;'>
+        <image src="{{item.url}}" style='width:90%;height:100%;' />
+        <view style='text-align:center;font-size:30rpx'>案例：{{item.text}}</view>
+      </navigator>
+    </view>
+  </swiper-item>
+</swiper>
