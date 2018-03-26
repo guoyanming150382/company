@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+}
+
+.hengfu {
+	z-index: 10000;
+	display: none;
+	background-image: url(../images/bck.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	width: 420px;
+	height: 250px;
+	position: fixed;
+	margin-left: -210px;
+	margin-top: -125px;
+	top: 50%;
+	left: 50%;
+}
+
+.hengfu a {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hengfu .close {
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-image: url(../images/close_03.png);
+	width: 32px;
+	height: 32px;
+	background-color: transparent;
+}
+
+.hengfu .h_q1 {
+	position: absolute;
+	top: 140px;
+	left: 8px;
+	background-image: url(../images/q1_12.png);
+	width: 81px;
+	height: 88px;
+}
+
+.hengfu .h_q2 {
+	position: absolute;
+	top: 83px;
+	left: 87px;
+	background-image: url(../images/q2_07.png);
+	width: 76px;
+	height: 97px;
+}
+
+.hengfu .h_q3 {
+	position: absolute;
+	top: 137px;
+	left: 163px;
+	background-image: url(../images/q3_17.png);
+	width: 75px;
+	height: 87px;
+}
+
+.hengfu .h_q4 {
+	position: absolute;
+	top: 96px;
+	left: 244px;
+	background-image: url(../images/q5_07.png);
+	width: 88px;
+	height: 102px;
+}
+
+.hengfu .h_q5 {
+	position: absolute;
+	top: 117px;
+	left: 338px;
+	background-image: url(../images/q6_07.png);
+	width: 78px;
+	height: 100px;
+}
+
+
+/*--竖版--*/
+
+.shuban {
+	z-index: 9999;
+	background-image: url(../images/shuban.png);
+	background-repeat: no-repeat;
+	width: 130px;
+	height: 292px;
+	position: relative;
+	position: fixed;
+	top: 50%;
+	margin-top: -146px;
+}
+
+.shuban span {
+	position: absolute;
+	bottom: 0px;
+	left: -12px;
+}
+
+.shuban span img {
+	width: 76px;
+	height: 57px;
+}
+
+.shuban a {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	display: block;
+	width: 120px;
+	height: 42px;
+	background-repeat: no-repeat;
+}
+
+.shuban .close_01 {
+	cursor: pointer;
+	float: right;
+	margin: -3px -3px 0 0;
+	width: 18px;
+	height: 18px;
+	background-image: url(../images/close_01_03.png);
+}
+
+.shuban .s_q1 {
+	margin-top: 96px;
+	background-image: url(../images/qq_03.png);
+}
+
+.shuban .s_q2 {
+	background-image: url(../images/qq_06.png);
+}
+
+.shuban .s_q3 {
+	background-image: url(../images/qq_08.png);
+}
+
+.shuban .s_q4 {
+	background-image: url(../images/qq_03.png);
+}
+
+.shuban .s_q5 {
+	background-image: url(../images/qq_12.png);
+}

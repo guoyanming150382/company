@@ -1,0 +1,357 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/****CSS重置*****/
+
+body {
+	margin: 0;
+	background-color: white;
+	min-width: 1100px;
+	-webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+html,
+body {
+	height: 100%;
+	min-width: 1100px;
+}
+
+* {
+	font-family: "Microsoft YaHei";
+	outline: none;
+}
+
+ul,
+dd,
+dl,
+select {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: block;
+}
+
+img {
+	border: none;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+input {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+button {
+	border: none;
+}
+
+table th {
+	font-weight: normal;
+}
+
+
+/*****导航*****/
+
+.anli_nav_box {
+	width: 236px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	height: 100%;
+	transition: all 0.4s;
+}
+
+.anli_nav_box.current {
+	left: -300px;
+}
+
+.anli_nav {
+	background-image: url(../images/anli_02.jpg);
+	background-repeat: no-repeat;
+	background-color: #fff;
+	height: 100%;
+	padding-top: 105px;
+}
+
+.anli_nav .logo {
+	display: block;
+	margin: 0 auto;
+	width: 126px;
+}
+
+.anli_nav p {
+	font-size: 12px;
+	color: #777777;
+	text-align: right;
+	line-height: 1.5;
+	padding-right: 10px;
+	letter-spacing: 2px;
+	position: absolute;
+	right: 0px;
+	width: 200px;
+	bottom: 10px;
+}
+
+.nav_anli {
+	width: 134px;
+	margin: 116px auto 0;
+}
+
+.nav_anli .box {
+	overflow: hidden;
+}
+
+.anli_nav li {
+	width: 134px;
+	height: 35px;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	color: #fcdc4c;
+	margin-bottom: 22px;
+}
+
+.anli_nav li.current a span {
+	color: #fcdc4c;
+}
+
+.anli_nav li.current svg line {
+	stroke: #fcdc4c;
+}
+
+.anli_nav li a span {
+	color: #fff;
+	line-height: 35px;
+	-webkit-transition: color 0.4s 0.5s;
+	transition: color 0.4s 0.5s;
+}
+
+.anli_nav li.box:hover span {
+	color: #fcdc4c;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.anli_nav .box svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 111;
+}
+
+.anli_nav .box svg line {
+	stroke-width: 3;
+	stroke: transparent;
+	fill: none;
+	-webkit-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+
+.anli_nav .box:hover svg line {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.anli_nav .box svg line.top,
+.anli_nav .box svg line.bottom {
+	stroke-dasharray: 134;
+}
+
+.anli_nav .box svg line.left,
+.anli_nav .box svg line.right {
+	stroke-dasharray: 35;
+}
+
+.anli_nav .box:hover svg line {
+	stroke: #fcdc4c;
+}
+
+.anli_nav .box:hover svg line.top {
+	-webkit-transform: translateX(-268px);
+	transform: translateX(-268px);
+}
+
+.anli_nav .box:hover svg line.bottom {
+	-webkit-transform: translateX(268px);
+	transform: translateX(268px);
+}
+
+.anli_nav .box:hover svg line.left {
+	-webkit-transform: translateY(70px);
+	transform: translateY(70px);
+}
+
+.anli_nav .box:hover svg line.right {
+	-webkit-transform: translateY(-70px);
+	transform: translateY(-70px);
+}
+
+@media (max-width:1240px) {
+	.anli_nav_box {
+		width: 210px;
+	}
+}
+
+
+/***gotop开始***/
+
+.gotop {
+	width: 50px;
+	height: 101px;
+	position: fixed;
+	right: 11px;
+	bottom: 8px;
+	display: none;
+	z-index: 44;
+}
+
+.gotop .qqkefu {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/qq2.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	transition: all linear 0.2s;
+	-transition: all linear 0.2s;
+	cursor: pointer;
+	margin-bottom: 1px;
+}
+
+.gotop .qqkefu:hover {
+	background-position: left bottom;
+}
+
+.gotop .topshang {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/backtop.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	transition: all linear 0.2s;
+	-transition: all linear 0.2s;
+	cursor: pointer;
+}
+
+.gotop .topshang:hover {
+	background-position: left bottom;
+}
+
+
+/***gotop结束***/
+
+
+/*弹窗*/
+
+.popup {
+	width: 500px;
+	height: 230px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -115px;
+	background: rgba(255, 255, 255, 0.9);
+	display: none;
+	border-radius: 8px;
+	border: 1px dashed #ddd;
+}
+
+.popup.current {
+	display: block;
+	-webkit-animation: moveFromTop 1s;
+	animation: moveFromTop 1s;
+}
+
+@-webkit-keyframes moveFromTop {
+	0% {
+		-webkit-transform: scale(0);
+	}
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes moveFromTop {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.popup p {
+	font-size: 36px;
+	color: #555;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 4px;
+	margin-top: 22px;
+}
+
+.popup p span {
+	color: #ff534b;
+	;
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+
+.popup .btnbox {
+	overflow: hidden;
+}
+
+.popup .btnbox button {
+	width: 194px;
+	height: 49px;
+	border: none;
+	margin-top: 34px;
+	cursor: pointer;
+}
+
+.popup .btnbox .cancel {
+	float: left;
+	margin-left: 30px;
+	color: #fff;
+	font-size: 22px;
+	background: rgba(188, 188, 188, 0.8);
+}
+
+.popup .btnbox .consultation {
+	float: right;
+	margin-right: 30px;
+	color: #fff;
+	font-size: 22px;
+	background: rgba(255, 83, 75, 0.8);
+}

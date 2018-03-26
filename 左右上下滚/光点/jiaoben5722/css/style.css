@@ -1,0 +1,111 @@
+body {
+  background: #222;/*黑*/
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 920px;
+  height: 590px;
+  overflow: hidden;
+}
+
+.row {
+  position: relative;
+  margin-bottom: 6.5%;
+  width: 120%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.row:nth-of-type(odd) {
+  left: -6.5%;
+}
+
+.circle {
+  mix-blend-mode: screen;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  -webkit-animation: pulsate 5s ease-in-out infinite alternate;
+          animation: pulsate 5s ease-in-out infinite alternate;
+}
+.circle:nth-of-type(1) {
+  background: #40bf80;/*浅绿*/
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.circle:nth-of-type(2) {
+  background: #40bfbf;/*浅深绿*/
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.circle:nth-of-type(3) {
+  background: #4080bf;/*蓝*/
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.circle:nth-of-type(4) {
+  background: #4040bf;/*深蓝*/
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.circle:nth-of-type(5) {
+  background: #8040bf;/*深蓝*/
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+.circle:nth-of-type(6) {
+  background: #bf40bf;/*紫*/
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.circle:nth-of-type(7) {
+  background: #bf4080;/*深紫*/
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+.circle:nth-of-type(8) {
+  background: #bf4040;/*红*/
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.circle:nth-of-type(9) {
+  background: #bf8040;/*土黄*/
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+.circle:nth-of-type(10) {
+  background: #bfbf40;/*暗黄*/
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(39);
+            transform: scale(39);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(39);
+            transform: scale(39);
+  }
+}

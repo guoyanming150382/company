@@ -1,0 +1,576 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge /">
+		<meta name="renderer" content="webkit">
+		<meta name="description" content="河南灵秀网络科技有限公司是一家专业从事网站建设,app开发,微信公众号二次开发的公司,从业8年来积累了丰富的互联网建设经验,致力于为客户提供专业的app开发、公众号开发及网站建设方案。网站建设、app开发、微信公众号开发就找河南灵秀">
+		<meta name="keywords" content="河南网站建设,河南app开发,郑州微信公众号开发,网站建设公司">
+		<meta name="searchtitle" content="河南网站建设,河南app开发,郑州微信公众号开发,网站建设公司">
+		<meta name="baidu-site-verification" content="i2SBJcf6dK" />
+		<meta name="360-site-verification" content="292a9b40b1c0cdc5ea23682d14cc9e19" />
+		<title>河南网站建设,河南app开发,郑州微信公众号开发,网站建设公司-河南灵秀网络科技</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<!--<script src="http://siteapp.baidu.com/static/webappservice/uaredirect.js" type="text/javascript"></script>
+<script type="text/javascript">uaredirect("http://leasom.com/mobile/index.html");</script>-->
+		<!--<script>
+
+    if(navigator.platform.indexOf('Win32')!=-1){ 
+
+    //pc
+
+       // window.location.href="http://www.cccuu.com";
+
+     }else{ 
+
+   //shouji
+
+        window.location.href="http://www.cccuu.com/mobile";
+
+      } 
+
+</script>-->
+		<SCRIPT LANGUAGE="JavaScript">
+			function mobile_device_detect(url) {
+				var thisOS = navigator.platform;
+				var os = new Array("iPhone", "iPod", "iPad", "android", "Nokia", "SymbianOS", "Symbian", "Windows Phone", "Phone", "Linux armv71", "MAUI", "UNTRUSTED/1.0", "Windows CE", "BlackBerry", "IEMobile");
+				for(var i = 0; i < os.length; i++) {
+					if(thisOS.match(os[i])) {
+						window.location = url;
+					}
+				}
+
+				//因为相当部分的手机系统不知道信息,这里是做临时性特殊辨认
+				if(navigator.platform.indexOf('iPad') != -1) {
+					window.location = url;
+				}
+
+				//做这一部分是因为Android手机的内核也是Linux
+				//但是navigator.platform显示信息不尽相同情况繁多,因此从浏览器下手，即用navigator.appVersion信息做判断
+				var check = navigator.appVersion;
+
+				if(check.match(/linux/i)) {
+					//X11是UC浏览器的平台 ，如果有其他特殊浏览器也可以附加上条件
+					if(check.match(/mobile/i) || check.match(/X11/i)) {
+						window.location = url;
+					}
+				}
+
+				//类in_array函数
+				Array.prototype.in_array = function(e) {
+					for(i = 0; i < this.length; i++) {
+						if(this[i] == e)
+							return true;
+					}
+					return false;
+				}
+			}
+			mobile_device_detect("http://www.cccuu.com/mobile");
+		</SCRIPT>
+
+		<script charset="utf-8" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+		<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20000494/10056704.js"></script>
+		<!-- WPA Button Begin -->
+		<!--<script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzkzODAxNjgzOF8zMjkxMjdfNDAwNzc3NzA1MV8"></script>-->
+		<!-- WPA Button END -->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "//hm.baidu.com/hm.js?effff41ff312713e72a3bddbe11cb6c9";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="videobox">
+			<div class="video">
+				<video id="myVideo" width="900px" poster="images/1-1.jpg" oncontextmenu="return false;" src="">
+				</video>
+				<a id="boo"></a>
+			</div>
+			<div class="closex" id="clo"><img src="images/closex.png"></div>
+		</div>
+		<script>
+			window.onload = function() {
+				var boo = document.getElementById('boo');
+				var myVideo = document.getElementById('myVideo');
+				var img1 = document.getElementById('img1');
+				var clo = document.getElementById('clo');
+				if(myVideo.duration === undefined) {
+					boo.style.display = 'none';
+				}
+				myVideo.onended = function() {
+					myVideo.load();
+					boo.style.display = 'block';
+					myVideo.controls = "";
+				};
+				boo.onclick = function() {
+					boo.style.display = 'none';
+					myVideo.src = '/video/leam.mp4';
+					myVideo.play();
+					myVideo.controls = "controls";
+				}
+				clo.onclick = function() {
+					myVideo.pause();
+					$(".popup").addClass("current");
+					$(".cancel").click(function() {
+						$(".popup").removeClass("current");
+					})
+				}
+			}
+		</script>
+
+		<!--左侧导航-->
+		<div class="leftnav">
+			<div class="leftmenu">
+				<ul>
+					<li class="wow animated" data-wow-delay="0s" onClick="window.location.href='about.html'">
+						<a>灵</a><i class="oi1"></i></li>
+					<li class="wow animated" data-wow-delay="0.3s" onClick="window.open('http://cccuu.com/Public/home/video/leam.mp4')">
+						<a>秀</a><i class="oi2"></i></li>
+					<li class="wow animated" data-wow-delay="0.6s" onClick="window.location.href='news.html'">
+						<a>科</a><i class="oi3"></i></li>
+					<li class="wow animated" data-wow-delay="0.9s" onClick="window.location.href='sys.html'">
+						<a>技</a><i class="oi4"></i></li>
+					<li class="wow animated" data-wow-delay="1.2s" onClick="window.location.href='team.html'">
+						<a>欢</a><i class="oi5"></i></li>
+					<li class="wow animated" data-wow-delay="1.5s" onclick="doyoo.util.openChat('g=10052701');return false">
+						<a>迎</a><i class="oi6"></i></li>
+					<li class="wow animated" data-wow-delay="1.8s" onclick="doyoo.util.openChat('g=10052701');return false">
+						<a>您</a><i class="oi7"></i></li>
+					<script type="text/javascript">
+						BizQQWPA.addCustom({
+							aty: '0',
+							a: '0',
+							nameAccount: 4007777051,
+							selector: 'BizQQWPA7'
+						});
+					</script>
+					<li class="close wow animated" data-wow-delay="2.1s" onClick="window.location.href='#'">
+						<a>x</a><i class="oi8"></i></li>
+				</ul>
+			</div>
+		</div>
+		<!--左侧导航-->
+
+		<div class="ml-nav">
+			<div class="center-wrap clearfix">
+				<a class="ml-logo" href="index.html"><img src="images/logo.png" alt="" /></a>
+				<ul class="ml-link">
+					<!-- 导航 -->
+
+					<li class="current first">
+						<a href="index.html">首页</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="web.html">网站建设</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="app.html">APP开发</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="wechat.html">微信开发</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="sys.html">系统开发</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="anli.html" target="_blank">案例展示</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="team.html">团队成员</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="news.html">公司动态</a>
+						<div></div>
+					</li>
+					<li>
+						<a href="about.html">关于我们</a>
+						<div></div>
+					</li>
+					<!-- 导航 -->
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div id="dowebok">
+			<div class="section banner active rela">
+				<a href="#page2 " class="arrow"></a>
+				<div class="lunbo">
+					<a class="prev" href="javascript:void(0)"></a>
+					<a class="next" href="javascript:void(0)"></a>
+					<div class="item">
+						<div>
+							<h2>品质 + 服务 · 就是我们</h2>
+							<p>近10年的发展历程，灵秀，始终坚持“服务是根本，技术才是征服您的唯一”的发展理念</p>
+						</div>
+						<div>
+							<h2>终身免费维护</h2>
+							<p>行业内，唯一一家敢于承诺客户终身免费维护的后期服务，因为公司规模大，所以我们敢于承担</p>
+						</div>
+						<div>
+							<h2>0元体验建站</h2>
+							<p>还在茫然吗？还在犹豫不决吗？灵秀，让您0元体验建站，抢先玩转互联网</p>
+						</div>
+					</div>
+				</div>
+				<div class="button">
+					<div class="buttonbox">
+						<a class="first" onclick="doyoo.util.openChat('g=10052701');return false">立刻咨询 </a>
+						<span class="bg"></span>
+					</div>
+				</div>
+			</div>
+			<div class="section footer fp-auto-height">
+				<ul class="sed_nav">
+					<li>
+						<a href="web.html">
+							<img class="imgg" src="images/xxa1.jpg" alt="">
+							<!--<span class="con"><span>网站建设</span><img src="images/jian.png" alt=""></span>-->
+						</a>
+					</li>
+					<li>
+						<a href="app.html">
+							<img class="imgg" src="images/xxa2.jpg">
+							<!--<span class="con"><span>APP开发</span><img src="images/jian.png" alt=""></span>-->
+						</a>
+					</li>
+					<li>
+						<a href="wechat.html">
+							<img class="imgg" src="images/xxa3.jpg">
+							<!--<span class="con"><span>微信开发</span><img src="images/jian.png" alt=""></span>-->
+						</a>
+					</li>
+					<li>
+						<a href="sys.html" target="_blank">
+							<img class="imgg" src="images/xxa4.jpg" alt="">
+							<!--<span class="con"><span>系统开发</span><img src="images/jian.png" alt=""></span>-->
+						</a>
+					</li>
+				</ul>
+				<div class="foot">
+					<div class="wrap">
+						<div class="fleft">
+							<ul>
+								<!-- 导航 -->
+
+								<li class="current first">
+									<a href="index.html">首页</a>
+									<div></div>
+								</li>
+								<li>
+									<a href="web.html">网站建设</a>
+									<div></div>
+								</li>
+								<li>
+									<a href="app.html">APP开发</a>
+									<div></div>
+								</li>
+								<li>
+									<a href="wechat.html">微信开发</a>
+									<div></div>
+								</li>
+								<li>
+									<a href="sys.html">系统开发</a>
+									<div></div>
+								</li>
+								<li>
+									<a href="anli.html" target="_blank">案例展示</a>
+									<div></div>
+								</li>
+								<li>
+									<a href="team.html">团队成员</a>
+									<div></div>
+								</li>
+								<li>
+									<a href="news.html">公司动态</a>
+									<div></div>
+								</li>
+								<li>
+									<a href="about.html">关于我们</a>
+									<div></div>
+								</li>
+								<!-- 导航 -->
+								<span id="spad"></span>
+
+							</ul>
+
+							<div class="clear"></div>
+							<p>Copyright © 河南灵秀网络科技有限公司 All Rights Reserved 版权
+								<br/><span><a target="_blank" href="http://www.miitbeian.gov.cn">豫ICP备16017713号</a></span>
+							</p>
+						</div>
+						<div class="fright">
+							<a href="javascript:void(0)" onclick="doyoo.util.openChat('g=10052701');return false"><b style="border-radius:100px; display:inline-block; line-height:16px; background-color:#fff; width:16px; height:16px; color:#ffc900; margin-right:3px;">？</b>在线咨询</a>
+							<div class="clear"></div>
+							<p class="number">0371 6016 6357 或 0371 5857 6315</p>
+							<p class="address">地址：郑州市金水东路与东风南路交汇处 绿地.原盛国际1号楼B座7楼132户</p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--客服-->
+		<div class="shuban" style="right:10px;">
+			<b class="close_01"></b>
+			<a class="s_q1" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2853325060&site=qq&menu=yes"></a>
+			<a class="s_q2" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2853325059&site=qq&menu=yes"></a>
+			<a class="s_q5" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2853325064&site=qq&menu=yes"></a>
+			<span><img src="images/yun.png"></span>
+		</div>
+		<script type="text/javascript">
+			BizQQWPA.addCustom({
+				aty: '0',
+				a: '0',
+				nameAccount: 4007777051,
+				selector: 'BizQQWPA'
+			});
+		</script>
+
+		<!--弹窗-->
+		<div class="popup">
+			<p>立即联系我们的商务顾问<br> 多一份
+				<span>方案</span>&nbsp;&nbsp; 多一份<span>选择</span></p>
+			<div class="btnbox">
+				<button class="cancel">暂不需要</button>
+				<button class="consultation" onclick="doyoo.util.openChat('g=10052701');return false">立即咨询</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+			BizQQWPA.addCustom({
+				aty: '0',
+				a: '0',
+				nameAccount: 4007777051,
+				selector: 'BizQQWPA2'
+			});
+		</script>
+
+		<!--<!--活动图--
+<div class="acbg"></div>
+<div class="activity">
+	<a class="acclose"></a>
+	<img src="/Public/home/images/activity.jpg" onclick="doyoo.util.openChat('g=10052701');return false">
+</div>
+-->
+
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<!--<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+-->
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script src="js/basee.js"></script>
+
+		<!--<script src="/Public/home/js/main.js"></script>
+<script src="/Public/home/js/AdMove.js"></script>
+
+    <div id="gg1" style="width:100px;height:59px; background-image:url(/Public/home/images/guoqi.jpg); background-size:100% 100%; cursor:pointer;" onclick="doyoo.util.openChat('g=10052701');return false"></div>
+    <div id="gg2" style="width:80px;height:47px; background-image:url(/Public/home/images/guoqi.jpg); background-size:100% 100%;cursor:pointer;" onclick="doyoo.util.openChat('g=10052701');return false"></div>
+	<script type="text/javascript">
+ 
+        var ad1=new AdMove("gg1");
+        ad1.Run();
+ var ad2=new AdMove("gg2");
+        ad2.Run();
+    
+    </script>-->
+
+		<script>
+			$(function() {
+				var wli = $('.fleft ul li').width();
+				var maa = $('.fleft ul li').eq(0).width();
+				//alert(m)
+				$('#spad').width(maa);
+				$(".fleft ul li").hover(function() {
+					var Oli = 0;
+					var n = $(this).index();
+					for(var i = 0; i < n; i++) {
+						Oli += $(".fleft ul li").eq(i).width() + 10
+					};
+					$('#spad').css({
+						"width": $(this).width() + 'px',
+						"left": Oli + 'px'
+					});
+				}, function() {
+					$('#spad').css({
+						"left": 0,
+						"width": maa + 'px'
+					});
+				})
+			})
+		</script>
+		<script>
+			$(function() {
+				var $mlNav = $('.ml-nav');
+				var w = $(window).width();
+				$mlNav.find(".ml-logo img").attr("src", "images/logo.png");
+				$('#dowebok').fullpage({
+					anchors: ['page1', 'page2', ],
+					'navigation': 1,
+					onLeave: function(index, nextIndex, direction) {
+						if(index == 2 && direction == 'up') {
+							$mlNav.removeClass("curr");
+							$mlNav.find(".ml-logo img").attr("src", "images/logo.png");
+							$mlNav.find(" li div").css("background", "#fff");
+							$(".footer").removeClass("footer1")
+						} else {
+							$mlNav.addClass("curr")
+							$mlNav.find(".ml-logo img").attr("src", "images/logo1.png");
+							$mlNav.find(" li div").css("background", "#333333");
+							$(".footer").addClass("footer1")
+						}
+					}
+				});
+				$('.arrow').click(function() {
+
+				})
+			});
+		</script>
+
+		<!--点我咨询吧
+<div class="togclose"><span>点击关闭</span></div>
+<div class="tog_contact">
+  <div class="t_con_box">
+    <div class="drift_left">
+      <p><img src="/Public/home/images/top_logo.jpg" /></p>
+      <p class="f-yh">服务是根本，技术才是征服您的唯一<br/>
+      公司地址：郑州市郑东新区建业五栋大楼B座803室
+        </p>
+    </div>
+    <div class="phonee">
+      <dl>
+        <dd>
+          <div><img src="/Public/home/images/icon_phone.jpg" />
+            <h3 class="f-yh">电话咨询</h3>
+            <span>PHONE CONSULTING</span></div>
+          <p>400-7777-051</p>
+        </dd>
+        <dd>
+          <div><img src="/Public/home/images/icon_consult.jpg" class="consult_img" />
+            <h3 class="f-yh">在线咨询</h3>
+            <span>ONLINE CONSULTING</span></div>
+          <a class="online" id="BizQQWPAA"><q class="f-yh">在线客服</q></a><script type="text/javascript">
+BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 4007777051, selector: 'BizQQWPAA'});
+</script><a  class="online" id="BizQQWPAB"><q class="f-yh">售后咨询</q></a><script type="text/javascript">
+BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 4007777051, selector: 'BizQQWPAB'});
+</script>
+          
+          </dd>
+      </dl>
+    </div>
+    <div class="mapp"><img src="/Public/home/images/map.png" /></div>
+  </div>
+</div>
+<div class="cont">和我联系吧</div>
+<div class="tog" id="tog"></div>
+-->
+
+		<!--<style>
+.gonggao{ position:fixed; right:0; bottom:-150px; width:320px; height:140px; border:5px solid #f64242; background:rgba(255,255,255,1); z-index:9999999}
+.gonggao .dongtai{ width:100%; height:26px; font-size:14px; line-height:20px; overflow:hidden; background-color:#f64242; color:#111}
+.gonggao .dongtai .zui{ float:left; padding-left:4px; color:#fff;}
+.gonggao .dongtai .bi{ float:right; padding-right:4px; cursor:pointer;color:#fff;}
+.gonggao dl{ width:94%; margin:0 auto;overflow:hidden; cursor:pointer; }
+.gonggao dl .dimg{ width:90px; height:90px; float:left; margin-top:9px; border-radius:4px; overflow:hidden;}
+.gonggao dl .dimg img{ width:90px; height:90px; }
+.gonggao dl .dfont{ float:left; margin-left:10px; width:200px; margin-top:13px;}
+.gonggao dl .dfont h2{ font-size:14px; font-weight:bold; color:#222;}
+.gonggao dl .dfont p{ font-size:14px; margin-top:4px; color:#444}
+.gonggao dl .dfont p span{color:#f64242; font-weight:bold;}
+</style>
+
+<div class="gonggao">
+	<ul class="dongtai">
+    	<li class="zui">放假通知</li>
+        <li class="bi">关闭</li>
+    </ul>
+    <dl onclick=window.open("/about.html")>
+    	<dd class="dimg"><img src="/Public/home/images/pz1.jpg"></dd>
+        <dd class="dfont">
+        	<h2>灵秀科技【放假通知】</h2>
+            <p>
+            	新春佳节来临之际，灵秀全体员工给大家提前拜年了，我司将在阳历<span>1.24~2.04</span>期间放假。
+            </p>
+        </dd>
+    </dl>
+</div>
+<script>
+timers = setInterval(function(){
+	$(".gonggao").animate({bottom:0},800);
+},2000)	
+
+$(function(){
+	var n=0;
+	$(".gonggao .bi").click(function(){
+		if(n==0){
+			$(".gonggao").animate({bottom:-119},800,function(){$(".gonggao .bi").html("打开");});
+			clearInterval(timers);
+			n=1;
+		}else{
+			$(".gonggao").animate({bottom:0},800,function(){$(".gonggao .bi").html("关闭");});
+			n=0;
+		}
+	})
+})
+</script>-->
+
+		<link rel="stylesheet" href="css/animate.css">
+		<script src="js/wow.js"></script>
+		<script>
+			if(!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+				new WOW().init();
+			};
+		</script>
+
+		<script>
+			$(function() {
+				$(".close").click(function() {
+					$(this).parent("ul").addClass("current");
+				})
+				$(document).ready(function() {
+					$(".leftmenu ul li").addClass("fadeInUp");
+				})
+			})
+		</script>
+		<div class="aaaxx" style="width:100%; height:100%;position:fixed; left:0; top:0; display:none; z-index:99999999; text-align:center; background-color:#fff;padding-top:17%; ">
+			<p style=" font-size:48px; color:#000; ">网站已被复制<span style="color:red;font-size:48px;">n+1</span>次，再复制老板发飙了</p><button class='gunabi' style="width:120px;height:38px; background-color:#ffc900; color:#333; font-size:14px; margin-top:60px;border:none;">返回首页</button></div>
+		<script>
+			$(window).resize(function() {
+				var wout = window.screen.availWidth;
+				var winner = $(window).width();
+
+				var hout = window.screen.availHeight;
+				var hinner = $(window).height();
+
+				if(wout - winner > 100 || hout - hinner > 20) {
+					//window.opener=null;
+					//window.open('','_self');
+					//.close();
+					$('.aaaxx').show();
+				}
+				$('.gunabi').click(function() {
+					$('.aaaxx').hide();
+				})
+
+			})
+		</script>
+		<script type="text/javascript" src="//s.union.360.cn/72281.js"></script>
+	</body>
+
+</html>

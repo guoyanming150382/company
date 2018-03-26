@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+	background: #eff2f4;
+	min-width: 1200px;
+}
+
+.top_nav {
+	overflow: hidden;
+	position: fixed;
+	left: 0px;
+	top: 0;
+	box-shadow: 0 2px 2px #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 27px 0;
+	min-width: 1200px;
+	background-color: #fff;
+	z-index: 998;
+	width: 100%;
+}
+
+.top_nav li {
+	float: left;
+	font-size: 18px;
+	color: #333;
+	margin-right: 15px;
+	height: 32px;
+	overflow: hidden;
+	margin-left: 20px;
+	margin-left: 266px;
+	transition: all 0.4s;
+}
+
+.top_nav li.current {
+	margin-left: 20px;
+}
+
+.top_nav li .onoff {
+	display: block;
+	float: left;
+	width: 22px;
+	height: 32px;
+	margin-right: 20px;
+	cursor: pointer;
+	background-image: url(../images/px.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.top_nav li.lright {
+	float: right;
+	margin: 0;
+	margin-right: 0;
+}
+
+@media (max-width:1500px) {
+	.top_nav li.lright {
+		display: none;
+	}
+}
+
+.top_nav li .find {
+	overflow: hidden;
+	line-height: 30px;
+	border-radius: 15px;
+	margin-right: 60px;
+	border: 1px solid #444;
+	position: relative;
+	transition: all 0.3s;
+}
+
+.top_nav li .find a {
+	display: block;
+	width: 80px;
+	padding: 0 4px;
+	border-radius: 15px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	color: #444;
+	margin: 0;
+	cursor: pointer;
+	float: right;
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+.top_nav li .find a span {
+	display: inline-block;
+	padding-left: 26px;
+	background-image: url(../images/anls_03.png);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+.top_nav li .find i {
+	display: block;
+	width: 60px;
+	padding: 0 12px;
+	border-radius: 15px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	color: #444;
+	margin: 0;
+	cursor: pointer;
+	float: right;
+	transition: all 0.3s;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-style: normal;
+}
+
+.top_nav li .find i span {
+	display: inline-block;
+	padding-left: 26px;
+	background-image: url(../images/anls_03.png);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+.top_nav li .find input {
+	display: block;
+	float: left;
+	height: 30px;
+	border: none;
+	font-size: 14px;
+	color: #666;
+	line-height: 30px;
+	text-indent: 8px;
+	width: 0px;
+	transition: all 0.3s;
+}
+
+.top_nav li .find.current {
+	margin-right: 60px;
+}
+
+.top_nav li .find.current input {
+	width: 180px;
+}
+
+.top_nav li .find.current a {
+	background-color: #ffc900;
+	opacity: 1;
+}
+
+.top_nav li .find.current i {
+	display: none;
+}
+
+.top_nav li.checkbox {
+	float: left;
+	margin-left: 0px;
+	font-size: 16px;
+}
+
+.top_nav li.checkbox dl {
+	overflow: hidden;
+}
+
+.top_nav li.checkbox dl dd {
+	float: left;
+	color: #333;
+	height: 26px;
+	position: relative;
+	overflow: hidden;
+	width: 85px;
+	line-height: 33px;
+}
+
+@media (max-width:1350px) {
+	.top_nav li.checkbox dl dd {
+		width: 78px;
+	}
+	.top_nav li.checkbox {
+		float: right;
+		font-size: 14px;
+	}
+	.top_nav li {
+		margin-left: 266px;
+		margin-right: 0px;
+	}
+}
+
+@media (max-width:1244px) {
+	.top_nav li {
+		margin-left: 256px;
+	}
+}
+
+@media (max-width:1240px) {
+	.top_nav li {
+		margin-left: 236px;
+	}
+}
+
+.top_nav li.checkbox dl dd.quanbu {
+	width: 60px;
+}
+
+.top_nav li.checkbox dl dd.currentA .all1 {
+	color: #ff4229;
+	text-decoration: underline;
+}
+
+.top_nav li.checkbox dl dd a {
+	color: #333;
+	display: block;
+	position: absolute;
+}
+
+.top_nav li.checkbox dl dd span {
+	display: block;
+	height: 26px;
+}
+
+.top_nav li.checkbox dl dd span.all {
+	color: #ff4229;
+	text-decoration: underline;
+}
+
+.maincontent_anli {
+	padding-top: 116px;
+	padding-left: 268px;
+	overflow: hidden;
+	transition: all 0.4s;
+}
+
+.maincontent_anli.current {
+	padding-left: 10px;
+}
+
+.maincontent_anli li {
+	float: left;
+	width: 300px;
+	margin: 0 7px 2%;
+}
+
+.maincontent_anli .con_anli {
+	display: block;
+	overflow: hidden;
+	width: 300px;
+	height: 269px;
+	position: relative;
+}
+
+.maincontent_anli .con_anli .zhezhao {
+	position: absolute;
+	top: -180px;
+}
+
+.maincontent_anli b {
+	display: block;
+	color: #111111;
+	font-weight: normal;
+	fopnt-size: 18px;
+	margin-bottom: 8px;
+	transition: color 1s;
+	-webkit-transition: color 1s;
+}
+
+.maincontent_anli strong {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+	color: #a1a1a1;
+	transition: color 1s;
+	-webkit-transition: color 1s;
+}
+
+.maincontent_anli .text {
+	padding: 20px 15px;
+	display: block;
+}
+
+.maincontent_anli li:hover b {
+	color: #fff;
+}
+
+.maincontent_anli li:hover strong {
+	color: #fff;
+}
+
+.maincontent_anli .bg {
+	background: #fff;
+	display: block;
+	width: 300px;
+	height: 89px;
+	margin-top: -89px;
+	padding-top: 89px;
+}
+
+.maincontent_anli .bg b {
+	display: block;
+	background: #ff4229;
+	width: 300px;
+	height: 89px;
+}
+
+@media (max-width:1840px) {
+	.maincontent_anli li {
+		margin: 0 2% 2%;
+	}
+}
+
+@media (max-width:1684px) {
+	.maincontent_anli li {
+		margin: 0 0.5% 2%;
+	}
+}
+
+@media (max-width:1500px) {
+	.maincontent_anli li {
+		margin: 0 2% 2%;
+	}
+}
+
+@media (max-width:1272px) {
+	.maincontent_anli li {
+		margin: 0 0.5% 2%;
+	}
+}
+
+@media (max-width:1200px) {
+	.maincontent_anli {
+		padding-left: 230px;
+	}
+}
+
+.maincontent_anli .cons {
+	height: 622px;
+	;
+}
+
+.maincontent_anli .cons .zhezhao1 {
+	position: absolute;
+	top: -533px;
+}

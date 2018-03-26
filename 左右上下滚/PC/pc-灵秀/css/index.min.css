@@ -1,0 +1,193 @@
+.business .box {
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .3s ease-in-out 0s;
+	-moz-transition: all .3s ease-in-out 0s;
+	-ms-transition: all .3s ease-in-out 0s;
+	-o-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
+	margin-top: 20px;
+	top: 50px;
+	z-index: 1;
+}
+
+.business .box ul.items {
+	margin: 0 auto;
+}
+
+.business .box ul.items li {
+	width: 260px;
+	height: 382px;
+	margin: 0 39px;
+	background: url(../images/yellow.jpg) no-repeat 0px 500px;
+	overflow: hidden;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.business .box ul.items li i {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 36px;
+	height: 69px;
+}
+
+.business .box ul.items li.pc i {
+	width: 59px;
+	background: url(../images/i1.png) no-repeat;
+}
+
+.business .box ul.items li.mobi i {
+	width: 46px;
+	background: url(../images/i2.png) no-repeat;
+}
+
+.business .box ul.items li.sys i {
+	width: 59px;
+	background: url(../images/i3.png) no-repeat;
+}
+
+.business .box ul.items li.pc1 i {
+	width: 59px;
+	background: url(../images/ii1.png) no-repeat;
+}
+
+.business .box ul.items li.mobi1 i {
+	width: 58px;
+	background: url(../images/ii2.png) no-repeat;
+}
+
+.business .box ul.items li.sys1 i {
+	width: 59px;
+	background: url(../images/ii3.png) no-repeat;
+}
+
+.business .box ul.items li u {
+	display: block;
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	margin-left: 64px;
+	background: url(../images/circle.png) no-repeat;
+	-webkit-transition: all .5s ease-in-out 0s;
+	-moz-transition: all .5s ease-in-out 0s;
+	-ms-transition: all .5s ease-in-out 0s;
+	-o-transition: all .5s ease-in-out 0s;
+	transition: all .5s ease-in-out 0s;
+}
+
+.business .box ul.items li u.cl {
+	clip: rect(0px, 130px, -10px, 65px);
+}
+
+.business.active .box ul.items li u.cl {
+	clip: rect(0px, 130px, 130px, 65px);
+}
+
+.business .box ul.items li u.cr {
+	clip: rect(130px, 65px, 130px, 0px);
+}
+
+.business.active .box ul.items li u.cr {
+	clip: rect(0px, 65px, 130px, 0px);
+}
+
+.business .box ul.items li strong {
+	display: block;
+	margin-top: 70px;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	color: #222;
+}
+
+.business .box ul.items li p {
+	position: relative;
+	top: 220px;
+	color: #333;
+	padding: 0 30px;
+	line-height: 24px;
+	font-size: 12px;
+}
+
+.business .box ul.items li:hover {
+	background-position: 0px 0px;
+	background-size: 100% 100%;
+	-webkit-transition: all .5s ease-in-out .3s;
+	-moz-transition: all .5s ease-in-out .3s;
+	-ms-transition: all .5s ease-in-out .3s;
+	-o-transition: all .5s ease-in-out .3s;
+	transition: all .5s ease-in-out .3s;
+}
+
+.business .box ul.items li:hover i {
+	-webkit-transition: all .5s ease-in-out .4s;
+	-moz-transition: all .5s ease-in-out .4s;
+	-ms-transition: all .5s ease-in-out .4s;
+	-o-transition: all .5s ease-in-out .4s;
+	transition: all .5s ease-in-out .4s;
+}
+
+.business .box ul.items li.pc:hover i {
+	background: url(../images/i4.png) no-repeat;
+}
+
+.business .box ul.items li.mobi:hover i {
+	background: url(../images/i5.png) no-repeat;
+}
+
+.business .box ul.items li.sys:hover i {
+	background: url(../images/i6.png) no-repeat;
+}
+
+.business .box ul.items li.pc1:hover i {
+	background: url(../images/ii4.png) no-repeat;
+}
+
+.business .box ul.items li.mobi1:hover i {
+	background: url(../images/ii5.png) no-repeat;
+}
+
+.business .box ul.items li.sys1:hover i {
+	background: url(../images/ii6.png) no-repeat;
+}
+
+.business .box ul.items li:hover u.cl {
+	clip: rect(0px, 156px, -10px, 78px);
+}
+
+.business .box ul.items li:hover u.cr {
+	clip: rect(156px, 78px, 156px, 0px);
+}
+
+.business .box ul.items li:hover strong {
+	-webkit-transition-delay: .4s;
+	-moz-transition-delay: .4s;
+	-ms-transition-delay: .4s;
+	-o-transition-delay: .4s;
+	transition-delay: .4s;
+}
+
+.business .box ul.items li:hover p {
+	top: 20px;
+	-webkit-transition: all .3s ease-in-out .5s;
+	-moz-transition: all .3s ease-in-out .5s;
+	-ms-transition: all .3s ease-in-out .5s;
+	-o-transition: all .3s ease-in-out .5s;
+	transition: all .3s ease-in-out .5s;
+}
+
+.business .box label {
+	display: block;
+	margin: 0 auto;
+	margin-top: -40px;
+	width: 297px;
+	height: 21px;
+	background: url(../images/words.png) no-repeat 0px -333px;
+}
+
+section.cases {
+	background: url(../images/wallpaper3.jpg);
+}

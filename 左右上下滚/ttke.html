@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="http://www.163css.com/myweb/hihilinxuan/template/hihilinxuan/cssjs/2012/12/ifengtouch/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.163css.com/myweb/hihilinxuan/template/hihilinxuan/cssjs/2012/12/ifengtouch/js/jquery.touchSwipe.min.js"></script>
+    <style>
+        #screen1{
+            background-color: red;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        #screen2{
+            display: none;
+            position: absolute;
+            background-color: pink;
+            width: 100%;
+            height: 100%;
+        }
+        #screen3{
+            display: none;
+            position: absolute;
+            background-color:blue;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body id="orientation">
+    <div class="screen1" id="screen1" >
+121212
+    </div>
+    <div class="screen2" id="screen2">
+66662121212
+    </div>
+    <div class="screen3" id="screen3" >
+54545454
+    </div>
+    <script>
+        $(function () {
+            function switcher(id, nextid, xiaid) {
+                $(id).swipe({
+                            swipe: function (event, direction, distance, duration, fingerCount) {
+                                if (direction == "up") {
+                                    $(nextid).show();
+                                    $(this).hide();
+                                }
+                                else if (direction == "down") {
+                                    $(xiaid).show();
+                                    $(this).hide();
+                                }
+                            }
+                        }
+                );
+            }
+            $("#screen1").swipe({
+                        swipe: function (event, direction, distance, duration, fingerCount) {
+                            if (direction == "up") {
+                                $("#screen2").show();
+                                $("#screen1").hide();
+                            }
+                        }
+                    }
+            )
+            switcher("#screen2", "#screen3", "#screen1");
+            $("#screen3").swipe({
+                        swipe: function (event, direction, distance, duration, fingerCount) {
+                            if (direction == "down") {
+                                $("#screen3").hide();
+                                $("#screen2").show();
+                            }
+                        }
+                    }
+            );
+        });
+    </script>
+</body>
+</html>

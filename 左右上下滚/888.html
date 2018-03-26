@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit">
+	<link rel="dns-prefetch" href="//cd.faisys.com">
+	<link rel="dns-prefetch" href="//301249.s50i.faiusr.com">
+	<link rel="dns-prefetch" href="//301249.s50i.faiusr.com">
+	<title>元宵服装大促</title>
+	
+		<link rel="apple-touch-icon" sizes="57x57" href="//cd.faisys.com/image/favIcon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="//cd.faisys.com/image/favIcon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="//cd.faisys.com/image/favIcon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="//cd.faisys.com/image/favIcon/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="//cd.faisys.com/image/favIcon/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="//cd.faisys.com/image/favIcon/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="//cd.faisys.com/image/favIcon/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="//cd.faisys.com/image/favIcon/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="//cd.faisys.com/image/favIcon/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="//cd.faisys.com/image/favIcon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="//cd.faisys.com/image/favIcon/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="//cd.faisys.com/image/favIcon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="//cd.faisys.com/image/favIcon/favicon-16x16.png" sizes="16x16">
+		<link rel="mask-icon" href="//cd.faisys.com/image/favIcon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="//cd.faisys.com/image/favIcon/mstile-144x144.png">
+		<meta name="theme-color" content="#00ffff">
+	
+	<script type="text/javascript">
+		//这里有个问题：现在的跳转判断都写在nginx里面，如果用户使用了代理路由，而且用户的代理路由修改了用户请求的user agent
+		//就会导致手机预览无法跳转到index.jsp页面
+		(function(){
+			//判断是否来自PC，是否调用箭头滑动的方法。
+			var _isMobileBrowser = /Android|webOS|iPhone|iPad|iPod|BlackBerry|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(							  navigator.userAgent) ?  true : false;
+			if(_isMobileBrowser){
+				location.href = "/index.jsp?id=9661Z6u&flyerAid=9661&chl=";
+			}
+		})();
+	</script>
+	<link href="//cd.faisys.com/css/flyer/flyerPreview.min.css?v=201802011718" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="preContainer">
+		<div class="preContent">
+			<div class="preLink" style="">
+				
+				<div class="preQRCode">
+					<div class="qrCode">
+						<img src="/qrCode.jsp?cmd=qr&flyerId=222&flyerAid=301249&qrCodeForeColor=404040&qrCodeBackColor=1"/ >
+						<img class="hovered" src="/qrCode.jsp?cmd=qr&flyerId=222&flyerAid=301249&qrCodeForeColor=404040&qrCodeBackColor=3"/ >
+					</div>
+					<div class="preSweep">
+						手机扫一扫更精彩
+					</div>
+				</div>
+		
+				
+					<a class="preHome" href="http://cdm.faisco.cn/manage/flyerManage.jsp?fromFlyerId=222&fromFlyerAid=301249&fromCaseId=1218&fromPcPrev=true" target="_blank">
+						复制该模板
+					</a>
+				
+		
+		
+
+		
+			
+				
+			
+		 
+		
+			</div>
+			<div class="flyerSimulator">
+				<div class="floatHot1"></div>
+				<div class="floatHot2"></div>
+				<div class="preScreen">
+					<div class="pageMobi">
+						<iframe class="preIframe" width="750px" height="1206px" src ="/index.jsp?id=9661Z6u&flyerAid=9661&loading=1&chl=" >
+						<p>您的浏览器不支持iframe标签</p>
+						</iframe>
+					</div>
+				</div>
+				<div class="simulatorMouse">
+					<div id="mouseUp" class="mouseUp upDownBtn disabled"></div>
+					<div id="preCurrentPage" class="preCurrentPage">1</div>
+					<div id="mouseDown" class="mouseDown upDownBtn disabled"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script type='text/javascript' src="//cd.faisys.com/js/comm/jquery/jquery-core.min.js?v=201711271131"></script>
+	<script>
+
+		var userAgent = navigator.userAgent.toLowerCase();
+		var isIE = userAgent.indexOf("msie"),
+			isIE11 = userAgent.indexOf(".net"),
+			rchrome = /chrome\/\d+/,
+			isFireFox = userAgent.indexOf("firefox");
+		//webkit内核太低不给玩
+		var lowWebKit = false;
+		var webKitVersion = userAgent.match(/webkit\/\d{3}.\d+/gi);
+		if( webKitVersion ){
+			webKitVersion = webKitVersion[0].split('/');
+			if(webKitVersion.length > 1){
+				webKitVersion = parseFloat(webKitVersion[1]);
+				lowWebKit = webKitVersion >= 537.36 ? false : true;
+			}
+		}
+		var chromeVer = userAgent.match(rchrome);
+		if(chromeVer){
+			chromeVer = chromeVer[0].split('/');
+			if(chromeVer.length > 1){
+				chromeVer = parseFloat(chromeVer[1]);
+				lowWebKit = chromeVer >= 38 ? false : true;
+			}
+		}
+		if(isIE >= 0 || isIE11 >= 0 || isFireFox >= 0 || /Edge\/([\d.]+)/i.test(userAgent) || lowWebKit){
+			var url = encodeURIComponent(location.pathname + location.search);
+			window.location.href="/lvBrowser.jsp?url="+url;
+		}
+
+		var isUIManage = true;
+		var isOperateManage = false;
+		var faiscoaid = 8733254;
+		var flyerId = 222;
+		//统计
+		function logDog(dogId, dogSrc){
+			if(isUIManage && !isOperateManage){
+				return;
+			}
+			
+			if(isOperateManage){
+				if(dogId == 2000022 || dogId == 2000023 || dogId == 2000024 || dogId == 2000025 ){
+					dogId += 10;
+				}
+				dogSrc = flyerId*100+dogSrc;
+			}
+
+		    $.ajax({
+		        type:'get',
+		        url: '/ajax/log_h.jsp?cmd=dog&dogId='+ dogId + '&dogSrc=' + dogSrc + '&aid=' + faiscoaid
+		    });	
+		}
+
+		$(function(){
+			var innerHeight = $(window).innerHeight();
+			var screenH = 684;
+			var screenW = 424;
+			var contentW = 904;
+			var simulatorW = 533;
+			var border = 8*2;
+			//480是字体不变形的最小高度。
+			var minHeight = 480;
+			var count = function(){
+			//以谷歌浏览器在1920*1080屏幕下的数值为参照计算其他窗口或者浏览器的iframe尺寸，此时谷歌innerHeight为979
+				innerHeight = $(window).innerHeight();
+				var height = Number((screenH/ 979 * innerHeight).toFixed(2));
+				height = height > minHeight ? height : minHeight;
+				var width = height * 0.6219;
+
+				var scale = Number(( (width) / 750 ).toFixed(6));
+				var translate = Number(((1-scale) / (scale * 2) * 100).toFixed(4));
+				var transform = 'scale('+scale+') translate3d(-'+translate+'%,-'+translate+'%,0)';
+
+				$(".preScreen").css({
+					"width": Math.floor(width) ,
+					"height": Math.floor(height)
+				});
+
+				$('.preScreen .pageMobi').css({
+					'-webkit-transform':transform,
+					'-moz-transform':transform,
+					'-o-transform':transform,
+					'transform':transform
+				});
+
+				$(".preContent").css({
+					"width" : contentW - (screenW - width) ,
+					"height" : height + border ,
+					"margin-top" : -(height + border)/2
+				});
+
+				$(".flyerSimulator").css({
+					"width": width + border,//simulatorW - (screenW - width) , 
+					"height": height + border
+				});
+				
+			};
+			count();
+			
+			$(window).off("resize").on("resize",function(){
+				//计算当前窗口iframe的高度是否小于最小高度且iframe的高度已等于最小高度，如果是，则让高度相等，不再计算，如果不是则重新计算iframe高度。
+				var nHeight = ((screenH / 979 * $(window).innerHeight() < 480) && ($(".preScreen").height() == 480))? 
+							  innerHeight : $(window).innerHeight();
+				if(innerHeight != nHeight){
+					count();
+					$(".preCurrentPage").text("1");
+					$("iframe").get(0).contentWindow.location.reload(true);
+				};
+			});
+
+			logDog(2000042,0);
+			$(".preHome").on("click",function(){
+				logDog(2000043,0);
+			});
+
+		});
+
+
+//        if(!Flyer.hasLoadedJs["cardsRound"]){
+//            scriptUrl = Flyer.lazyJSPath["cardsRound"];
+//            jQuery.getCacheScript(scriptUrl, function(data, textStatus) {
+//                if(textStatus){
+//                    Flyer.hasLoadedJs["cardsRound"] = true;
+//                    runAction();
+//                }else{
+//                    console.log("js加载出错！");
+//                }
+//            });
+//        } else {
+//            runAction();
+//        }
+//	window.addEventListener('appShowMask',function(){
+//		console.log("previewPage console")
+//	});
+	</script>
+</body>
+</html>
