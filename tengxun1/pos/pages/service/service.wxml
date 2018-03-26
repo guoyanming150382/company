@@ -1,0 +1,44 @@
+<!--pages/service/service.wxml-->
+<view class='all'>
+  <view class='head'>
+    <view class='head-1'>
+      <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516079573091&di=5889ec0956ee9b7b5c12dbf240d04950&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F17%2F66%2F07%2F55764d06220d5_1024.jpg'></image>
+    </view>
+    <view class='head-2'>
+      <view class='head-2-1'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516674606&di=0e1e3be5ffce8c9063e3fdc7fd1c1273&imgtype=jpg&er=1&src=http%3A%2F%2Fpic38.nipic.com%2F20140306%2F2531170_083119850000_2.jpg'></image>
+      </view>
+      <view class='head-2-1'>
+        <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=594105206,1569280675&fm=27&gp=0.jpg'></image>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <form bindsubmit="formSubmit">
+      <view>
+        <picker style='width:100%;margin-top:100rpx;line-height:100rpx;text-align:center;padding-left:90rpx;' bindchange="bindYyPickerChange" value="{{yyIndex}}" range="{{yyArray}}">
+          <view>
+            <text style='color:#000;float:left;'>业务类型 : </text>
+            <input disabled='true' placeholder='请选择预约项目' name="type" value='{{yyArray[yyIndex]}}' style='color:#666;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+          </view>
+        </picker>
+        <view style='width:100%;height:150rpx;'></view>
+        <view style='width:100%;line-height:100rpx;margin-top:50rpx;overflow:hidden;padding-left:145rpx;box-sizing:border-box;text-align:center;'>
+
+          <text style='color:#000;line-height:100rpx;height:100rpx;float:left;'> 姓 名 :  </text>
+          <input placeholder='请输入您的姓名' name="name" style='color:#000;display:inline-block;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+        </view>
+          <view style='width:100%;height:50rpx;'></view> 
+        <view style='width:100%;line-height:100rpx;margin-top:50rpx;padding-left:140rpx;box-sizing:border-box;text-align:center;'>
+          <text style='color:#000;line-height:100rpx;height:100rpx;float:left;'> 电 话 :  </text>
+          <input placeholder='请输入您的电话' name="tel" style='color:#000;display:inline-block;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+        </view>
+        <view style='width:100%;height:150rpx;'></view>
+        <button form-type="submit" style='margin:50rpx 100rpx;width:550rpx;font-size:40rpx;line-height:100rpx;text-align:center;height:100rpx;color:#fff;background-color:#000;'>立即咨询</button>
+      </view>
+    </form>
+    <view style='width:100%;text-align:center;line-height:100rpx;background-color:rgba(255,255,255,0.8);color:#F00;font-size:40rpx;font-weight:600;position:fixed;top:0;z-index:666;'>{{tip}}</view>
+  </view>
+</view>

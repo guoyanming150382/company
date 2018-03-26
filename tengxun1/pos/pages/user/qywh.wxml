@@ -1,0 +1,11 @@
+<!--pages/user/qywh.wxml-->
+<view class='all'>
+  <view style='width:100%;heigh:350rpx;'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516362718108&di=1736ec26ec80ede06d205060a7710fac&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F18%2F37%2F30%2F49q58PICV8W_1024.jpg' mode='widthFix' style='width:100%;'></image>
+  </view>
+  <view style='text-indent:2em;' class='jianju'>技术：技术是企业生存并得以持续发展的动力之源，有无自己的核心技术和产品，核心技术含金量的高底决定着企业在信息化市场竞争中所处的位置和所能发展到的高度。</view>
+  <view style='text-indent:2em;' class='jianju'>创新：创新是管理的创新、技术的创新、市场的创新、服务的创新，在信息爆炸时代，只有依靠不断的创新，企业才能在瞬息万变的市场环境之中可持续发展。</view>
+  <view style='text-indent:2em;' class='jianju'>诚信：诚信是做人立企兴业的根本，是企业立足市场、发展市场、赢得市场的关键，是企业的命脉与财富。诚信的企业才是长久发展的企业。在价值、信念和自尊不断面临挑战的世界中，诚恳踏实。</view>
+  <view style='text-indent:2em;' class='jianju'>勤勉：勤勉虚怀，始终保持清醒的市场开拓意识、服务意识、学习意识，是我们必须具备的生存和发展态度。</view>
+  <view style='text-indent:2em;' class='jianju'>联合发展：联合共赢发展是智推网络的市场兴企之道，做到社会、员工、客户、企业的多方共赢和满意，达成愿景与价值观的趋同。</view>
+</view>

@@ -1,0 +1,30 @@
+/* pages/service/service.wxss */
+.head{
+  width: 100%;
+  height: 380rpx;
+}
+.head .head-1{
+  width: 50%;
+  height: 100%;
+  /* background-color: yellow; */
+  float: left
+}
+.head .head-1 image{
+  width: 100%;
+  height: 100%;
+}
+.head .head-2{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.head .head-2 .head-2-1{
+  width: 100%;
+  height: 50%;
+  /* background-color: red */
+}
+.head .head-2 .head-2-1 image{
+  width: 100%;
+  height: 100%;
+}
+

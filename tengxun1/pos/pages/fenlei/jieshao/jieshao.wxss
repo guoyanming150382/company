@@ -1,0 +1,47 @@
+/* pages/fenlei/xiangqing/xiangqing.wxss */
+.t1{
+  color: white;
+  width:100%;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516613760&di=c70f55c9f1614abc2e75278a31546693&imgtype=jpg&er=1&src=http%3A%2F%2Fimg5.ph.126.net%2F3nZl4aw9qyIPiDsrF_odww%3D%3D%2F6597181916842141375.gif);
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.all{
+  width: 100%;
+  height: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516019345021&di=9633fbbc2689f199a311f90cbb85c22b&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fmobile%2F2%2F55a369b107a20.png);
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.tp{
+  width:100%;
+  height: 300rpx;
+  margin-top: 20rpx
+}
+.tp image{
+  width:100%;
+  height: 100%;
+}
+.audio{
+  margin-top: 30rpx
+}
+
+audio{
+  position: relative;
+}
+audio .free-MusicProgress{
+  position: absolute;
+  width:78%;
+  left:21.7%;
+  bottom:1px;
+  background:#C3C3C3;
+}
+audio .free-MusicProgress>view{
+  background:red;
+  height:3px;
+}

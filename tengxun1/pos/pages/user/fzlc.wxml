@@ -1,0 +1,17 @@
+<!--pages/user/fzlc.wxml-->
+<view class='all'>
+  <view style='width:100%;heigh:350rpx;'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516362165944&di=bc0c802c4e875c4f5f0f47e94842357a&imgtype=0&src=http%3A%2F%2Fpic2.ooopic.com%2F12%2F19%2F17%2F96bOOOPICb2_1024.jpg' mode='widthFix' style='width:100%;margin-bottom:20rpx;'></image>
+  </view>
+  <view style='text-indent:2em;' class='jianju'> 河南省辛普森互联网科技有限公司创建于2017年，注册资本100万元，公司为一般纳税人企业，现有员工20多人。 </view>
+  <view style='text-indent:2em;' class='jianju'>本公司是一家从事软件开发、网站制作、系统集成及网络产品销售等相关业务为一体的专业的计算机网络有限公司，本公司技术力量雄厚，有一流的软、硬件工程师及网络技术人才，有完善的售后服务体系。公司始终坚持“顾客至上、诚信为本、专业精致、卓越创新”的经营理念，以最优质的产品、最实惠的价格、最全面的服务竭诚为广大客户服务。
+    <view style='text-indent:2em;' class='jianju'>经营范围： </view>
+    <view style='text-indent:2em;' class='jianju'>1、程序设计与软件开发、软件产品销售； </view>
+    <view style='text-indent:2em;' class='jianju'>2、网站制作、网站推广、网站优化与网站维护、域名空间代理； </view>
+    <view style='text-indent:2em;' class='jianju'>3、网络系统集成与局域网架设。承接安防系统、门禁系统、监控系统、校园智能广播系统、食堂管理系统、酒店管理系统、点歌系统等相关业务； </view>
+    <view style='text-indent:2em;' class='jianju'>4、网络产品、计算机及配件、办公设备、电脑耗材及数码产品等硬件销售；</view>
+    <view style='text-indent:2em;' class='jianju'> 公司机构设置： 总经理室 行政部 人力资源部 商务部 开发部 工程部 客服售后中心 财务室</view>
+    <view style='text-indent:2em;' class='jianju'>公司优势： 我们拥有资深的企业核心管理人员，使得公司始终保持着持续稳定快速的发展方向；我们拥有有一批毕业于知名大学的计算机专业的技术人才，使得我们有强大的技术后盾； 我们积累了多家网站建设的经验，形成了自已独特的理论和方法，以及一套专业为客户服务的流程，能根据客户的不同需求较为灵活的为客户打造具有企业特色的电子商务平台； 我们有多年WEB技术开发经验的系统工程师，精通ASP.NET、JSP等动态网页交互技术开发，能为客户量体裁衣，定做开发方便实用的各类软件系统； 我们有多年的网络系统集成与局域网架设经验，能承接各种中小型系统集成项目；我们有从事多年的电脑及外设产品的硬件工程师，能为您提供优质的硬件售后服务。
+    </view>
+  </view>
+</view>

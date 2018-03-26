@@ -1,0 +1,9 @@
+/* pages/user/fzlc.wxss */
+.all{
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.jianju{
+  font-size: 30rpx;
+  line-height: 1.5rem
+}
