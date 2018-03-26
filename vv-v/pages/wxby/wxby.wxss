@@ -1,0 +1,11 @@
+/* pages/test/test.wxss */
+
+
+
+page{
+  box-sizing: border-box
+}
+
+view,picker,text{
+  box-sizing: border-box
+}

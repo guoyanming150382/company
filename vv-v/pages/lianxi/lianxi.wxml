@@ -1,0 +1,47 @@
+<!--pages/lianxi/lianxi.wxml-->
+<!-- 联系 -->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname" style='font-size:40rpx;color:white;font-wight:none'>{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class='all'>
+<view class='shixiang'>
+  <view style='border-top:2rpx solid #eee;border-left:2rpx solid #eee;border-right:2rpx solid #eee;padding:20rpx;box-sizing:border-box;'>预约事项</view>
+  <view style='border:2rpx solid #eee;'>
+    <view class='sh1'><image src='../../image/cj.png'></image> 预约试驾</view>
+    <view class='sh1 left-line'><image src='../../image/cj2.png'></image>维修保养</view>
+  </view>
+</view>
+<view class='lxkf'> 
+<view style='position:relative;margin-top:30rpx;'>联系客服
+<contact-button type="default-light" size="20" session-from="weapp" style='left:0'></contact-button>
+<contact-button type="default-light" size="20" session-from="weapp" style='left:40rpx;'></contact-button>
+<contact-button type="default-light" size="20" session-from="weapp" style='left:80rpx;'></contact-button>
+<contact-button type="default-light" size="20" session-from="weapp" style='left:120rpx;'></contact-button>
+<contact-button type="default-light" size="20" session-from="weapp" style='left:160rpx;'></contact-button>
+<contact-button type="default-light" size="20" session-from="weapp" style='left:200rpx;'></contact-button>
+<contact-button type="default-light" size="20" session-from="weapp" style='left:240rpx' ></contact-button> 
+<image src='../../image/call1.png' style='width:50rpx;height:50rpx;margin-left:30rpx'></image></view>
+</view> 
+<view style='margin-top:35rpx'>
+  <!-- 立即拨打 -->
+  <view bindtap='boda' class='v1'>一键电话<image src='../../image/dh.png' style='width:50rpx;height:50rpx'></image></view>
+</view>
+<!-- 导航 -->
+<view>
+  <view bindtap='click' class='v1'>一键导航<image src='https://www.emmmmm.xyz/vv-v/image/wz.png' style='width:50rpx;height:50rpx'></image></view>
+</view>
+
+<!-- 截图 -->
+<view>
+    <view class='jietu'><image src='https://www.emmmmm.xyz/vv-v/image/map.png' style='width:100%;height:500rpx'></image></view> 
+</view>
+</view>
+<view style='width:100%;height:200rpx;padding:30rpx;box-sizing:border-box;'>地址：河南省许昌市汽車北站西北方向300米
+<text>
+服务热线：0374-2651888</text></view>

@@ -1,0 +1,156 @@
+<view class='swiper'>
+  <image src='../../image/VV5/red/car05.png' class='swiper-image' mode='widthFix'></image>
+</view>
+
+
+<view wx:for="{{menus}}" style='font-size:30rpx;line-height:100rpx;padding:30rpx;color:#000;' class='xi'>
+  <view>型号<view>{{item.text1}}</view></view>
+  <view>最大功率<view>{{item.text2}}KW</view></view>
+  <view>最高時速<view>{{item.text3}}km/h</view></view>
+  <view>发动机<view>{{item.text4}}T {{item.text5}}马力 L{{item.text6}}</view></view>
+  <view>长宽高(L/100km)<view>{{item.text7}}mm</view></view>
+  <view>油耗(L/100km)<view>{{item.text8}}L/{{item.text9}}KM</view></view>
+  <view>售价<view>￥{{item.text9}}</view></view>
+</view>
+<view class='bck'>
+  <!-- 外观 -->
+  <view class='wg'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:30rpx' class='before-line'>外观</view>
+    </view>
+    <text>标准颜色</text>
+    <view class='byanse'>
+        <view class='b' style='background-color:black'><text>
+
+        黑色</text></view>
+        <view class='w' style='background-color:#f6f6f6'><text>
+
+        白色</text></view>
+        <view class='r' style='background-color:red'><text>
+
+        红色</text></view>
+        <view class='y' style='background-color: #aaa'><text>
+        
+        银色</text></view>
+        <view class='y' style='background-color: blue'><text>
+        
+        蓝色</text></view>
+        <view class='y' style='background-color: gray'><text>
+        
+        灰色</text></view>
+        <view class='y' style='background-color: purlple'><text>
+        
+        紫色</text></view>
+    </view>
+    <text>金属漆颜色</text>
+    <view class='jinshu'>
+        <view class='b' style='background-color:black'><text>
+
+        黑色</text></view>
+        <view class='w' style='background-color:#f6f6f6'><text>
+
+        白色</text></view>
+        <view class='r' style='background-color:red'><text>
+
+        红色</text></view>
+        <view class='y' style='background-color: blue'><text>
+        
+        蓝色</text></view>
+        <view class='y' style='background-color: gray'><text>
+        
+        灰色</text></view>
+    </view>
+  </view>
+  
+  <view class='hb' style='margin-top:110rpx;'></view>
+  <!-- 内饰 -->
+  <view class='nshi'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx' class='before-line'>内饰</view>
+    </view>
+    <view class='byanse'>
+        <view class='b' style='background-color:black'><text>
+
+        黑色</text></view>
+        <view class='w' style='background-color:black'><view style='width:60rpx;height:30rpx;background-color:red'><text>
+
+        黑红</text></view></view>
+        <view class='br' style='background-color:red'><text>
+
+        红色</text></view>
+        <view class='y' style='background-color:#e47833'><text>
+        
+        黄色</text></view>
+    </view>
+  </view>
+  <view class='hb'></view>
+  <!-- 轮毂 -->
+  <view class='lg'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx;margin-top:40rpx' class='before-line'>轮毂</view>
+    </view>
+    <view class='lt'>
+      <view style='display: flex;justify-content:space-between '>  
+      <view class='lt1'><image src='../../image/lun1.jpg'></image>18英寸</view>  
+      <view class='lt1'><image src='../../image/lun1.jpg'></image>19英寸</view>  
+      <view class='lt1'><image src='../../image/lun1.jpg'></image>20英寸</view>  
+      <view class='lt1'><image src='../../image/lun1.jpg'></image>21英寸</view>  
+    </view>
+  </view>
+</view> 
+ <view class='hb' style='margin-top:100rpx'></view>
+ <!-- 精选定制 -->
+ <view class='jx'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx;margin-top:40rpx;' class='before-line'>精选定制</view>
+    </view>
+    <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex;overflow:auto;">
+<!--  display: inline-block-->
+  <view style="background: red; width: 200px; height: 120px; display: inline-block;position:relative" >
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1597357330,2335598108&fm=27&gp=0.jpg' style='width:100%;height:100%'></image><view class='nqi'><view class='big'>智能套装</view><view class='bt'></view><text>
+    360°摄像头
+    主动式车道保持辅助系统
+    盲点辅助系统</text></view>
+  </view>
+  <view style="background: green; width: 200px; height: 120px; display: inline-block;margin-left:20rpx;position:relative">
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1597357330,2335598108&fm=27&gp=0.jpg' style='width:100%;height:100%'></image><view class='nqi'><view class='big'>智能套装</view><view class='bt'></view><text>
+    360°摄像头
+    主动式车道保持辅助系统
+    盲点辅助系统</text></view>
+  </view>
+</scroll-view>
+ </view>
+ <view class='hb' style='margin-top:60rpx'></view>
+ <!-- 选配装备 -->
+ <view class='xpzb'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx;margin-top:40rpx' class='before-line'>选配装备</view>
+    </view>
+     <scroll-view scroll-x="true" style=" white-space: nowrap; display:flex;overflow:auto;">
+<!--  display: inline-block-->
+  <view style="background: red; width: 200px; height: 120px; display: inline-block;position:relative" >
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1597357330,2335598108&fm=27&gp=0.jpg' style='width:100%;height:100%'></image><view class='nqi'><view class='big'>可加热前排座位</view><view class='bt'></view></view>
+  </view>
+  <view style="background: green; width: 200px; height: 120px; display: inline-block;margin-left:20rpx;position:relative">
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1597357330,2335598108&fm=27&gp=0.jpg' style='width:100%;height:100%'></image><view class='nqi'><view class='big'>空气悬挂系统</view><view class='bt'></view></view>
+  </view>
+</scroll-view>
+ </view>
+ <view class='hb' style='margin-top:60rpx'></view>
+ <!-- 不同展示 -->
+ <view class='btzs'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx;margin-top:40rpx;' class='before-line'>车辆展示</view>
+    </view>
+    <view wx:for="{{menus3}}" class='btzs1'>
+      <image src="{{item.url}}" mode='widthFix'/>
+    </view>
+ </view>
+ <!-- 底部 -->
+
+</view>
+ <view class='foot'>
+      <navigator url='../sale/sale'>
+      <view class='f12'>预约试驾</view>
+      </navigator>
+ </view>

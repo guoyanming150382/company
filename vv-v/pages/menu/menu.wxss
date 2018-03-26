@@ -1,0 +1,34 @@
+/* pages/menu/menu.wxss */
+page{
+  width: 100%;
+  height: 99%;
+}
+.all{
+  width: 100%;
+  height: 100%;
+}
+.contetn{
+  width: 100%;
+  height: 50%;
+}
+.con1{
+  width: 100%;
+  height: 65%;
+  text-align: center
+}
+.con1 image{
+  width: 65%;
+}
+.con2{
+  width: 100%;
+  height: 35%;
+}
+.con2 .t1,.t2{
+  margin: 10rpx auto;
+  width: 300rpx;
+  height: 70rpx;
+  background: blue;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 35rpx;
+}

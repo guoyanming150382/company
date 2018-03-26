@@ -1,0 +1,41 @@
+/* pages/yuyue/yuyue.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-image: url(http://www.emmmmm.xyz/tx/weyb1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.all{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  width: 100%;
+  height: 50%;
+}
+.con1{
+  width: 100%;
+  height: 35%;
+  padding-top: 100rpx;
+  box-sizing: border-box;
+}
+.con2{
+  width: 100%;
+  height: 65%;
+  text-align: center
+}
+.con2 image{
+  width: 65%;
+}
+.t1{
+  width: 200rpx;
+  height: 90rpx;
+  border: 2rpx solid #fff;
+  border-radius: 20rpx;
+  font-size: 35rpx;
+  line-height: 90rpx;
+  text-align: center;
+  margin:auto;
+  color: #fff;
+}

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/sale/sale",
+    "pages/goods/goods",
+    "pages/goods1/goods",
+    "pages/lianxi/lianxi",
+    "pages/qyjj/qyjj",
+    "pages/jrfa/jrfa",
+    "pages/jdyl/jdyl",
+    "pages/yuyue/yuyue",
+    "pages/wxby/wxby",
+    "pages/cspz/cspz",
+    "pages/cspz1/cspz",
+    "pages/menu/vv5",
+    "pages/menu/vv7"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WEY",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/indexs.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "iconPath": "image/auto.png",
+        "selectedIconPath": "image/autos.png",
+        "text": "车辆展厅"
+      },
+      {
+        "pagePath": "pages/yuyue/yuyue",
+        "iconPath": "image/yy.png",
+        "selectedIconPath": "image/yys.png",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/lianxi/lianxi",
+        "iconPath": "image/hui.png",
+        "selectedIconPath": "image/hui1.png",
+        "text": "VIP"
+      }
+    ]
+  }
+}

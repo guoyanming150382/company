@@ -1,0 +1,44 @@
+/* pages/menu/menu.wxss */
+.menu_container {
+    width: 420rpx;
+    height: 100rpx;
+    margin: auto;
+    position: absolute;
+    top: 8.5rem;
+    left: 50%;
+    margin-left: -210rpx;
+    z-index: 999;
+}
+.menu_item{
+  width: 60rpx;
+  height:60%;
+  border-radius: 50%;
+  float: left;
+  margin-left: 10rpx;
+}
+.hidden{
+  display: none;
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+}
+.hidden image{
+  width: 70%;
+}
+.cs{
+  width: 100%;
+  position: absolute;
+  top: 11rem;
+}
+.cs image{
+  width: 100%;
+}
+.top{
+  width: 100%;
+  height: 80rpx;
+  background:#000;
+  color:#fff;
+  font-size:30rpx;
+  text-align: center;
+  line-height: 80rpx;
+}

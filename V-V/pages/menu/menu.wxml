@@ -1,0 +1,28 @@
+<view class='all'>
+  <view class='contetn' style='border-bottom:2rpx solid #aaa'>
+    <view class='con1'>
+      <image src='../../image/v1.png' mode='widthFix'></image>
+    </view>
+    <view class='con2'>
+      <navigator url='../cspz/cspz'>
+      <view class='t1' style='background:#aaa;'>参数配置</view>
+      </navigator>
+      <navigator url='../goods/goods'>
+      <view class='t2' style='background:#ff7f00;color:white'>了解详情</view>
+      </navigator>
+    </view>
+  </view>
+  <view class='contetn'>
+     <view class='con1'>
+      <image src='../../image/v2.png' mode='widthFix'></image>
+    </view>
+    <view class='con2'>
+    <navigator url='../cspz1/cspz'>
+      <view class='t1' style='background:#aaa;'>参数配置</view>
+    </navigator>
+    <navigator url='../goods1/goods'>
+      <view class='t2' style='background:#ff7f00;color:white'>了解详情</view>
+    </navigator>
+    </view>
+  </view>
+</view>
