@@ -1,0 +1,77 @@
+/* pages/see/see.wxss */
+.top{
+  width: 100%;
+  height: 100rpx;
+  background: #ff7f00;
+  font-size: 40rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+}
+.content{
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.menus{
+  width: 100%;
+  height: 180rpx;
+  margin-bottom: 60rpx;
+  border-top: 2rpx solid #aaa;
+}
+.men-1{
+  width: 100%;
+  height: 100%;
+  margin-top: 20rpx;
+}
+.men-1 .p{
+  width: 30%;
+  height: 100%;
+    float: left;
+    border: 1rpx solid #ccc;
+}
+.men-1 .p image{
+  width: 100%;
+  height: 100%;
+}
+.men-1 .w{
+  width: 68%;
+  height: 100%;
+    float: left;
+    display: block;
+    font-size: 30rpx;
+    padding-left: 50rpx;
+    box-sizing: border-box;
+    letter-spacing: 2rpx;
+    line-height: 40rpx;
+    margin-top: 10rpx;
+    color: gray;
+}
+.w1{
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #000;
+}
+.w2{
+  font-size: 25rpx;
+  /* font-weight: bold; */
+  /* color: red; */
+}
+.w3{
+  font-size: 25rpx;
+}
+.w4{
+   font-size: 25rpx;
+  color:red;
+}
+.youhui{
+  width: 100%;
+  height: 50rpx;
+  font-size: 35rpx;
+  text-align: center;
+  font-weight: bold;
+  line-height: 80rpx;
+/* padding-left: 30rpx; */
+  box-sizing: border-box;
+}
+

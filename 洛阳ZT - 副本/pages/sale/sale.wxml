@@ -1,0 +1,12 @@
+<view class='head'>
+ <view class='h1'><text decode="{{true}}" space="{{true}}">D &nbsp;R&nbsp; I&nbsp; V&nbsp; I&nbsp; N&nbsp; G &nbsp; &nbsp; &nbsp; T&nbsp; E &nbsp;X &nbsp;T</text></view>
+  <view class='h2'>预约到店亲临体验</view>
+</view>
+<view style="{{style}}">{{tip}}</view>
+<view class='all'>
+  <form bindsubmit="formBindsubmit">
+    <input type='text' name='userName' placeholder='请输入姓名'></input>
+    <input type='text' name='tel' placeholder='请输入电话号码'></input>
+    <button  formType="submit" >提交预约</button>
+  </form>
+</view>

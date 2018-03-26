@@ -1,0 +1,21 @@
+<!--pages/see/see.wxml-->
+<!-- <view class='top'>会员卡 领取</view> -->
+<view class='youhui'>套餐项目：</view>
+<view class='content'>
+  <view class='menus' wx:for="{{menus}}" wx:for-item="menu">
+    <view class='men-1'>
+        <view class='p' bindtap='on'>
+          <image src='{{menu.url}}'></image>
+        </view>
+   
+        <text class='w'><text class='w1'>{{menu.name}}</text>
+        <text class='w3'>
+        {{menu.name1}}</text>
+        <text class='w2'>
+        {{menu.name2}}</text>
+        <text class='w4'>
+        {{menu.name3}}</text>
+        </text>
+    </view>
+  </view>
+</view>

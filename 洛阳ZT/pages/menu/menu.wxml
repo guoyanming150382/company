@@ -1,0 +1,20 @@
+<view class='m-m'>
+  <view class='menu_fa'>
+  <view class='menus' wx:for="{{menus}}" wx:for-item="menu">
+      <view class='menu'>
+        <navigator url='{{menu.ut}}'>
+          <image src='{{menu.url}}'></image>
+          <text style='display:block'>{{menu.name}}</text>
+        </navigator>
+      </view>
+  </view>
+</view>
+</view>
+<view wx:for="{{menus1}}" style='width:100%;height:200rpx;margin-top:30rpx;background-color:white;' bindtap='tz'>
+  <view style='height:100%;float:left;padding-left:30rpx'>
+    <view style='width:200rpx;padding:10rpx;position: relative'>
+      <view style='line-height:120rpx;height:120rpx'><view style='padding-left:30rpx;' class='left-line'>{{item.text1}}</view></view>
+    </view>
+  </view>
+  <image src="{{item.url}}" style='width:50%;height:80%;float:right;margin-right:10rpx'/>
+</view>

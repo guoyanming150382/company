@@ -1,0 +1,11 @@
+<view class='head'>
+  <image src='https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1462132946.jpg'></image>
+</view>
+<view style="{{style}}">{{tip}}</view>
+<view class='all'>
+  <form bindsubmit="formBindsubmit">
+    <input type='text' name='userName' placeholder='请输入姓名'></input>
+    <input type='text' name='tel' placeholder='请输入电话号码'></input>
+    <button  formType="submit" >提交</button>
+  </form>
+</view>

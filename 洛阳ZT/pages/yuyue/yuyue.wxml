@@ -1,0 +1,23 @@
+<!--pages/yuyue/yuyue.wxml-->
+<view class='all'>
+  <view class='content'>
+    <view class='con1'>
+    <navigator url='../sale/sale'>
+      <view class='t1'>预约试驾</view>
+      </navigator>
+    </view>
+    <view class='con2'>
+      <image src='http://59.110.163.174/qy/img/Louder_Blue.png' mode='widthFix'></image>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='con1'>
+    <navigator url='../wxby/wxby'>
+      <view class='t1'>维修保养</view>
+      </navigator>
+    </view>
+    <view class='con2'>
+      <image src='https://cep-prd-ms-public.oss-cn-hangzhou.aliyuncs.com/PermanentFolder/ce16d102-46af-4a16-948d-643fbdf12d0b' mode='widthFix'></image>
+    </view>
+  </view>
+</view>

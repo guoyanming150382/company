@@ -1,0 +1,43 @@
+/* pages/sale/sale.wxss */
+page{
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515556525&di=5a6239f7299b2fa9113a9ab4513064de&imgtype=jpg&er=1&src=http%3A%2F%2Fim6.leaderhero.com%2Fwallpaper%2F20141021%2F10033da650.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+.head view{
+  text-align: center;
+  margin-top: 20rpx;
+}
+.head .h1{
+  font-size: 25rpx;
+}
+.head .h2{
+   font-size: 60rpx;
+}
+.all{
+  width: 100%;
+  position: absolute;
+  top: 600rpx
+}
+.all input{
+  color: #000;
+  background-color: #a8a8a8;
+  width: 90%;
+  height: 80rpx;
+  border: 2rpx solid #a8a8a8;
+  margin: auto;
+  margin-bottom: 40rpx;
+}
+
+.all button{
+  width: 40%;
+  height: 100rpx;
+  background-color: #000;
+  color: white;
+  border-radius: 0rpx;
+  line-height: 100rpx;
+  margin-top: 80rpx;
+}
+
+

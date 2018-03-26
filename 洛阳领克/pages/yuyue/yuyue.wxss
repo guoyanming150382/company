@@ -1,0 +1,43 @@
+/* pages/yuyue/yuyue.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521609701038&di=5dfd9350e5ac202f8d72119c7cb21ccd&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F63d0f703918fa0ec0a117674209759ee3c6ddbf0.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.all{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  width: 100%;
+  height: 50%;
+}
+.con1{
+  width: 100%;
+  height: 35%;
+  padding-top: 100rpx;
+  box-sizing: border-box;
+}
+.con2{
+  width: 100%;
+  height: 65%;
+  text-align: center;
+  padding-top: 20rpx;
+  box-sizing: border-box
+}
+.con2 image{
+  width: 65%;
+}
+.t1{
+  width: 200rpx;
+  height: 90rpx;
+  border: 2rpx solid #fff;
+  border-radius: 20rpx;
+  font-size: 35rpx;
+  line-height: 90rpx;
+  text-align: center;
+  margin:auto;
+  color: #fff;
+}
