@@ -1,0 +1,12 @@
+<!--pages/menus/menus.wxml-->
+<view class='menu_pic'>
+  <view class='goods' style='width:50%; text-align:center;' wx:for="{{menus1}}">
+    <navigator url='menu'>
+      <image class='img' style='width:100%;' src='{{item.img}}'></image>
+      <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'>{{item.text}}</text>
+    </navigator>
+  </view>
+</view>
+
+
+<text style='text-align:center;font-size:26rpx;display:block;margin:50rpx;color:#666;'>© 2018 小程序由河南辛普森互联网科技提供技术支持</text>

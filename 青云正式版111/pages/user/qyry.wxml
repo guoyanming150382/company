@@ -1,0 +1,11 @@
+<!--pages/user/qyry.wxml-->
+
+<view class='ry'>
+  <view class="p">饮水思源，回报社会，青云教育及青云人在蓬勃发展的同时，不忘初心，实实在在地行善助人、以自己的绵薄之力，向社会力所能及地尽着一份公民的责任和义务。八年多来，青云教育广大员工一直积极投身于许昌地区教育交流、扶贫帮扶等社会公益事业，累计为偏远学校募捐少儿图书10000余册，募捐办公电脑、文具、体育器材2000余件，累计捐款50000余元，举办健康及安全知识公益讲座20余场。</view>
+  <view class='h2' style='padding-left:10rpx;'> 公益活动</view>
+  <view wx:for="{{menus}}" style="width:100%;margin-bottom:10rpx;padding:0 10rpx;box-sizing:border-box;">
+
+    <image style='width:100%;' mode='widthFix' src="{{item.url}}" class="swiper-image" />
+
+  </view>
+</view>

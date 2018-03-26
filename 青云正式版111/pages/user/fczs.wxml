@@ -1,0 +1,24 @@
+<!--pages/user/fczs.wxml-->
+
+<view class='zs'>
+  <view class='h2' style='padding-left:10rpx;'> 名师风采</view>
+  <view wx:for="{{menus1}}" style="width:50%;margin-bottom:20rpx;padding:0 10rpx;box-sizing:border-box;float:left;">
+    <navigator url='../teacher/teacher'>
+      <image style='width:100%;' mode='widthFix' src="{{item.url}}" class="swiper-image" />
+
+      <text style='display:block;box-sizing:border-box;text-align:center;font-size: 40rpx;font-weight:500;' class='text'>{{item.text1}}</text>
+      <text style='display:block;box-sizing:border-box;text-align:center;font-size: 30rpx;' class='text'>{{item.text2}}</text>
+
+    </navigator>
+  </view>
+
+  <view class='h2' style='padding-left:10rpx;'> 学生风采</view>
+  <view wx:for="{{menus2}}" style="width:50%;margin-bottom:20rpx;padding:0 10rpx;box-sizing:border-box;float:left;">
+    <navigator url='../show/show'>
+      <image style='width:100%;' mode='widthFix' src="{{item.url}}" class="swiper-image" />
+
+      <text style='display:block;box-sizing:border-box;text-align:center;font-size: 30rpx;' class='text'>{{item.text2}}</text>
+
+    </navigator>
+  </view>
+</view>

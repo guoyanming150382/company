@@ -1,0 +1,5 @@
+<!--pages/show/show.wxml-->
+<block wx:for="{{menus}}">
+  <image src="{{item.url}}" class="swiper-image" />
+</block>
+

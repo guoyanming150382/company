@@ -1,0 +1,284 @@
+<!-- <view class='swiper'>
+  <image src='https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1462132946.jpg' class='swiper-image'></image>
+</view> -->
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+  <block wx:for="{{menus1}}">
+    <view wx:for="{{item.dict}}">
+      <swiper-item wx:if="{{item.imgtype}}">
+        <image mode="widthFix" src="{{item.img}}" style='padding:20rpx;' class="swiper-image" />
+      </swiper-item>
+    </view>
+  </block>
+</swiper>
+<view style='padding:20rpx 0;border-bottom:1px solid #ccc;'>
+  <view class='textjs' style='width:100%;' wx:for="{{menus1}}">
+    <view class='name' style='width:100%;text-align:center;font-size:36rpx;font-weight:600;line-height:80rpx;'>{{item.name}}</view>
+
+    <view style='padding-left:20rpx;line-height:50rpx;font-size:30rpx;'>{{item.mile}}万公里/{{item.year}}年</view>
+    <view style='padding-left:20rpx;color:red;line-height:50rpx;font-size:30rpx;'>￥ {{item.price}}</view>
+  </view>
+
+</view>
+<!-- <view wx:for="{{menus}}" style='font-size:30rpx;line-height:100rpx;padding:30rpx;color:#000;' class='xi'> -->
+<!-- <view>型号
+    <view>{{item.text1}}</view>
+  </view> -->
+<!-- <view>功率<view>{{item.text2}}KW({{item.text3}}hp)/{{item.text4}}rpm</view></view> -->
+<!-- <view>0-100km/h加速时间<view>{{item.text5}}s</view></view> -->
+<!-- <view>最高时速<view>{{item.text6}}km/h</view></view> -->
+<!-- <view>耗油量 混合(L/100km)<view>{{item.text7}}</view></view> -->
+<!-- <view>郊区(L/100km)<view>{{item.text8}}</view></view> -->
+<!-- <view>价格
+    <view>{{item.text9}}元</view>
+  </view>
+</view> -->
+<view class='bck'>
+  <!-- 外观 -->
+  <view class='wg'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:30rpx' class='before-line'>外观</view>
+    </view>
+    <text>标准颜色</text>
+    <view class='byanse'>
+      <view class='b' style='background-color:black'>
+        <text>
+
+        黑色</text>
+      </view>
+      <view class='w' style='background-color:#f6f6f6'>
+        <text>
+
+        白色</text>
+      </view>
+      <view class='r' style='background-color:red'>
+        <text>
+
+        红色</text>
+      </view>
+      <view class='y' style='background-color:yellow'>
+        <text>
+        
+        黄色</text>
+      </view>
+    </view>
+    <text>金属漆颜色</text>
+    <view class='jinshu'>
+      <view class='w' style='background-color:#f6f6f6'>
+        <text>
+        
+        白色</text>
+      </view>
+      <view class='b' style='background-color:black'>
+        <text>
+        
+        黑色</text>
+      </view>
+      <view class='g' style='background-color:gray'>
+        <text>
+        
+        灰色</text>
+      </view>
+      <view class='yin' style='background-color:#b5b5b5'>
+        <text>
+        
+        银色</text>
+      </view>
+      <view class='lan' style='background-color:blue'>
+        <text>
+        
+        蓝色</text>
+      </view>
+      <view class='shui' style='background-color:black'>
+        <text>
+        
+        深灰</text>
+      </view>
+      <view class='qianhui' style='background-color:#eee'>
+        <text>
+        
+        浅灰</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='hb' style='margin-top:110rpx;'></view>
+  <!-- 内饰 -->
+  <view class='nshi'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx' class='before-line'>内饰</view>
+    </view>
+    <view class='byanse'>
+      <view class='b' style='background-color:black'>
+        <text>
+
+        黑色</text>
+      </view>
+      <view class='w' style='background-color:black'>
+        <view style='width:60rpx;height:30rpx;background-color:red'>
+          <text>
+
+        黑红</text>
+        </view>
+      </view>
+      <view class='br' style='background-color:red'>
+        <text>
+
+        红色</text>
+      </view>
+      <view class='y' style='background-color:#e47833'>
+        <text>
+        
+        黄色</text>
+      </view>
+    </view>
+  </view>
+  <view class='hb'></view>
+  <!-- 轮毂 -->
+  <view class='lg'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx;margin-top:40rpx' class='before-line'>轮毂</view>
+    </view>
+    <view class='lt'>
+      <view style='display: flex;justify-content:space-between '>
+        <view class='lt1'>
+          <image src='https://img14.360buyimg.com/n0/jfs/t5200/250/1862810929/303090/3f354a77/59157e88N45e9a8f0.jpg'></image>19英寸</view>
+        <view class='lt1'>
+          <image src='https://img14.360buyimg.com/n0/jfs/t5200/250/1862810929/303090/3f354a77/59157e88N45e9a8f0.jpg'></image>19英寸</view>
+        <view class='lt1'>
+          <image src='https://img14.360buyimg.com/n0/jfs/t5200/250/1862810929/303090/3f354a77/59157e88N45e9a8f0.jpg'></image>19英寸</view>
+        <view class='lt1'>
+          <image src='https://img14.360buyimg.com/n0/jfs/t5200/250/1862810929/303090/3f354a77/59157e88N45e9a8f0.jpg'></image>19英寸</view>
+      </view>
+    </view>
+  </view>
+  <view class='hb' style='margin-top:100rpx'></view>
+  <!-- 精选定制 -->
+  <!-- <view class='jx'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx;margin-top:40rpx;' class='before-line'>精选定制</view>
+    </view>
+    <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex;overflow:auto;"> -->
+  <!--  display: inline-block-->
+  <!-- <view style="background: red; width: 200px; height: 120px; display: inline-block;position:relative" >
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1597357330,2335598108&fm=27&gp=0.jpg' style='width:100%;height:100%'></image><view class='nqi'><view class='big'>智能套装</view><view class='bt'></view><text>
+    360°摄像头
+    主动式车道保持辅助系统
+    盲点辅助系统</text></view>
+  </view>
+  <view style="background: green; width: 200px; height: 120px; display: inline-block;margin-left:20rpx;position:relative">
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1597357330,2335598108&fm=27&gp=0.jpg' style='width:100%;height:100%'></image><view class='nqi'><view class='big'>智能套装</view><view class='bt'></view><text>
+    360°摄像头
+    主动式车道保持辅助系统
+    盲点辅助系统</text></view>
+  </view>
+</scroll-view>
+ </view>
+ <view class='hb' style='margin-top:60rpx'></view> -->
+  <!-- 选配装备 -->
+  <!-- <view class='xpzb'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx;margin-top:40rpx' class='before-line'>选配装备</view>
+    </view>
+     <scroll-view scroll-x="true" style=" white-space: nowrap; display:flex;overflow:auto;"> -->
+  <!--  display: inline-block-->
+  <!-- <view style="background: red; width: 200px; height: 120px; display: inline-block;position:relative" >
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1597357330,2335598108&fm=27&gp=0.jpg' style='width:100%;height:100%'></image><view class='nqi'><view class='big'>可加热前排座位</view><view class='bt'></view></view>
+  </view>
+  <view style="background: green; width: 200px; height: 120px; display: inline-block;margin-left:20rpx;position:relative">
+    <image src='https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1597357330,2335598108&fm=27&gp=0.jpg' style='width:100%;height:100%'></image><view class='nqi'><view class='big'>空气悬挂系统</view><view class='bt'></view></view>
+  </view>
+</scroll-view>
+ </view>
+ <view class='hb' style='margin-top:60rpx'></view> -->
+  <!-- 不同展示 -->
+  <view class='btzs'>
+    <view style='position:relative'>
+      <view style='font-size:40rpx;margin-left:15rpx;margin-bottom:50rpx;margin-top:40rpx;' class='before-line'>车辆展示</view>
+    </view>
+    <!-- <view wx:for="{{menus3}}" class='btzs1'>
+      <image src="{{item.url}}"/>
+    </view> -->
+
+    <view class='img' style='padding:0 10rpx;' wx:for="{{menus1}}">
+      <view wx:for="{{item.dict}}">
+        <view hidden="{{item.imgtype}}">
+          <image src='{{item.img}}' style='width:100%;padding:20rpx 0;' mode="widthFix"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 底部 -->
+
+</view>
+<view class='foot'>
+  <view class='f11' style='position:relative;'>询价
+    <contact-button style='opacity: 0;position:absolute;left:0;top:0;' type="default-dark" size="40" session-from="weapp"></contact-button>
+    <contact-button style='opacity: 0;position:absolute;left:0;top:40rpx;' type="default-dark" size="40" session-from="weapp"></contact-button>
+    <contact-button style='opacity: 0;position:absolute;left:160rpx;top:0;' type="default-dark" size="40" session-from="weapp"></contact-button>
+    <contact-button style='opacity: 0;position:absolute;left:160rpx;top:40rpx;' type="default-dark" size="40" session-from="weapp"></contact-button>
+    <contact-button style='opacity: 0;position:absolute;left:80rpx;top:0;' type="default-dark" size="40" session-from="weapp"></contact-button>
+    <contact-button style='opacity: 0;position:absolute;left:80rpx;top:40rpx;' type="default-dark" size="40" session-from="weapp"></contact-button>
+  </view>
+
+  <view bindtap='show' class='f12'>预约购车</view>
+
+</view>
+
+
+<view style='width:100%;height:100%;background-color:rgba(0,0,0,0.5);position:fixed;top:0;z-index:1;{{style}}'>
+  <view style='width:100%;text-align:center;line-height:100rpx;background-color:rgba(255,255,255,0.8);color:#F00;font-size:40rpx;font-weight:500;position:fixed;top:0;z-index:666;'>{{tip}}</view>
+  <view style='position:absolute;left:10%;top:20%;width:80%;height:600rpx;border:1px solid #fff;border-radius:10rpx;background-color:rgba(0,0,0,0.6)'>
+    <view style='font-size:46rpx;font-weight:600;text-align:center;margin-top:30rpx;line-htight:80rpx;color:#fff;'>预约购车</view>
+
+    <form style='z-index:6;font-size:32rpx;{{style}}' bindsubmit="formSubmit">
+
+      <view class="row-wrap">
+
+        <view style='width:100%;line-height:100rpx;margin-top:50rpx;overflow:hidden;padding-left:66rpx;box-sizing:border-box;text-align:center;'>
+
+          <text style='color:#fff;line-height:100rpx;height:100rpx;float:left;'> 姓 名 :  </text>
+          <input placeholder='请输入您的姓名' name="name" style='color:#fff;display:inline-block;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+        </view>
+
+        <view style='width:100%;line-height:100rpx;margin-top:50rpx;padding-left:66rpx;box-sizing:border-box;text-align:center;'>
+
+          <text style='color:#fff;line-height:100rpx;height:100rpx;float:left;'> 电 话 :  </text>
+          <input placeholder='请输入您的电话' name="tel" style='color:#fff;display:inline-block;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+        </view>
+
+        <view style='width:100%;height:20rpx;'></view>
+        <view style='width:100%;display:none;line-height:100rpx;margin-top:50rpx;padding-left:66rpx;overflow:hidden;box-sizing:border-box;text-align:center;'>
+
+          <text style='color:#fff;line-height:100rpx;height:100rpx;float:left;'> 车 型 :  </text>
+          <input placeholder='请输入车辆型号' name="model" value='{{id}}' style='color:#fff;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+        </view>
+
+        <view style='display:none;width:100%;height:50rpx;'></view>
+        <view style='display:none;width:100%;line-height:100rpx;padding-left:166rpx;overflow:hidden;box-sizing:border-box;text-align:center;'>
+
+          <text style='color:#fff;line-height:100rpx;height:100rpx;float:left;'> 排 量 :  </text>
+          <input placeholder='请输入车辆排量' name="pl" style='color:#fff;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+        </view>
+
+        <view style='width:100%;display:none;height:50rpx;'></view>
+        <view style='width:100%;display:none;line-height:100rpx;padding-left:166rpx;overflow:hidden;box-sizing:border-box;text-align:center;'>
+
+          <text style='color:#fff;line-height:100rpx;height:100rpx;float:left;'> code :  </text>
+          <input placeholder='{{code2}}' name="code" value='{{code2}}' style='color:#fff;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+        </view>
+
+
+
+        <button type='' form-type="submit" style='margin-top:150rpx;width:550rpx;font-size:40rpx;line-height:100rpx;text-align:center;height:100rpx;color:#fff;background-color:#999;'> 提 交 </button>
+      </view>
+    </form>
+
+
+
+  </view>
+</view>

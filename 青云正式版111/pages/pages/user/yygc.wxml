@@ -1,0 +1,23 @@
+<!--pages/user/yygc.wxml-->
+
+
+<!-- <view wx:for="{{Array}}" style='font-size:30rpx;color:#666;line-height:60rpx;background-color:#f3f4f6;margin-bottom:4rpx;padding:20rpx 0;'>
+  <view style='padding-left:30rpx;'>预购保险类型 : {{item.type}}</view>
+  <view style='padding-left:30rpx;'>预约时间 : {{item.time}}</view>
+  <view style='padding-left:30rpx;'>联系人姓名 : {{item.name}}</view>
+  <view style='padding-left:30rpx;'>联系人电话 : {{item.tel}}</view>
+</view> -->
+<view wx:for="{{Array}}">
+<view wx:for="{{item.car}}" style='width:100%;height:250rpx;margin-bottom:10rpx;background-color: #f3f4f6;'>
+  <navigator style='display:block;width:100%;height:100%' url='../menu/goods?id={{item.carid}}'>
+    <image src="{{item.img}}" style='width:50%;float:left;height:100%' mode="aspectFit" />
+    <view style='width50%;height:100%;float:left;padding-left:30rpx'>
+      <view style='width:300rpx;padding:10rpx;'>
+        <view style='line-height:60rpx;font-size:30rpx;height:120rpx'>{{item.name}}</view>
+        <view style='line-height:60rpx;font-size:30rpx;color:#666;'>{{item.mile}}万公里 / {{item.year}}年</view>
+          <view style='line-height:60rpx;font-size:30rpx;color:#f00;'>售价：￥{{item.price}}</view>  
+      </view>
+    </view>
+  </navigator>
+</view>
+</view>

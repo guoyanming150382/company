@@ -1,0 +1,14 @@
+
+<view class='menu_pic'>
+
+  <view class='goods' style='width:50%; text-align:center;' wx:for="{{menus1}}">
+    <navigator url='../menu/menus?id={{item.classid}}'>
+      <view style='width:100%;height:172rpx;padding-bottom:20rpx;overflow:hidden;'>
+        <image class='img' style='width:100%;' mode="widthFix" src='{{item.img}}'></image>
+      </view>
+
+      <text style='font-size:30rpx;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'>{{item.name}}</text>
+    </navigator>
+
+  </view>
+</view>

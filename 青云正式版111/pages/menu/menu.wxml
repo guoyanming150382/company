@@ -1,0 +1,77 @@
+<!--pages/menu/menu.wxml-->
+
+<view class="menu_container">
+  <view class="menu_item">
+    <view bindtap='showhide1' data-type='公职考试'>
+      <image class="menu_icon" src="{{img1}}"></image>
+      <text class='bstyle' style='font-size:22rpx;padding-bottom:20rpx;display:block;text-align:center;color:#000;{{bstyle1}}'>公职考试</text>
+    </view>
+  </view>
+  <view class="menu_item">
+    <view bindtap='showhide2' data-type='资格证考试'>
+      <image class="menu_icon" src="{{img2}}" />
+      <text class='bstyle' style='font-size:22rpx;padding-bottom:20rpx;display:block;text-align:center;color:#000;{{bstyle2}}'>资格证考试</text>
+    </view>
+  </view>
+  <view class="menu_item">
+    <view bindtap='showhide3' data-type='学历提升'>
+      <image class="menu_icon" src="{{img3}}" />
+      <text class='bstyle' style='font-size:22rpx;padding-bottom:20rpx;display:block;text-align:center;color:#000;{{bstyle3}}'>学历提升</text>
+    </view>
+  </view>
+  <view class="menu_item">
+    <navigator url='sort?type=其他' bindtap='showhide' data-type='其他'>
+      <image class="menu_icon" src="../../image/qt1.png" />
+      <text class='bstyle' style='font-size:22rpx;padding-bottom:20rpx;display:block;text-align:center;color:#000;{{bstyle4}}'>其他</text>
+    </navigator>
+  </view>
+</view>
+
+
+<view style='{{style1}}' class="hide menu_container">
+  <view class="menu_item" wx:for="{{menus4}}" wx:for-index="idx" wx:for-item="menu">
+    <navigator url='sort?type={{menu.type}}' data-type='{{menu.type}}'>
+      <image class="menu_icon" style='height:75rpx' src="{{menu.url}}" />
+      <text style='font-size:22rpx;display:block;text-align:center;color:#1296db;'>{{menu.type}}</text>
+    </navigator>
+  </view>
+</view>
+
+
+<view style='{{style3}}' class="hide menu_container">
+  <view class="menu_item" wx:for="{{menus3}}" wx:for-index="idx" wx:for-item="menu">
+    <navigator url='sort?type={{menu.type}}' data-type='{{menu.type}}'>
+      <image class="menu_icon" style='height:75rpx;width:75rpx;' src="{{menu.url}}" />
+      <text style='font-size:22rpx;display:block;text-align:center;color:#1296db;'>{{menu.type}}</text>
+    </navigator>
+  </view>
+</view>
+
+
+<view style='{{style2}}' class="hide menu_container">
+  <view class="menu_item" wx:for="{{menus2}}" wx:for-index="idx" wx:for-item="menu">
+    <navigator url='sort?type={{menu.type}}' data-type='{{menu.type}}'>
+      <image class="menu_icon" style='height:75rpx' src="{{menu.url}}" />
+      <text style='font-size:22rpx;display:block;text-align:center;color:#1296db;'>{{menu.type}}</text>
+    </navigator>
+  </view>
+</view>
+
+
+
+
+
+
+<view class='menu_pic'>
+
+  <view class='goods' style='width:50%; text-align:center;' wx:for="{{menus1}}">
+    <navigator url='menus?id={{item.classid}}'>
+      <image class='img' style='width:100%;' src='{{item.img}}'></image>
+      <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'>{{item.name}}</text>
+    </navigator>
+  </view>
+
+
+
+
+</view>

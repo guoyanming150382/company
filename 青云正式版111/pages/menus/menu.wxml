@@ -1,0 +1,51 @@
+<!--pages/menus/menu.wxml-->
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+  <block wx:for="{{menus1}}">
+    <view wx:for="{{item.dict}}">
+      <swiper-item wx:if="{{item.imgtype}}">
+        <image mode="widthFix" src="{{item.img}}" class="swiper-image" />
+      </swiper-item>
+    </view>
+  </block>
+</swiper>
+<view style='padding:20rpx 0;'>
+  <view class='textjs' style='width:100%;' wx:for="{{menus1}}">
+    <view class='name' style='width:100%;text-align:center;font-size:36rpx;font-weight:600;line-height:80rpx;'>{{item.pname}}</view>
+
+
+    <view style='float:left;width:50%;text-align:center;line-height:80rpx;font-size:30rpx;color:#666;'>型号 : {{item.model}}</view>
+    <view style='float:left;width:50%;text-align:center;line-height:80rpx;font-size:30rpx;color:#666;'>规格 : {{item.size}}</view>
+    <view style='float:left;width:50%;text-align:center;line-height:80rpx;font-size:30rpx;color:#666;'>电池容量 : {{item.btr}}</view>
+    <view style='float:left;width:50%;text-align:center;line-height:80rpx;font-size:30rpx;color:#666;'>价格 : {{item.price}}</view>
+
+  </view>
+</view>
+
+<view class="weui-cells weui-cells_after-title">联系客服
+  <contact-button class='btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn1 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn2 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn3 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn4 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn5 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn6 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn7 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn8 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn9 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+  <contact-button class='btn10 btn' type="default-dark" size="20" session-from="weapp"></contact-button>
+</view>
+<view style='line-height:100rpx;font-size:40rpx;font-weight:600;text-indent:1em;'>商品详情</view>
+
+<view wx:for="{{menus1}}">
+  <text style='display:block;margin:0 20rpx;text-indent:2em;line-height: 66rpx;font-size: 36rpx;color: #999;'>文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述文字叙述</text>
+</view>
+
+<view class='img' style='padding:0 10rpx;' wx:for="{{menus1}}">
+  <view wx:for="{{item.dict}}">
+    <view hidden="{{item.imgtype}}">
+      <image src='{{item.img}}' style='width:100%;height:400rpx;'></image>
+    </view>
+  </view>
+</view>
+
+<text style='text-align:center;font-size:26rpx;display:block;margin:50rpx;color:#666;'>© 2018 小程序由河南辛普森互联网科技提供技术支持</text>

@@ -1,0 +1,60 @@
+<!--pages/test/test.wxml-->
+<image src='../../image/bz.jpg' style='width:100%;height:110%;position:absolute;top:0;z-index:1;'></image>
+<form style='position:absolute;width:100%;height:110%;top:0;z-index:6;background-color:rgba(255,255,255,0.7);font-size:32rpx;' bindsubmit="formSubmit">
+  
+  <view class="row-wrap">
+    <picker style='width:100%;margin-top:100rpx;line-height:100rpx;text-align:center;padding-left:114rpx;' bindchange="bindYyPickerChange" value="{{yyIndex}}" range="{{yyArray}}">
+      <view>
+        <text style='color:#666;float:left;'>预约项目 : </text>
+        <input disabled='true' placeholder='请选择预约项目' name="type" value='{{yyArray[yyIndex]}}' style='color:#666;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+      </view>
+    </picker>
+    <view style='width:100%;height:100rpx;'></view>
+    <picker style='width:100%;line-height:100rpx;margin-top:50rpx;text-align:center;padding-left:114rpx;' mode="date" value="{{yearsValue}}" start="1999-01-01" end="2030-12-31" bindchange="yearsPickerBindchange">
+      <view>
+        <text style='color:#666;float:left;'>购车日期 : </text>
+        <input disabled='true' placeholder='请选择购车日期' name="subdate" value='{{yearsValue}}' style='color:#666;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+      </view>
+    </picker>
+    <view style='width:100%;height:100rpx;'></view>
+    <picker style='width:100%;line-height:100rpx;margin-top:50rpx;text-align:center;padding-left:114rpx;' mode="date" value="{{dateValue}}" start="1900-01-01" end="2030-12-31" bindchange="datePickerBindchange">
+      <view>
+        <text style='color:#666;float:left;'>预约时间 : </text>
+        <input disabled='true' value='{{dateValue}}' name="time" placeholder='请选择预约时间' style='color:#666;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+      </view>
+    </picker>
+    <view style='width:100%;height:100rpx;'></view>
+    <view style='width:100%;line-height:100rpx;margin-top:50rpx;overflow:hidden;padding-left:166rpx;box-sizing:border-box;text-align:center;'>
+
+      <text style='color:#666;line-height:100rpx;height:100rpx;float:left;'> 姓 名 :  </text>
+      <input placeholder='请输入您的姓名' value='{{form_info}}' name="name" style='color:#666;display:inline-block;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+    </view>
+
+    <view style='width:100%;line-height:100rpx;margin-top:50rpx;padding-left:166rpx;box-sizing:border-box;text-align:center;'>
+
+      <text style='color:#666;line-height:100rpx;height:100rpx;float:left;'> 电 话 :  </text>
+      <input placeholder='请输入您的电话' value='{{form_info}}' name="tel" style='color:#666;display:inline-block;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+    </view>
+    <view style='width:100%;height:100rpx;'></view>
+    <view style='width:100%;line-height:100rpx;margin-top:50rpx;padding-left:166rpx;overflow:hidden;box-sizing:border-box;text-align:center;'>
+
+      <text style='color:#666;line-height:100rpx;height:100rpx;float:left;'> 车 型 :  </text>
+      <input placeholder='请输入车辆型号' value='{{form_info}}' name="model" style='color:#666;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+    </view>
+    
+    <view style='display:none;width:100%;height:50rpx;'></view>
+    <view style='display:none;width:100%;line-height:100rpx;padding-left:166rpx;overflow:hidden;box-sizing:border-box;text-align:center;'>
+
+      <text style='color:#666;line-height:100rpx;height:100rpx;float:left;'> 排 量 :  </text>
+      <input placeholder='请输入车辆排量' name="pl" style='color:#666;float:left;width:300rpx;line-height:100rpx;margin-left:16rpx;height:100rpx;border-radius:10rpx;padding:0 30rpx;border:1px solid #ccc'></input>
+
+    </view>
+    <button type='' form-type="submit" style='margin:50rpx 100rpx;width:550rpx;font-size:40rpx;line-height:100rpx;text-align:center;height:100rpx;color:#fff;background-color:#999;'> 提 交 </button>
+  </view>
+</form>
+
+<view style='width:100%;text-align:center;line-height:100rpx;background-color:rgba(255,255,255,0.8);color:#F00;font-size:40rpx;font-weight:500;position:fixed;top:0;z-index:666;'>{{tip}}</view>
+

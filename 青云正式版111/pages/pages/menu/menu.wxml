@@ -1,0 +1,64 @@
+<!--pages/menu/menu.wxml-->
+<view class="viewport sortpage">
+  <!-- 分类 -->
+  <view class="sortcontainer">
+    <!-- 分类大项 -->
+    <template is="msgItem" data="{{...item,msg:'vue'}}" />
+    <view class="sortsup ">
+      <view class='ul' wx:for='{{nav}}'>
+
+        <view id="{{index}}" data-index="{{index}}" bindtap='mkdir' class="black {{item.color?red:black}}">{{item.content}}</view>
+
+      </view>
+    </view>
+    <!-- <view class="sortsup ">
+      <view class='ul'>
+        <navigator>
+          <view data-type="1 " bindtap='' class="view active ">价格区间</view>
+        </navigator>
+        <navigator>
+          <view data-type="2 " bindtap='' class="view ">价格区间</view>
+        </navigator>
+        <navigator>
+          <view data-type="3 " bindtap='' class="view ">价格区间</view>
+        </navigator>
+        <navigator>
+          <view data-type="4 " bindtap='' class="view ">价格区间</view>
+        </navigator>
+        <navigator>
+          <view data-type="5 " bindtap='' class="view ">价格区间</view>
+        </navigator>
+        <navigator>
+          <view data-type="6 " bindtap='' class="view ">价格区间</view>
+        </navigator>
+        <navigator>
+          <view data-type="7 " bindtap='' class="view ">价格区间</view>
+        </navigator>
+
+
+
+      </view>
+    </view> -->
+    <!-- 分类小项 -->
+    <view class="sortsub ">
+
+
+      <view class="panel" style='padding-top:30rpx;'>
+        
+        <view wx:for="{{cars}}">
+          <view class='view'>
+            <navigator url="goods?id={{item.carid}}">
+              <image src="{{item.img}}" style='padding:20rpx;' mode="widthFix"></image>
+              <text style='color:#000;'>{{item.name}}</text>
+              <text style='color:#666;'>{{item.mile}}万公里/{{item.year}}年</text>
+              <text style='color:#f00;'>售价 : {{item.price}}</text>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+

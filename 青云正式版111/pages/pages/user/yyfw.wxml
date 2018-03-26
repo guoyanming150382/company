@@ -1,0 +1,7 @@
+<!--pages/user/yyfw.wxml-->
+<view wx:for="{{Array}}" style='font-size:30rpx;color:#666;line-height:60rpx;background-color:#f3f4f6;margin-bottom:4rpx;padding:20rpx 0;'>
+  <view style='padding-left:30rpx;'>预购服务 : {{item.type}}</view>
+  <view style='padding-left:30rpx;'>预约时间 : {{item.time}}</view>
+  <view style='padding-left:30rpx;'>联系人姓名 : {{item.name}}</view>
+  <view style='padding-left:30rpx;'>联系人电话 : {{item.tel}}</view>
+</view>

@@ -1,0 +1,4 @@
+/* pages/user/yygc.wxss */
+page {
+  background-color: #fff;
+}

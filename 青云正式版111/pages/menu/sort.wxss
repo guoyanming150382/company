@@ -1,0 +1,17 @@
+/* pages/menu/sort.wxss */
+.menu_pic {
+  margin: 10rpx;
+  /* border-left: 1px dashed #ccc; */
+  /* border-top: 1px dashed #ccc; */
+}
+.menu_pic .goods {
+  box-sizing: border-box;
+  float: left;
+  padding: 10rpx;
+  /* border-bottom: 1px dashed #ccc; */
+  /* border-right: 1px dashed #ccc; */
+  
+}
+.menu_pic .goods .img {
+  height: 250rpx;
+}

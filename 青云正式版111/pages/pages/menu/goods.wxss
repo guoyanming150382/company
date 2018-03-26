@@ -1,0 +1,254 @@
+page {
+  background-color: white;
+  width: 100%;
+}
+.swiper {
+
+  width: 100%;
+}
+
+.swiper-image {
+
+  width: 100%;
+}
+.textjs {
+  width: 50%;
+  display: inline-block;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+
+}
+.textjs text {
+  width: 100%;
+
+  line-height: 66rpx;
+  font-size: 36rpx;
+  color: #999;
+}
+
+.text {
+  display: block;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  text-indent: 2em;
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.xi view view{
+  float: right;
+  display: block;
+}
+
+/* 外观 */
+.wg{
+  width: 100%;
+  height: 400rpx;
+  background-color: white;
+  font-size: 30rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.before-line:before{
+  content: "";
+  display: block;
+  width: 5rpx;
+  height:16px;
+  background-color: #bc1717;
+  position: absolute;
+  top: 11rpx;
+  left: 0;
+}
+.byanse,.jinshu{
+  margin-top: 20rpx;
+}
+.byanse{
+  margin-bottom: 50rpx;
+}
+.byanse view{
+  width: 30rpx;
+
+}
+.byanse view{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+  margin-right: 25rpx;
+}
+
+.jinshu view{
+  width: 60rpx;
+  height: 60rpx;
+  display: inline-block;
+  margin-right: 25rpx;
+}
+/* 内饰 */
+.nshi{
+  background-color: white;
+  margin-top: 40rpx;
+  padding: 30rpx;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+.hb{
+  background-color:#ccc;
+  width:100%;
+  height:20rpx;
+}
+/* 轮毂 */
+.lg{
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.lt1{
+  height:150rpx;
+  width:150rpx;
+ background-color: blue;
+ text-align: center;
+}
+.lt1 image{
+  height: 100%;
+  width:100%;
+}
+
+/* 精选 */
+.jx{
+  padding: 30rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+.jx .nqi{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+   color: white;
+}
+.jx .big{
+  font-size: 40rpx;
+}
+.jx .bt{
+  position: relative;
+  top: 25rpx;
+  left: 0;
+  width: 70rpx;
+  height: 3rpx;
+  background-color: white;
+}
+/* 选配装备 */
+.xpzb{
+padding: 30rpx;
+font-size: 28rpx;
+box-sizing: border-box;
+}
+.xpzb .nqi{
+  position: absolute;
+  top: 40%;
+  left: 20rpx;
+   color: white;
+}
+.xpzb .big{
+  font-size: 40rpx;
+}
+.xpzb .bt{
+  position: relative;
+  top: 25rpx;
+  left: 0;
+  width: 70rpx;
+  height: 3rpx;
+  background-color: white;
+}
+/* 车辆不同方位展示 */
+.btzs{
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.btzs .btzs1{
+  width: 100%;
+  height: 350rpx
+}
+.btzs image{
+  width: 100%;
+  height: 100%;
+}
+
+/* 底部 */
+.foot{
+  width: 100%;
+  height: 100rpx;
+  /* background-color: pink; */
+  margin-top: 60rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 100rpx;
+  margin-bottom: 0rpx;
+}
+.foot .f11{
+  width: 30%;
+  height: 100%;
+  background-color: #eee;
+  color: #000;
+  float: left;
+}
+.foot .f12{
+  width: 70%;
+  height: 100%;
+  color: white;
+  background-color: #000;
+  float: left;
+}
+
+
+
+
+
+.weui-cells::after{
+  content: none;
+  border-bottom: none;
+}
+
+.weui-cells::before{
+  border-top: none;
+}
+.weui-cells {
+  font-size: 44rpx;
+}
+.btn {
+  display: inline-block;
+  position: absolute;
+  left: 10rpx;
+  top: 15rpx;
+  padding: 20rpx;
+  opacity: 0; 
+}
+.btn1 {
+  left: 75rpx;
+}
+.btn2 {
+  left: 140rpx;
+}
+.btn3 {
+  left: 205rpx;
+}
+.btn4 {
+  left: 270rpx;
+}
+.btn5 {
+  left: 335rpx;
+}
+.btn6 {
+  left: 400rpx;
+}
+.btn7 {
+  left: 465rpx;
+}
+.btn8 {
+  left: 530rpx;
+}
+.btn9 {
+  left: 595rpx;
+}
+.btn10 {
+  left: 660rpx;
+}
