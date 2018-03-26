@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.head{
+		width: 7.5rem;
+		height: 1rem;
+		/*background-color: red;*/
+		border-bottom: 0.02rem solid #aaa
+	}
+	.head .tu1{
+		width: 1rem;
+		height: 1rem;
+		padding: 0.15rem;
+		box-sizing: border-box;
+		float: left;
+	}
+	.head .tu2{
+		width: 1.1rem;
+		height: 0.9rem;
+		padding: 0.25rem;
+		box-sizing: border-box;
+		float: right;
+		margin-top: 0.05rem
+	}
+	.head .tu3{
+		width: 0.7rem;
+		height: 0.8rem;
+		float: right;
+		margin-top: 0.1rem
+	}
+	.head .tu4{
+		width: 0.7rem;
+		height: 0.7rem;
+		float: right;
+		padding: 0.1rem;
+		box-sizing: border-box;
+		margin-top: 0.15rem
+		
+	}
+	/*轮播*/
+	.all {
+		/*height: 100%;*/
+		/*height: 8rem;*/
+		overflow: hidden;
+		height: 4rem;
+
+	}
+	#wrap{
+		position: relative;
+		height: 4rem
+	}
+	#list{
+		position: absolute;
+		list-style: none;
+		/*width: 500%;*/
+		width: 6rem;
+		overflow: hidden;
+		height: 4rem
+	}
+	#list li{
+		float: left;
+		/*width: 20%;*/
+		height: 4rem;
+	}
+	#list li img{
+		display: block;
+		width: 100%;
+		height: 4em
+	}
+	/*热销*/
+	.contient{
+		width: 7.5rem;
+		height: 1.2rem;
+		background-color: #eee;
+		text-align: center;
+		padding-top: 0.15rem;
+		box-sizing: border-box;
+		position: relative;
+		border-bottom: 0.02rem solid #aaa
+	}
+	.contient .co1{
+		font-size: 0.08rem;
+	}
+	.contient .co2{
+		font-size: 0.4rem;
+		font-weight: bold
+	}
+	.contient .co3{
+		font-size: 0.28rem;
+		text-align: right;
+		position: absolute;
+		right: 0.4rem;
+		top: 0.42rem;
+		color: #4d4dff
+	}
+	.contient1 {
+		height: 7.6rem;
+		width: 7.5rem;
+		box-sizing: border-box;
+		border-bottom: 0.04rem solid #aaa;
+	}
+	.contient1 .con1,.con2,.con3,.con4{
+		height: 3.8rem;
+		width: 3.75rem;
+		padding: 0 0.15rem 0 0.2rem;
+		box-sizing: border-box;
+	}
+	.contient1 .con3,.con4{
+		height:3.8rem;
+	}
+	.contient1 .d1,.d2,.d3,.d6{
+		padding-left: 0.1rem;
+		box-sizing: border-box;
+	}
+	.contient1 .con1{
+		/*background-color: green;*/
+		float: left;
+		/*border-right:  0.02rem solid #aaa;*/
+		/*border-bottom: 0.02rem solid #aaa; */
+		box-sizing: border-box;
+	}
+	.contient1 .con2{
+		/*background-color: red;*/
+		float: left;
+		/*border-bottom: 0.02rem solid #aaa; */
+		box-sizing: border-box;
+	}
+	.contient1 .con3{
+		/*background-color: blue;*/
+		float: left;
+		/*border-right: 0.02rem solid #aaa; */
+		/*border-bottom: 0.02rem solid #aaa; */
+		box-sizing: border-box;
+	}
+	.contient1 .con4{
+		/*background-color: yellow;*/
+		float: left;
+		box-sizing: border-box;
+		/*border-bottom: 0.02rem solid #aaa; */
+	}
+	.contient1 .d1{
+		font-size: 0.35rem;
+		color: red;
+	}
+	.contient1 .d2,.d3{
+		font-size: 0.25rem;
+	}
+	.contient1 .d3{
+		color: #ff7f00;
+		width: 2.2rem;
+		display: block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.contient1 .d4{
+		width: 1.5rem;
+		height: 0.5rem;
+		line-height: 0.5rem;
+		text-align: center;
+		font-size: 0.20rem;
+		background-color: red;
+		color: #fff;
+		float: left;
+		box-shadow: 0.04rem 0.03rem 0.02rem #aaa;
+	}
+	.contient1 .d5{
+		font-size: 0.20rem;
+		float: right;
+		height: 0.5rem;
+		width: 1.5rem;
+		line-height: 0.5rem;
+		padding-right: 0.1rem;
+		color: gray
+	}
+	.contient1 .d6{
+		margin-top: 0.3rem
+	}
+	.contient3{
+		height: 4rem;
+		width: 7.5rem;
+		border-bottom: 0.02rem solid #aaa;
+		background-color: #eee;
+		padding-top: 10px;
+		box-sizing: border-box;
+	}
+	.foot{
+		height: 0.5rem;
+		width: 7.5rem;
+		line-height: 0.5rem;
+		border-bottom: 0.02rem solid #aaa;
+		background-color: #d8d7d7;
+		font-size: 0.28rem;
+		text-align: center;
+		margin-bottom: 1.1rem;
+		margin-top: 0.7rem;
+	}
+	.fenleilan{
+		width: 5.5rem;
+		height: 5rem;
+		background-color: #f2f2f2;
+		position: absolute;
+		top: 1rem;
+		right: 0rem;
+		display: none
+	}
+	.fenleilan li{
+		width: 100%;
+		height: 1rem;
+		list-style: none;
+	}
+	.fenleilan .fen1 .df{
+		width: 2.74rem;
+		height: 1rem;
+		float: left;
+		line-height: 1rem;
+		font-size: 0.4rem;
+	}
+	.rightfenlei{
+		width: 1rem;
+		height: 4.4rem;
+		position:fixed;
+		right: 0rem;
+		bottom: 3rem;
+		
+	}
+	.rightfenlei .right1{
+		width: 1rem;
+		height: 1rem;
+		margin-top: 0.1rem;
+		background-color: #4d4dff;
+		text-align: center;
+		font-size: 8px;	
+		padding-top: 0.1rem;
+		box-sizing: border-box;
+		color: #fff
+	}
+	.rightfenlei .right1 img{
+		width: 0.45rem;height: 0.45rem;
+	}
+	.footer{
+		width: 7.5rem;
+		height: 1.1rem;
+		background-color: #f3f3f3;
+		position: fixed;
+		bottom: 0rem;
+		left: 0rem;
+		z-index: 10;
+		border-top: 0.02rem solid #aaa
+	}
+	.footer li{
+		width: 33.333%;
+		height: 1rem;
+		font-size: 0.2rem;
+		float: left;
+		list-style: none;
+		text-align: center;
+		padding-top: 0.15rem;
+		box-sizing: border-box;
+	}
+	.footer li img{
+		width: 0.4rem;
+		height: 0.4rem;
+	}
+</style>
+</head>
+<body>
+	<div class="head">
+		<img src="h1.png" class="tu1">
+		<img src="h2.png" class="tu2" id="show">
+	<!-- 	<img src="h3.png" class="tu3">
+		<img src="h4.png" class="tu4"> -->
+	</div>
+	<!-- 轮播 -->
+	<div class="all" id="suoyou" >
+		<div id="wrap" style="">
+			<ul id="list">
+				<li>
+					<a href="javascript:;" style="text-decoration: none">
+						<img src="lo1.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" style="text-decoration: none">
+						<img src="lo2.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" style="text-decoration: none">
+						<img src="lo3.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" style="text-decoration: none">
+						<img src="lo4.jpg" alt="">
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	<!-- 热销 -->
+	<div class="contient">
+		<div class="co1">CAR SHOW</div>
+		<div class="co2">车辆展示</div>
+		<div class="co3"><a href="index-2.html" style="text-decoration: none;color: #4d4dff">更多车型<span> &gt;</span></a></div>
+	</div>
+	<div class="contient1">
+		<div class="con1" >
+			<div style="border: 0.02rem solid #aaa;margin-top: 0.4rem;">
+					<a href="index-3.html" >
+					<img src="bo1.png" style="width: 100%" mode="widthFix">
+					</a>
+					<div class="d1" style="text-align: center;">￥45900<span style="font-size: 0.25rem"> 起</span></div>
+					<div class="d2" style="text-align: center;">众泰Z500EV</div>
+					<div class="d3" style="margin: 0 auto;margin-bottom: 0.1rem">2018众泰最新款车型</div>
+			</div>
+			<!-- <div class="d6">
+				<div class="d4">立即订购</div>
+				<div class="d5">已订购：66台</div>
+			</div> -->
+		</div>
+		<div class="con2" >
+			<div style="border: 0.02rem solid #aaa;margin-top: 0.4rem;">
+			<a href="index-3.html" >
+			<img src="bo4.png" style="width:100%" mode="widthFix">
+		</a>
+			<div class="d1" style="text-align: center;">￥125800<span style="font-size: 0.25rem"> 起</span></div>
+			<div class="d2" style="text-align: center;">众泰E200</div>
+			<div class="d3" style="margin: 0 auto;margin-bottom: 0.1rem">2018众泰最新款车型</div>
+		</div>
+			<!-- <div class="d6">
+				<div class="d4">立即订购</div>
+				<div class="d5">已订购：66台</div>
+			</div> -->
+		</div>
+		<div class="con3" >
+			<div style="border: 0.02rem solid #aaa;margin-top: 0.2rem;">
+			<a href="index-3.html" >
+			<img src="bo5.png" style="width: 100%" mode="widthFix">
+		</a>
+			<div class="d1" style="text-align: center;">￥72800<span style="font-size: 0.25rem"> 起</span></div>
+			<div class="d2" style="text-align: center;">众泰100</div>
+			<div class="d3" style="margin: 0 auto;margin-bottom: 0.1rem">2018众泰最新款车型</div>
+		</div>
+			<!-- <div class="d6">
+				<div class="d4">立即订购</div>
+				<div class="d5">已订购：66台</div>
+			</div> -->
+		</div>
+		<div class="con4" >
+			<div style="border: 0.02rem solid #aaa;margin-top: 0.2rem;">
+			<a href="index-3.html" >
+			<img src="bo3.png" style="width:100%" mode="widthFix">
+		</a>
+			<div class="d1" style="text-align: center;">￥119800<span style="font-size: 0.25rem"> 起</span></div>
+			<div class="d2" style="text-align: center;">大迈芝麻</div>
+			<div class="d3" style="margin: 0 auto;margin-bottom: 0.1rem">2018众泰最新款车型</div>
+		</div>
+			<!-- <div class="d6">
+				<div class="d4">立即订购</div>
+				<div class="d5">已订购：66台</div>
+			</div> -->
+		</div>
+	</div>
+	<div class="contient3">
+		<img src="lo5.jpg" width="100%;height:100%" >
+	</div>
+
+	<!-- ************* -->
+	<!-- <div class="contient">
+		<div class="co1">ACCESSORIES</div>
+		<div class="co2">热门精品</div>
+		<div class="co3">更多精品<span> &gt;</span></div>
+	</div>
+	<div class="contient">
+		<div class="co1">ACCESSORIES</div>
+		<div class="co2">热门配件</div>
+		<div class="co3">更多配件<span> &gt;</span></div>
+	</div> -->
+	<div class="foot">&copy; 2015 许昌众驰汽车销售有限公司</div>
+	<!-- 分类栏 -->
+	<ul class="fenleilan" id="fenlan">
+		<!-- <li class="fen1">
+			<div class="df" style="border-right: 0.02rem solid #fff;background-color: #aaa">
+				<div style="width: 50%;float: left;padding-top: 0.1rem;padding-left: 0.5rem;box-sizing: border-box;">
+					<img src="fen1.png" style="width: 0.6rem;height: 0.6rem">
+				</div>
+				<div style="width: 50%;float: left;line-height: 1rem">登录</div>
+			</div>
+			<div class="df" style="background-color: #aaa">
+				<div style="width: 50%;float: left;padding-top: 0.1rem;padding-left: 0.5rem;box-sizing: border-box;">
+					<img src="fen1.png" style="width: 0.6rem;height: 0.6rem">
+				</div>
+				<div style="width: 50%;float: left;line-height: 1rem">注册</div>
+			</div>
+		</li> -->
+		<li style="border-bottom: 0.02rem solid #aaa">
+			<a href="index.html" style="text-decoration: none;color: #000">
+			<img src="fen3.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+			<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+				<div style="width: 70%;float: left;font-size: 0.4rem">首页</div>
+				<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+			</div>
+			</a>
+		</li>
+		<li  style="border-bottom: 0.02rem solid #aaa">
+			<a href="index-2.html" style="text-decoration: none;color: #000">
+			<img src="fen4.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+			<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+				<div style="width: 70%;float: left;font-size: 0.4rem">车辆展示</div>
+				<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+			</div>
+			</a>
+		</li>
+		<li  style="border-bottom: 0.02rem solid #aaa">
+			<a href="yuyue.html" style="text-decoration: none;color: #000">
+			<img src="fen5.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+			<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+				<div style="width: 70%;float: left;font-size: 0.4rem">预约试驾</div>
+				<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+			</div>
+			</a>
+		</li>
+		<!-- <li  style="border-bottom: 0.02rem solid #aaa">
+			<img src="fen6.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+			<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+				<div style="width: 70%;float: left;font-size: 0.4rem">精品配件</div>
+				<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+			</div>
+		</li>
+		<li  style="border-bottom: 0.02rem solid #aaa">
+			<img src="fen7.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+			<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+				<div style="width: 70%;float: left;font-size: 0.4rem">销售网点</div>
+				<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+			</div>
+		</li> -->
+		<li style="height: 2rem;font-size: 0.25rem;text-align: center;">
+			<div style="margin-bottom: 0.2rem;margin-top: 0.35rem">法律声明 &nbsp;&nbsp;|&nbsp;&nbsp; 联系我们</div>
+			<div>&copy;2015许昌XXXXXXXX汽车销售有限公司</div>
+			<div>豫IPC备285559478</div>
+		</li>
+	</ul>
+	<div class="rightfenlei">
+		<div class="right1">
+			<a href="index-rexian.html" style="text-decoration: none;color: #fff">
+			<img src="rl1.png">
+			<div>销售热线</div>
+			</a>
+		</div>
+		<div class="right1">
+			<a href="index-5.html" style="text-decoration: none;color: #fff;">
+			<img src="rl2.png">
+			<div>销售网点</div>
+			</a>
+		</div>
+		<div class="right1">
+			<a href="yuyue.html" style="text-decoration: none;color: #fff">
+			<img src="rl3.png">
+			<div>预约试驾</div>
+			</a>
+		</div>
+		<div class="right1">
+			<a href="#" style="text-decoration: none;">
+			<img src="rl4.png" style="width: 0.6rem;height: 0.6rem;margin-top: 0.1rem">
+		</a>
+		</div>
+	</div>
+	<ul class="footer">
+		<li>
+			<a href="index.html" style="text-decoration: none;color: #4d4dff">
+			<img src="firsts.png">
+			<div style="color: #4d4dff">首页</div>
+			</a>
+		</li>	
+		<li>
+			<a href="yuyue.html" style="text-decoration: none;color: #000">
+			<img src="fen5.png">
+			<div>预约试驾</div>
+		</a>
+		</li>	
+		<li>
+			<a href="we.html" style="text-decoration: none;color: #000">
+			<img src="first3.png">
+			<div>关于我们</div>
+		</a>
+		</li>	
+	</ul>
+</body>
+<script  src="transformCss.js"></script>
+<script type="text/javascript">
+	(function (doc, win) {
+		var docEl = doc.documentElement,
+		resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+		recalc = function () {
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if(clientWidth>=750){
+				docEl.style.fontSize = '100px';
+			}else{
+				docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			}
+		};
+
+		if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+
+       // 轮播
+	playbo();
+  
+ function playbo(){
+        document.addEventListener("touchstart",function (event) {
+        	event.preventDefault()
+
+        })
+
+     
+        // window.onload =function () {
+        	var spanNodes = document.querySelectorAll("#navs span")
+        	var wrap = document.getElementById("wrap")
+        	var list = document.getElementById("list")
+        	list.innerHTML += list.innerHTML
+        	var liNodes = document.querySelectorAll("#list li")
+        	var styleN = document.createElement("style")
+        	var cssText = '#list{width:' + liNodes.length + '00%}'
+        	cssText += '#list li{width:' + (1 / liNodes.length * 100) + '%}'
+        	// cssText += '#wrap{height:' + liNodes[0].offsetHeight + 'px}'
+        	styleN.innerHTML = cssText;
+        	document.head.appendChild(styleN)
+
+        	var elementX = 0;
+        	var startX = 0;
+        	var timer =0;
+        	var now = 0;
+//           var disX =0
+//           var  translateX =0;
+wrap.addEventListener("touchstart", function (event) {
+	clearInterval(timer)
+	list.style.transition = 'none';
+	var left = transformCss(list, "translateX")
+	var now = Math.round(-left / document.documentElement.clientWidth)
+
+	if (now == 0) {
+		now = spanNodes.length
+	} else if (now == liNodes.length - 1) {
+		now = spanNodes.length - 1
+	}
+	transformCss(list, 'translateX', -now * document.documentElement.clientWidth)
+
+	var touch = event.changedTouches[0];
+//               elementX = list.offsetLeft;
+startX = touch.clientX
+//                elementX =translateX;
+elementX = transformCss(list, 'translateX')
+});
+wrap.addEventListener("touchmove", function (event) {
+	var touch = event.changedTouches[0];
+	var nowX = touch.clientX;
+	var disX = nowX - startX
+//               translateX = elementX+disX
+//               list.style.transform = 'translateX('+translateX +'px)';
+transformCss(list, 'translateX', elementX + disX)
+});
+wrap.addEventListener("touchend", function (event) {
+	event.preventDefault()
+
+//               var left =list.offsetLeft;
+//                   var left = translateX;
+var left = transformCss(list, "translateX")
+//               if(disX<0){
+//                now = Math.ceil(-left/document.documentElement.clientWidth)
+//               }else{
+//                   now = Math.floor(-left/document.documentElement.clientWidth)
+//
+//               }
+now = Math.round(-left / document.documentElement.clientWidth)
+if (now < 0) {
+	now = 0
+} else if (now > liNodes.length - 1) {
+	now = liNodes.length - 1
+}
+list.style.transition = '0.5s';
+//               translateX = -now*document.documentElement.clientWidth;
+//               list.style.transform = 'translateX('+translateX+'px)';
+transformCss(list, 'translateX', -now * document.documentElement.clientWidth)
+               //同步小圆点
+               for (var i = 0; i < spanNodes.length; i++) {
+               	spanNodes[i].className = ''
+               }
+               auto();
+           });
+         // 自动轮播图
+//           var now = 0;
+auto();
+function  auto() {
+	clearInterval(timer)
+	timer = setInterval(function () {
+		list.style.transition = 'none'
+		if(now ==liNodes.length-1){
+			now =spanNodes.length-1
+		}
+		transformCss(list, 'translateX', -now * document.documentElement.clientWidth)
+		setTimeout(function () {
+			now++;
+			list.style.transition = '0.5s'
+			transformCss(list, 'translateX', -now * document.documentElement.clientWidth)
+			for (var i = 0; i < spanNodes.length; i++) {
+				spanNodes[i].className = ''
+			}
+
+		},20)
+
+	},2000)
+}
+}
+ 
+	var oShow=document.getElementById('show');
+	var oFenl=document.getElementById('fenlan');
+
+	oShow.onclick=function(){
+                if(oFenl.style.display=="none"){
+                    oFenl.style.display="block"
+                }else{
+                    oFenl.style.display="none";
+                }
+
+            }
+</script>
+</html>

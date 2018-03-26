@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>提交成功</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.head{
+		width: 7.5rem;
+		height: 1rem;
+		/*background-color: red;*/
+		border-bottom: 0.02rem solid #aaa
+	}
+	.head .tu1{
+		width: 1rem;
+		height: 1rem;
+		padding: 0.15rem;
+		box-sizing: border-box;
+		float: left;
+	}
+	.head .tu2{
+		width: 1.1rem;
+		height: 0.9rem;
+		padding: 0.25rem;
+		box-sizing: border-box;
+		float: right;
+		margin-top: 0.05rem
+	}
+	.head .tu3{
+		width: 0.7rem;
+		height: 0.8rem;
+		float: right;
+		margin-top: 0.1rem
+	}
+	.head .tu4{
+		width: 0.7rem;
+		height: 0.7rem;
+		float: right;
+		padding: 0.1rem;
+		box-sizing: border-box;
+		margin-top: 0.15rem
+		
+	}
+	/*分类栏目*/
+	.fenleilan{
+		width: 5.5rem;
+		height: 5rem;
+		background-color: #f2f2f2;
+		position: absolute;
+		top: 1rem;
+		right: 0rem;
+		display: none
+	}
+	.fenleilan li{
+		width: 100%;
+		height: 1rem;
+		list-style: none;
+	}
+	.fenleilan .fen1 .df{
+		width: 2.74rem;
+		height: 1rem;
+		float: left;
+		line-height: 1rem;
+		font-size: 0.4rem;
+	}
+	.rightfenlei{
+		width: 1rem;
+		height: 4.4rem;
+		position:fixed;
+		right: 0rem;
+		bottom: 3rem;
+		
+	}
+	.rightfenlei .right1{
+		width: 1rem;
+		height: 1rem;
+		margin-top: 0.1rem;
+		background-color: #4d4dff;
+		text-align: center;
+		font-size: 8px;	
+		padding-top: 0.1rem;
+		box-sizing: border-box;
+		color: #fff
+	}
+	.rightfenlei .right1 img{
+		width: 0.45rem;height: 0.45rem;
+	}
+	/*主体*/
+	.content{
+		width: 7.5rem;
+		background-color: #eee;
+		padding: 0.5rem;
+		box-sizing: border-box;
+		margin-bottom: 1rem;
+	}
+	.content .con1{
+		text-indent: 0.6rem;
+		font-size: 0.3rem;
+		line-height: 0.7rem;
+		text-align:right;
+
+	}
+	.content .con2{
+		font-size: 0.8rem;
+		margin-top: 0.2rem;
+		text-align: center;
+		margin-top: 1rem;
+	}
+	/*底部*/
+	.footer{
+		width: 7.5rem;
+		height: 1.1rem;
+		background-color: #f3f3f3;
+		position: fixed;
+		bottom: 0rem;
+		left: 0rem;
+		z-index: 10;
+		border-top: 0.02rem solid #aaa
+	}
+	.footer li{
+		width: 33.333%;
+		height: 1rem;
+		font-size: 0.2rem;
+		float: left;
+		list-style: none;
+		text-align: center;
+		padding-top: 0.15rem;
+		box-sizing: border-box;
+	}
+	.footer li img{
+		width: 0.4rem;
+		height: 0.4rem;
+	}
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<img src="h1.png" class="tu1">
+		<img src="h2.png" class="tu2" id="show">
+	</div>
+	
+	<!-- 分类栏 -->
+	<ul class="fenleilan" id="fenlan">
+		<li style="border-bottom: 0.02rem solid #aaa">
+			<a href="index.html" style="text-decoration: none;color: #000">
+			<img src="fen3.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+			<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+				<div style="width: 70%;float: left;font-size: 0.4rem">首页</div>
+				<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+			</div>
+		</a>
+		</li>
+		<li  style="border-bottom: 0.02rem solid #aaa">
+			<a href="index-2.html" style="text-decoration: none;color: #000">
+			<img src="fen4.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+			<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+				<div style="width: 70%;float: left;font-size: 0.4rem">车辆展示</div>
+				<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+			</div>
+		</a>
+		</li>
+		<li  style="border-bottom: 0.02rem solid #aaa">
+		<a href="yuyue.html" style="text-decoration: none;color: #000">
+			<img src="fen5.png" style="width: 0.5rem;height: 0.5rem;margin-bottom: 0.3rem;margin-left: 0.3rem">
+			<div style="width: 75%;float: right;height: 1rem;line-height: 1rem">
+				<div style="width: 70%;float: left;font-size: 0.4rem">预约试驾</div>
+				<div style="width: 25%;float: right;font-size: 0.4rem">&gt;</div>
+			</div>
+		</a>
+		</li>
+		<li style="height: 2rem;font-size: 0.25rem;text-align: center;">
+			<div style="margin-bottom: 0.2rem;margin-top: 0.35rem">法律声明 &nbsp;&nbsp;|&nbsp;&nbsp; 联系我们</div>
+			<div>&copy;2015许昌XXXXXXXX汽车销售有限公司</div>
+			<div>豫IPC备285559478</div>
+		</li>
+	</ul>
+	<!-- 主体 -->
+	<div class="content">
+		<div class="con2">预约已经提交成功!</div>
+		<div class="con1"><a href="index.html" style="text-decoration: none;">返回首页</a></div>
+		
+		   
+	</div>
+	
+	<!-- 底部 -->
+	<ul class="footer">
+		<li>
+			<a href="index.html" style="text-decoration: none;color: #000">
+			<img src="first.png">
+			<div>首页</div>
+		</a>
+		</li>	
+		<li>
+			<a href="yuyue.html" style="text-decoration: none;color: #000">
+			<img src="fen5.png">
+			<div >预约试驾</div>
+		</a>
+		</li>	
+		<li>
+			<a href="we.html" style="text-decoration: none;color: #4d4dff">
+			<img src="first3s.png">
+			<div style="color: #4d4dff">关于我们</div>
+		</a>
+		</li>	
+	</ul>
+</body>
+<script type="text/javascript">
+	(function (doc, win) {
+		var docEl = doc.documentElement,
+		resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+		recalc = function () {
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if(clientWidth>=750){
+				docEl.style.fontSize = '100px';
+			}else{
+				docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			}
+		};
+	if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+
+	var oShow=document.getElementById('show');
+	var oFenl=document.getElementById('fenlan');
+	oShow.onclick=function(){
+                if(oFenl.style.display=="none"){
+                    oFenl.style.display="block"
+                }else{
+                    oFenl.style.display="none";
+                }
+
+            }
+</script>
+</html>
