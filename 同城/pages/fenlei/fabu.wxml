@@ -1,0 +1,77 @@
+<!--pages/fenlei/fabu.wxml-->
+<view class='all'>
+  <form bindsubmit="formSubmit">
+    <textarea placeholder='请输入发布内容' class='f'></textarea>
+    <view class='up'>
+      <view class='up1' bindtap='chooseImage'>
+        <image src='../../image/jh.png'></image>
+      </view>
+      <view wx:if="{{imagePath}}" class='up2'>
+        <image src='{{imagePath}}'></image>
+        <!-- <button bindtap='uploadImage'>上传图片</button>  -->
+      </view>
+    </view>
+    <view class='di'>
+      <view class='d11' style='border-bottom:1rpx solid #ccc'>
+        <view class='d111'>
+          <image src='../../image/wz.png'></image>
+        </view>
+        <view class='d112'>
+          <view>许昌市东城区威武大道100米</view>
+        </view>
+        <view class='d113'>
+          <image src='../../image/fa2.png'></image>
+        </view>
+      </view>
+      <view class='d11'>
+        <view class='d111'>
+          <image src='../../image/me.png'></image>
+        </view>
+        <view class='d112'>
+          <input placeholder='请输入电话号码' name="tel"></input>
+        </view>
+      </view>
+    </view>
+    <view class='zhiding' style='{{stylezd}}'>
+      <view class='z1'>
+        <view class='z12'>我要置顶</view>
+        <view class='btn' bindtap='shoudong' style='{{style1}}'>
+          <view class="btn1"></view>
+          <view class="btn22"></view>
+        </view>
+        <view class='btns' bindtap='shoudong1' style='{{style2}}'>
+          <view class="btn11"></view>
+          <view class="btn2"></view>
+        </view>
+      </view>
+      <view class='z1' style='{{stylez}}'>
+        <view class='z11'>选择置顶时间</view>
+        <view class='z111'>
+          <view style='float:left;width:100%;height:100%;padding-top:10rpx;padding-left:30rpx;;box-sizing:border-box'>
+            <picker style='width:100%;height:100%;' bindchange="bindYyPickerChange" value="{{yyIndex}}" range="{{yyArray}}">
+              <input style='width:100%;height:100%;text-align:right' placeholder='点此切换' disabled='true' value='{{yyArray[yyIndex]}}'></input>
+            </picker>
+          </view>
+        </view>
+      </view>
+      <view class='z1' style='border-bottom:0rpx;{{stylez}}'>
+        <view class='m1'>价格</view>
+        <view class='m2'>￥30</view>
+      </view>
+    </view>
+    <view class='mian'>
+      <view class='min1'>
+        <image style='width:60rpx;height:60rpx;margin-top:10rpx;float:right' src='../../image/dti.png'></image>
+      </view>
+      <view class='min1'>我已阅读并同意</view>
+      <view class='min1' style='text-align:left;color:blue'>免责声明</view>
+    </view>
+    <view class='main' style='font-size: 30rpx;overflow:hidden'>
+    <view class='mm1'>元/条</view>
+      <view class='mm1' style='color:red'>1.00</view>
+       <view class='mm1'>此分类信息</view>
+    </view>
+    <button form-type="submit" style='background:#eed504;color:white;width:90%;height:90rpx;line-height:90rpx;font-size:35rpx;margin-top:30rpx;'>立即发布</button>
+  </form>
+</view>
+<view style='width:100%;text-align:center;line-height:100rpx;background-color:rgba(255,255,255,0.8);color:#F00;font-size:40rpx;font-weight:600;position:fixed;top:0;z-index:666;'>{{tip}}</view>

@@ -1,0 +1,7 @@
+<view class='all'>
+  <view wx:for="{{menus}}" style='margin-top:20rpx;'>
+    <navigator url='{{item.url}}'>
+        <view class='lanmu'>{{item.text}}</view>
+    </navigator>
+  </view>
+</view>

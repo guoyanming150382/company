@@ -1,0 +1,62 @@
+<!--pages/fenlei/fabu.wxml-->
+<view wx:for="{{menus}}" class='company'>
+  <!-- 五个项目 -->
+   <navigator url='{{item.urldz}}'>
+  <view class='sb' >
+    <view class='p'>
+      <image src='{{item.url}}'></image>
+    </view>
+    <view class='lanmu'>{{item.text}}</view>
+  </view>
+  </navigator>
+  <navigator url='{{item.urldz}}'>
+  <view class='sb' >
+    <view class='p'>
+      <image src='{{item.url11}}'></image>
+    </view>
+    <view class='lanmu'>{{item.text11}}</view>
+  </view>
+</navigator>
+  <navigator url='{{item.urldz}}'>
+  <view class='sb'>
+    <view class='p'>
+      <image src='{{item.url12}}'></image>
+    </view>
+    <view class='lanmu'>{{item.text12}}</view>
+  </view>
+  </navigator>
+  <navigator url='{{item.urldz}}'>
+  <view class='sb'>
+    <view class='p'>
+      <image src='{{item.url13}}'></image>
+    </view>
+    <view class='lanmu'>{{item.text13}}</view>
+  </view>
+  </navigator>
+  <navigator url='{{item.urldz}}'>
+  <view class='sb'>
+    <view class='p'>
+      <image src='{{item.url14}}'></image>
+    </view>
+    <view class='lanmu'>{{item.text14}}</view>
+  </view>
+  </navigator>
+  <!-- 插入广告 -->
+  <view class='guanggao'>
+    <view class='tu'>
+      <view class='tu1'>
+        <image src='{{item.url1}}'></image>
+      </view>
+      <view class='tu1'>
+        <image src='{{item.url2}}'></image>
+      </view>
+      <view class='tu1'>
+        <image src='{{item.url3}}'></image>
+      </view>
+      <view class='tu1'>
+        <image src='{{item.url4}}'></image>
+      </view>
+    </view>
+    <view class='zi'>{{item.text1}}</view>
+  </view>
+</view>

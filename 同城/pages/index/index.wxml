@@ -1,0 +1,135 @@
+<view class='top' style="display: flex;justify-content:space-between ">
+  <view class='left'>
+    <image src='../../image/wz1.png' class='p'></image>
+    <view class='w'>{{currentCity}}</view>
+    <image src='../../image/x.png' class='p1'></image>
+  </view>
+  <view class='right'>
+    <image src='../../image/s.png' class='rp'></image>
+    <input placeholder='请输入关键字'></input>
+  </view>
+</view>
+
+<swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <view class='swiper-top'>
+          <view>
+            <navigator url='{{item.dizhi}}'>
+            <image src="{{item.url1}}" mode='widthFix' class="swiper-image" />
+            </navigator> 
+          </view>
+          <view>
+          <navigator url='{{item.dizhi}}'>
+            <image src="{{item.url2}}" mode='widthFix' class="swiper-image" />
+            </navigator>
+          </view>
+          <view>
+          <navigator url='{{item.dizhi}}'>
+            <image src="{{item.url3}}" mode='widthFix' class="swiper-image" />
+            </navigator>
+          </view>
+          <view>
+          <navigator url='{{item.dizhi}}'>
+            <image src="{{item.url4}}" mode='widthFix' class="swiper-image" />
+            </navigator>
+          </view>
+        </view>
+        <view class='swiper-bottom'>
+          <view>{{item.name1}}</view>
+          <view>{{item.name2}}</view>
+          <view>{{item.name3}}</view>
+          <view>{{item.name4}}</view>
+        </view>
+        <view class='swiper-top'>
+          <view>
+          <navigator url='{{item.dizhi}}'>
+            <image src="{{item.url5}}" mode='widthFix' class="swiper-image" />
+            </navigator>
+          </view>
+          <view>
+          <navigator url='{{item.dizhi}}'>
+            <image src="{{item.url6}}" mode='widthFix' class="swiper-image" />
+            </navigator>
+          </view>
+          <view>
+          <navigator url='{{item.dizhi}}'>
+            <image src="{{item.url7}}" mode='widthFix' class="swiper-image" />
+            </navigator>
+          </view>
+          <view>
+          <navigator url='{{item.dizhi}}'>
+            <image src="{{item.url8}}" mode='widthFix' class="swiper-image" />
+            </navigator>
+          </view>
+        </view>
+        <view class='swiper-bottom'>
+          <view>{{item.name5}}</view>
+          <view>{{item.name6}}</view>
+          <view>{{item.name7}}</view>
+          <view>{{item.name8}}</view>
+        </view>
+      </swiper-item>
+  </block>
+</swiper>
+
+<view style='width:100%;height:30rpx;background:#eee'></view>
+
+<view style='background-color:#fff;' class="swiper-tab">
+  <!-- <view style='display:inline-block;position:relative'>
+    <image src='../../image/l1.png' style='width:30rpx;height:30rpx;position:absolute;left:-25rpx;top:-54rpx'></image>
+  </view> -->
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex;overflow:auto;display:inline-block;width:90%;float:left">
+    <view class="swiper-tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">优秀企业</view>
+    <view class="swiper-tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">焦点信息</view>
+  </scroll-view>
+  <view style='display:inline-block;margin-top:24rpx'>
+      <image src='../../image/rr.png' style='width:35rpx;height:35rpx;float:left'></image>
+  </view>
+</view>
+
+<swiper current="{{currentTab}}" duration="300" style="height:1060rpx;margin-top:20rpx" bindchange="bindChange">
+  <swiper-item>
+
+    <view wx:for="{{menus1}}" style='width:50%;height:250rpx;background-color: #eee;display:inline-block;text-align:center;float:left;'>
+      <navigator url='{{item.ulti}}' style='width:100%;height:80%;'>
+        <image src="{{item.url}}" style='width:90%;height:100%;' />
+        <view style='text-align:center;font-size:30rpx'>{{item.text}}</view>
+      </navigator>
+    </view>
+    
+  </swiper-item>
+  <swiper-item>
+    <view class='pro-m'>
+          <view class='t1' bindtap='ont1' style='{{style11}}'>房屋租售</view>
+          <view class='t1'  bindtap='ont2' style='{{style12}}'>二手交易</view>
+          <view class='t1'  bindtap='ont3' style='{{style13}}'>商业促销</view>
+          <view class='t2'  bindtap='ont4' style='{{style14}}'>教育培训</view>
+          <view class='t2'  bindtap='ont5' style='{{style15}}'>家政保洁</view>
+          <view class='t2'  bindtap='ont6' style='{{style16}}'>安装维修</view>
+    </view>
+    <view wx:for="{{menus2}}" style='width:100%;height:60rpx;background-color: #eee;padding:10rpx 30rpx;;box-sizing:border-box'>
+      <navigator url='' style='width:100%;height:80%;{{style1}}' class='hidden'>
+        <view class='yins' style='text-align:left;font-size:35rpx'>{{item.text}}</view>
+      </navigator>
+      <navigator url='' style='width:100%;height:80%;{{style2}}' class='hidden'>
+        <view class='yins' style='text-align:left;font-size:35rpx;color:blue'>{{item.text1}}</view>
+      </navigator>
+      <navigator url='' style='width:100%;height:80%;{{style3}}' class='hidden'>
+        <view class='yins' style='text-align:left;font-size:35rpx;color:red;'>{{item.text2}}</view>
+      </navigator>
+       <navigator url='' style='width:100%;height:80%;{{style4}}' class='hidden'>
+        <view class='yins' style='text-align:left;font-size:35rpx;color:pink;'>{{item.text3}}</view>
+      </navigator>
+       <navigator url='' style='width:100%;height:80%;{{style5}}' class='hidden'>
+        <view class='yins' style='text-align:left;font-size:35rpx;color:yellow;'>{{item.text4}}</view>
+      </navigator>
+       <navigator url='' style='width:100%;height:80%;{{style6}}' class='hidden'>
+        <view class='yins' style='text-align:left;font-size:35rpx;color:purple;'>{{item.text5}}</view>
+      </navigator>
+    </view>
+  </swiper-item>
+
+
+  
+</swiper>

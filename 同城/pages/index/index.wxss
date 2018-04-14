@@ -1,0 +1,152 @@
+page {
+   background-color: #eee; 
+}
+.top{
+  width: 100%;
+  height: 100rpx;
+  background: #eed504;
+  padding: 15rpx 30rpx;
+  box-sizing: border-box;
+}
+.left{
+  width: 40%;
+  height: 100%;
+  background: gray;
+  opacity: 0.6;
+  float: left;
+  position: relative;
+}
+.p{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 15rpx;
+  left:10rpx;
+}
+.p1{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 15rpx;
+  right:10rpx;
+}
+.w{
+  font-size: 35rpx;
+  color: #fff;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+.right{
+  width: 55%;
+  height: 100%;
+  background: #fff;
+    float: left;
+    position: relative;
+}
+.rp{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 18rpx;
+  left:10rpx;
+}
+input{
+  width: 90%;
+  height: 100%;
+  padding-left: 15%;
+  box-sizing: border-box;
+}
+.swiper {
+  height: 400rpx;
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.swiper-top{
+  width: 100%;
+  height: 35%;
+}
+.swiper-top view{
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.swiper-top view image{
+  width: 60%;
+  height: 60%;
+}
+.swiper-bottom{
+  width: 100%;
+  height: 15%;
+}
+.swiper-bottom  view{
+  width: 25%;
+  height: 100%;
+  font-size: 30rpx;
+  text-align: center;
+  float: left;
+}
+
+
+
+
+.swiper-tab{ 
+  width: 100%; 
+  border-bottom: 2rpx solid #eee; 
+   text-align: center;  
+  height: 100rpx;
+  line-height: 100rpx;
+  } 
+.swiper-tab-item{ 
+   font-size: 35rpx;  
+  display: inline-block; 
+  width: 50%;
+} 
+
+.on{ 
+  color: #d2be10; 
+  border-bottom: 5rpx solid #d2be10;
+  } 
+ 
+  /* .swiper-box{ 
+   background-color: #fff;   
+  display: block; 
+     height:100%;   
+   width: 100%;
+  overflow: hidden;  
+  
+ }    */
+.yins{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 小分类 */
+.pro-m{
+  width: 100%;
+  height: 160rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx; 
+   background: #ccc; 
+}
+.pro-m .t1{
+  width: 33.33%;
+  height: 50%;
+  float: left;
+  color: #eee;
+}
+.pro-m .t2{
+  width: 33.33%;
+  height: 50%;
+  float: left;
+  color: #eee;
+}
+.hidden{
+  display: none;
+}

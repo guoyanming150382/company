@@ -1,0 +1,16 @@
+<!--pages/lianxi/lianxi.wxml-->
+<!-- 联系 -->
+  <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+  </view>
+
+   <view wx:for="{{menus1}}" class='project' >
+      <view>
+          <image src="{{item.url}}"></image>
+      </view>
+      <view class='w'>{{item.text}}</view>
+      <view class='r'>
+          <image src="{{item.url1}}" ></image>
+      </view>
+    </view>

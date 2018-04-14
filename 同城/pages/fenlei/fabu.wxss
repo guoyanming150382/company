@@ -1,0 +1,202 @@
+page{
+  background: #eee;
+}
+.all{
+  background: #eee;
+}
+.f{
+  width: 100%;
+  height:300rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background: #fff; 
+  font-size: 35rpx;
+}
+.up{
+  width: 100%;
+  height: 130rpx;
+  padding: 10rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background: #fff
+}
+.up1{
+  width: 15%;
+  height: 100%;
+  text-align: center;
+  float: left
+}
+.up1 image{
+  width: 100%;
+  height: 100%;
+}
+.up2 {
+  width: 85%;
+  float: left;
+}
+.up2 image{
+  width: 100rpx;height: 100rpx;
+}
+.di{
+  width: 100%;
+  height: 151rpx;
+  background: #fff;
+}
+.d11{
+  width: 100%;
+  height: 72.5rpx;
+}
+.d111{
+  width: 10%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.d111 image{
+  width: 60%;
+  height: 60%;
+  margin-top: 20%;
+}
+.d112{
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+.d112 view,input{
+  width: 100%;
+  height: 100%;
+  line-height: 72.5rpx;
+  font-size: 30rpx;
+}
+.d113{
+  width: 10%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.d113 image{
+  width: 40%;
+  height: 40%;
+   margin-top: 25%;
+}
+
+/* 置顶 */
+.zhiding{
+  width: 100%;
+  height: 225.5rpx;
+  margin-top: 30rpx;
+  background: #fff;
+}
+
+.z12{
+  float: left;
+}
+.btn{
+  width: 121rpx;
+  height: 80%;
+  background: #fff;
+  border-radius: 25px;
+  float: right;
+   margin-top: 5rpx; 
+  border: 1rpx solid #000;
+}
+.btns{
+  width: 121rpx;
+  height: 80%;
+  background: green;
+  border-radius: 25px;
+  float: right;
+   margin-top: 5rpx; 
+  border: 1rpx solid #000;
+}
+.btn21{
+  width: 48%;
+  height: 100%;
+  background: #fff;
+   border-radius: 25px;
+  float: left;
+  border: 1rpx solid #000;
+}
+.btn1{
+  width: 48%;
+  height: 100%;
+  background: #fff;
+   border-radius: 25px;
+  float: left;
+  border: 1rpx solid #000;
+}
+.btn11{
+  width: 48%;
+  height: 100%;
+  background: green;
+   border-radius: 25px;
+  float: left;
+  border: 0rpx;
+}
+.btn2{
+  width: 48%;
+  height: 100%;
+  background: #fff;
+   border-radius: 25px;
+   border: 1rpx solid #000;
+  float: left;
+}
+.ttt{
+  width: 48%;
+  height: 100%;
+  background: green;
+   border-radius: 25px;
+  float: left;
+}
+.btn22{
+  width: 48%;
+  height: 100%;
+  background: #fff;
+   border-radius: 25px;
+  float: left;
+}
+
+.z1{
+  width: 100%;
+  height: 72.5rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 30rpx;
+  line-height: 72.5rpx;
+  padding: 0rpx 20rpx;
+  box-sizing: border-box;
+}
+.z11{
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+.z111{
+  width: 60%;
+  height: 100%;
+  float: right;
+  text-align: right;
+}
+.m1{
+  float: left;
+  width: 30%;height: 100%;
+}
+.m2{
+  float: right;height: 100%;
+  color: red;
+}
+.mian{
+  text-align: center;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.min1{
+  width: 33.33%;
+  height: 100%;float: left;
+  font-size: 30rpx;
+}
+.mm1{
+  float: right;
+  height: 100%;
+}

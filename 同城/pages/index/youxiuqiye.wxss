@@ -1,0 +1,123 @@
+/* pages/index/youxiuqiye.wxss */
+.top{
+  width: 100%;
+  height: 150rpx;
+  border-bottom: 1rpx solid #eee;
+  /* background: red; */
+  padding: 0rpx 30rpx;
+  box-sizing: border-box;
+}
+.top .left{
+  width: 22%;
+  height: 100%;
+  /* background: blue; */
+  float: left;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.top .left .left-1{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.top .left .left-1 image{
+  width: 100%;
+  height: 100%;
+}
+.top .right{
+   width: 78%;
+  height: 100%;
+  /* background: red; */
+  float: left;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+.top .right .r1{
+  width: 100%;
+  height: 40%;
+  /* background: pink; */
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.top .right .r2{
+  width: 100%;
+  height: 30%;
+  /* background: green; */
+  line-height: 45rpx;
+  font-size: 25rpx;
+}
+
+.content {
+  width: 100%;
+  /* height: 200rpx; */
+  border-bottom: 1rpx solid #eee;
+  overflow: hidden;
+}
+.content .fenlei{
+  width: 100%;
+  height: 60rpx;
+  /* background: red; */
+  font-size: 30rpx;
+  line-height: 60rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+.content .fenlei1{
+  width: 28%;
+  height: 60rpx;
+  line-height: 55rpx;
+  text-align: center;
+  background: #eee;
+  font-size: 35rpx;
+  float: left;
+  border-radius:30rpx;
+  margin: 10rpx;
+  color: #aaa;
+}
+.ju{
+  width: 100%;
+  height: 200rpx;
+   padding-left: 50rpx;
+}
+.message{
+  width: 100%;
+  
+margin-top: 60rpx;
+}
+.mess1{
+  width: 100%;
+  height: 120rpx;
+    position: relative;
+    border-top: 1rpx solid #eee;
+}
+.mess1 .mess2{
+  width: 70%;
+  height: 100%;
+  /* background: yellow; */
+  float: left;
+  font-size: 35rpx;
+  line-height: 120rpx;
+  text-align: left;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+
+}
+.mess1 .mess3{
+  width: 30%;
+  height: 100%;
+  /* background: red; */
+  float: left;
+  font-size: 35rpx;
+  line-height: 120rpx;
+  text-align: center;
+}
+.poi{
+  width: 180rpx;
+  height: 60rpx;
+  position: absolute;
+  bottom: -25rpx;
+  left: 40rpx;
+  color: #aaa;
+  font-size: 20rpx;
+}

@@ -1,0 +1,63 @@
+<!--pages/index/xiangqing.wxml-->
+<view class='top'>
+  <view class='le'>
+    <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4030508634,3614369012&fm=27&gp=0.jpg'></image>
+  </view>
+  <view class='fa'>代开发票</view>
+  <view class='date'>2018-06-16 12:30</view>
+</view>
+<view class='top-top'>
+  <view class='left'>
+    <view class='left-pic'>
+      <image style='width:50%;' mode='widthFix' src='../../image/wz.png'></image>
+    </view>
+    <view class='left-w'>许昌市魏都区</view>
+  </view>
+  <view class='right'>离你682.Km</view>
+</view>
+<view class='content'>
+  <view class='word'>衰的历史时期，杜甫出身在一个世代“奉儒守官”的家庭，家学渊博。早期作品主要表现理想抱负和所期望的人生道路。另一方面则表现他“致君尧舜上，再使风俗淳”的政治理想，期间许多作品 反映当时的民生疾苦和政治动乱、揭露统治者的丑恶行径，从此踏上了忧国忧民的生活和创作道路。随着唐玄宗后期政治越来越腐败，他的生活也一天天地陷入贫困失望的境地。在颠沛流离的生活中。</view>
+  <view class='tu'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523261716&di=5f1d17208d47d5489b8f861c87b074eb&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.asiadancing.com%2Fimages%2FaHR0cDovL3BpYy5iYWlrZS5zb3NvLmNvbS9wLzIwMTMxMjExLzIwMTMxMjExMDkxNzUyLTM5MzY2OTAzNy5qcGc%3D.jpg'></image>
+  </view>
+  <view class='tu'>
+    <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4030508634,3614369012&fm=27&gp=0.jpg'></image>
+  </view>
+  <view class='p'>
+    <view class='p1'>
+      <view class='p2' >
+        <image src='../../image/eye1.png'  bindtap='add1'></image>
+      </view>
+      <view class='p2' >{{count1}}</view>
+    </view>
+    <view class='p1'>
+      <view class='p2' style='padding-top:8rpx;box-sizing:border-box'   bindtap='add'>
+        <image src='../../image/eye.png'></image>
+      </view>
+      <view class='p2'>{{count}}</view>
+    </view>
+  </view>
+</view>
+<view class='footer'>
+  <view class='foot' style='padding-left:60rpx;box-sizing:border-box'>
+    <view style='padding-top:10rpx;box-sizing:border-box;' >
+      <image src='../../image/fenx.png'></image>
+    </view>
+    <view>分享</view>
+  </view>
+  <view class='foot' style='padding-left:60rpx;box-sizing:border-box'>
+    <view style='padding-top:10rpx;box-sizing:border-box;{{stylt}}' bindtap='dian'>
+      <image src='../../image/co.png'></image>
+    </view>
+    <view style='padding-top:10rpx;box-sizing:border-box;{{stylt1}}' bindtap='dian1'>
+      <image src='../../image/co1.png'></image>
+    </view>
+    <view>收藏</view>
+  </view>
+  <view class='foot' style='padding-left:60rpx;box-sizing:border-box'>
+    <view style='padding-top:10rpx;box-sizing:border-box'>
+      <image src='../../image/tp.png'></image>
+    </view>
+    <view bindtap='calling'>联系</view>
+  </view>
+</view>
